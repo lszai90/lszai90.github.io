@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/06/07/hello-world/"/>
+      <url>/2022/06/07/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Kylin | 关于写博客的七点反思</title>
+      <link href="/2020/01/14/kylin-songzai/"/>
+      <url>/2020/01/14/kylin-songzai/</url>
+      
+        <content type="html"><![CDATA[<blockquote></blockquote><p><img src="/medias/contact.jpg" alt></p><h2 id="When？什么时候开始写的？"><a href="#When？什么时候开始写的？" class="headerlink" title="When？什么时候开始写的？"></a>When？什么时候开始写的？</h2><h2 id="Why？为什么会想起来写博客？"><a href="#Why？为什么会想起来写博客？" class="headerlink" title="Why？为什么会想起来写博客？"></a>Why？为什么会想起来写博客？</h2><h2 id="What？都写一些什么主题的博客？"><a href="#What？都写一些什么主题的博客？" class="headerlink" title="What？都写一些什么主题的博客？"></a>What？都写一些什么主题的博客？</h2><h2 id="Who？写出来的博客都是给谁看的？"><a href="#Who？写出来的博客都是给谁看的？" class="headerlink" title="Who？写出来的博客都是给谁看的？"></a>Who？写出来的博客都是给谁看的？</h2><h2 id="Where？都在什么平台写博客呢？"><a href="#Where？都在什么平台写博客呢？" class="headerlink" title="Where？都在什么平台写博客呢？"></a>Where？都在什么平台写博客呢？</h2><h2 id="How？按照什么流程来写博客？"><a href="#How？按照什么流程来写博客？" class="headerlink" title="How？按照什么流程来写博客？"></a>How？按照什么流程来写博客？</h2><h2 id="How-much？要花多少时间和金钱来运营维护？"><a href="#How-much？要花多少时间和金钱来运营维护？" class="headerlink" title="How much？要花多少时间和金钱来运营维护？"></a>How much？要花多少时间和金钱来运营维护？</h2>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+          <category> C# </category>
+          
+          <category> .NetCore </category>
+          
+          <category> ABP </category>
+          
+          <category> ABP.IO </category>
+          
+          <category> Sql </category>
+          
+          <category> My Sql </category>
+          
+          <category> Vue3 </category>
+          
+          <category> TS </category>
+          
+          <category> Nodejs </category>
+          
+          <category> MQ </category>
+          
+          <category> Redis </category>
+          
+          <category> Nginx </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>

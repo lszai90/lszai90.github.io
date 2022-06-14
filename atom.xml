@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kylin的博客</title>
+  
+  <subtitle>程序猿的生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://liszai90.github.io/"/>
+  <updated>2022-06-09T06:08:29.120Z</updated>
+  <id>https://liszai90.github.io/</id>
+  
+  <author>
+    <name>松崽</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://liszai90.github.io/2022/06/07/hello-world/"/>
+    <id>https://liszai90.github.io/2022/06/07/hello-world/</id>
+    <published>2022-06-07T00:45:51.531Z</published>
+    <updated>2022-06-09T06:08:29.120Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Kylin | 关于写博客的七点反思</title>
+    <link href="https://liszai90.github.io/2020/01/14/kylin-songzai/"/>
+    <id>https://liszai90.github.io/2020/01/14/kylin-songzai/</id>
+    <published>2020-01-14T07:27:31.000Z</published>
+    <updated>2022-06-13T00:57:51.078Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;/medias/contact.jpg&quot; alt&gt;&lt;/p&gt;
+&lt;h2 id=&quot;When？什么时候开始写的？&quot;&gt;&lt;a href=&quot;#When？什么时候开始写的？&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+      <category term="C#" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/"/>
+    
+      <category term=".NetCore" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/"/>
+    
+      <category term="ABP" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/"/>
+    
+      <category term="ABP.IO" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/"/>
+    
+      <category term="Sql" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/"/>
+    
+      <category term="My Sql" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/"/>
+    
+      <category term="Vue3" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/"/>
+    
+      <category term="TS" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/"/>
+    
+      <category term="Nodejs" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/"/>
+    
+      <category term="MQ" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/"/>
+    
+      <category term="Redis" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/"/>
+    
+      <category term="Nginx" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/Nginx/"/>
+    
+    
+      <category term="博客" scheme="https://liszai90.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
+    
+  </entry>
+  
+</feed>
