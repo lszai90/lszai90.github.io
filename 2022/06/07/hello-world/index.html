@@ -456,14 +456,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.3k
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    5 分
+                    4 分
                 </div>
                 
                 
@@ -498,7 +498,7 @@ yarn add hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></s
 <p>5、注册Github账号</p>
 <p>​      gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。这里用到Github，是因为我们需要通过Github得到自己的博客网站域名，而且需要使用gitHub同步我们个人博客的相关文件。注册地址：<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a></p>
 <h3 id="二-开始搭建博客"><a href="#二-开始搭建博客" class="headerlink" title="二 开始搭建博客"></a>二 开始搭建博客</h3><p>1、新建GitHub仓库<br>      搭建我们的个人博客需要一个唯一的域名，当然我们可以申请购买一个域名来使用，但是在不是太必要的情况下，我们也可以通过Github Pages获得一个免费使用的域名，这需要我们在Github上新建一个仓库，如下：</p>
-<p>![](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo01.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo01.png" alt></p>
 <p>这个过程和建立普通的仓库没什么区别，关键在于新仓库的名字，一定要是UserName+“github.io”的形式。这也是之前强调的要起一个好的用户名的原因。这样之后我们最后的博客网站的链接就会是：<a href="https://UserName.github.io的形式。" target="_blank" rel="noopener">https://UserName.github.io的形式。</a></p>
 <p>2、创建本地博客站点</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo init  myHexoBlog<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
@@ -508,28 +508,28 @@ yarn add hexo-cli -g<span aria-hidden="true" class="line-numbers-rows"><span></s
 <pre class="line-numbers language-bash"><code class="language-bash">hexo g  //g是generetor的缩写，生成博客
 hexo s  //s是server的缩写，启动服务<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 <p>输入 hexo s 会出现如下图:</p>
-<p><img src="C:%5CUsers%5CAdministrator%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220619092438712.png" alt="image-20220619092438712"></p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo10.png" alt="image-20220619092438712"></p>
 <p>  此时打开浏览器，输入 <a href="http://localhost:4000/，" target="_blank" rel="noopener">http://localhost:4000/，</a> 我们将会看到Hexo自带默认主题显示的博客样式如下:</p>
-<p>![](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo02.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo02.png" alt></p>
 <p>这里还是我们本地访问的地址、如果想在公网上访问那么就需要在我们这个项目推送到Github上。还记得我们之前在自己仓储上建立的项目吗？首先找到我们的博客仓库，并拷贝仓库地址：</p>
-<p>![Hexo03](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo03.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo03.png" alt="Hexo03"></p>
 <p>然后修改本地博客目录的配置：<br>修改本次博客根目录下的_config.yml文件，修改deploy下的配置如下：</p>
-<p>![Hexo04](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo04.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo04.png" alt="Hexo04"></p>
 <h3 id="三-主题替换"><a href="#三-主题替换" class="headerlink" title="三 主题替换"></a>三 主题替换</h3><p>1、在Hexo主题页面找到自己喜欢的主题，链接地址：<code>https://hexo.io/themes/</code></p>
-<p>![Hexo05](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo05.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo05.png" alt="Hexo05"></p>
 <p>2、进入到主题仓库复制地址：</p>
-<p>![Hexo06](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo06.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo06.png" alt="Hexo06"></p>
 <p>3、在自己博客的根目录、控制台执行如下命令：</p>
 <p>![Hexo07](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo07.png)</p>
 <p>4、在 _config.yml 文件下修改主题为刚下载的主题：</p>
-<p>![Hexo08](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo08.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo08.png" alt="Hexo08"></p>
 <p>5、重新启动项目就能看到主题改变了</p>
 <p>6、推送项目到Github</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>7、安装上传GitHub的插件：</p>
 <pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git —save //安装部署插件<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>8、最后我们开启GitHubPages：</p>
-<p>![Hexo09](F:\MyDataInfo\My blog 博客\Kylinblog\source\images\hellowordImages\Hexo09.png)</p>
+<p><img src="https://lszai90.github.io/images/hellowordImages/Hexo09.png" alt="Hexo09"></p>
 <p>9、基本hexo 操作命令</p>
 <pre class="line-numbers language-bash"><code class="language-bash">hexo clean // 清理
 hexo new <span class="token string">"文章名称"</span> // 新建文章
@@ -1177,7 +1177,7 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">1.4k</span>
+            <span class="white-color">1.3k</span>
             
 
             <br>
