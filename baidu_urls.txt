@@ -1,2 +1,5 @@
+https://liszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/
+https://liszai90.github.io/2022/07/04/cursor/
+https://liszai90.github.io/2022/06/19/hello-world/
 https://liszai90.github.io/2022/06/19/rsa/
 https://liszai90.github.io/2020/06/11/kylin-songzai/
