@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-04T00:52:54.116Z</updated>
+  <updated>2022-07-05T00:52:24.549Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,81 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NetCore_解决请求数据大小限制</title>
+    <link href="https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/"/>
+    <id>https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/</id>
+    <published>2022-07-05T00:49:28.000Z</published>
+    <updated>2022-07-05T00:52:24.549Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;利用Kestrel部署的应用配置接收数据的大小限制
+对于 Kestrel 托管的应用，默认的最大请求正文大小为 30,000,000
+        
+      
+    
+    </summary>
+    
+    
+      <category term=".NetCore" scheme="https://liszai90.github.io/tags/NetCore/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>触发器语法</title>
+    <link href="https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/"/>
+    <id>https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/</id>
+    <published>2022-07-05T00:46:46.000Z</published>
+    <updated>2022-07-05T00:47:29.201Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;
+ALTER trigger &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;dbo&lt;span
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Sql" scheme="https://liszai90.github.io/tags/Sql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>统计表空间占用大小</title>
+    <link href="https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
+    <id>https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
+    <published>2022-07-05T00:44:45.000Z</published>
+    <updated>2022-07-05T00:45:51.981Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;
+CREATE TABLE &lt;span class=&quot;token comment&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="Sql" scheme="https://liszai90.github.io/tags/Sql/"/>
+    
+  </entry>
   
   <entry>
     <title>sql事务语法</title>

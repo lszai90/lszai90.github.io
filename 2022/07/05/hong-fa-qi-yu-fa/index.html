@@ -4,13 +4,19 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Kylin | 关于写博客的七点反思, C# .NetCore  ABP ABP.IO  Vue3 TS NodeJS MYSQL SERVER MQ Redis dapper ">
+    <meta name="keywords" content="触发器语法, C# .NetCore  ABP ABP.IO  Vue3 TS NodeJS MYSQL SERVER MQ Redis dapper ">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="
+ALTER trigger [dbo].[tri_XXXX]
+on [dbo].[表]
+for  insert, delete, update
+as
+begin
 
-When？什么时候开始写的？Why？为什么会想起来写博客？What？都写一些什么主题的博客？Who？写出来的博客都是给谁看的？Where？都在什么平台写博客呢？How？按照什么流程来写博客？How much？要花多少时间和金钱来运营维护">
+    declare @InsCount int
+    declare">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +24,7 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Kylin | 关于写博客的七点反思 | Kylin的博客</title>
+    <title>触发器语法 | Kylin的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -316,13 +322,13 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/27.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Kylin | 关于写博客的七点反思
+                        触发器语法
                     </div>
                 </div>
             </div>
@@ -433,8 +439,8 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
                     
                     <div class="article-tag">
                         
-                        <a href="/tags/博客/" target="_blank">
-                            <span class="chip bg-color">博客</span>
+                        <a href="/tags/Sql/" target="_blank">
+                            <span class="chip bg-color">Sql</span>
                         </a>
                         
                     </div>
@@ -442,70 +448,13 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
                 </div>
                 <div class="col s5 right-align">
                     
-                    <div class="post-cate">
-                        <i class="fa fa-bookmark fa-fw icon-category"></i>
-                        
-                        <a href="/categories/随笔/" class="post-category" target="_blank">
-                            随笔
-                        </a>
-                        
-                        <a href="/categories/随笔/C/" class="post-category" target="_blank">
-                            C#
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/" class="post-category" target="_blank">
-                            .NetCore
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/" class="post-category" target="_blank">
-                            ABP
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/" class="post-category" target="_blank">
-                            ABP.IO
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/" class="post-category" target="_blank">
-                            Sql
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/" class="post-category" target="_blank">
-                            My Sql
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/" class="post-category" target="_blank">
-                            Vue3
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/" class="post-category" target="_blank">
-                            TS
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/" class="post-category" target="_blank">
-                            Nodejs
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/" class="post-category" target="_blank">
-                            MQ
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/" class="post-category" target="_blank">
-                            Redis
-                        </a>
-                        
-                        <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/Nginx/" class="post-category" target="_blank">
-                            Nginx
-                        </a>
-                        
-                    </div>
-                    
                 </div>
             </div>
 
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-06-11
+                    2022-07-05
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -519,7 +468,7 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    83
+                    75
                 </div>
                 
 
@@ -542,9 +491,42 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <blockquote>
-</blockquote>
-<h2 id="When？什么时候开始写的？"><a href="#When？什么时候开始写的？" class="headerlink" title="When？什么时候开始写的？"></a>When？什么时候开始写的？</h2><h2 id="Why？为什么会想起来写博客？"><a href="#Why？为什么会想起来写博客？" class="headerlink" title="Why？为什么会想起来写博客？"></a>Why？为什么会想起来写博客？</h2><h2 id="What？都写一些什么主题的博客？"><a href="#What？都写一些什么主题的博客？" class="headerlink" title="What？都写一些什么主题的博客？"></a>What？都写一些什么主题的博客？</h2><h2 id="Who？写出来的博客都是给谁看的？"><a href="#Who？写出来的博客都是给谁看的？" class="headerlink" title="Who？写出来的博客都是给谁看的？"></a>Who？写出来的博客都是给谁看的？</h2><h2 id="Where？都在什么平台写博客呢？"><a href="#Where？都在什么平台写博客呢？" class="headerlink" title="Where？都在什么平台写博客呢？"></a>Where？都在什么平台写博客呢？</h2><h2 id="How？按照什么流程来写博客？"><a href="#How？按照什么流程来写博客？" class="headerlink" title="How？按照什么流程来写博客？"></a>How？按照什么流程来写博客？</h2><h2 id="How-much？要花多少时间和金钱来运营维护？"><a href="#How-much？要花多少时间和金钱来运营维护？" class="headerlink" title="How much？要花多少时间和金钱来运营维护？"></a>How much？要花多少时间和金钱来运营维护？</h2>
+                <pre class="line-numbers language-bash"><code class="language-bash">
+ALTER trigger <span class="token punctuation">[</span>dbo<span class="token punctuation">]</span>.<span class="token punctuation">[</span>tri_XXXX<span class="token punctuation">]</span>
+on <span class="token punctuation">[</span>dbo<span class="token punctuation">]</span>.<span class="token punctuation">[</span>表<span class="token punctuation">]</span>
+<span class="token keyword">for</span>  insert, delete, update
+as
+begin
+
+    <span class="token keyword">declare</span> @InsCount int
+    <span class="token keyword">declare</span> @DelCount int
+    <span class="token keyword">declare</span> @SRMCount int
+
+    <span class="token keyword">set</span> @InsCount <span class="token operator">=</span> 0 
+    <span class="token keyword">set</span> @DelCount <span class="token operator">=</span> 0 
+    <span class="token keyword">select</span> @InsCount <span class="token operator">=</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span>
+    from   inserted
+
+    <span class="token keyword">select</span> @DelCount <span class="token operator">=</span> count<span class="token punctuation">(</span>*<span class="token punctuation">)</span>
+    from   deleted 
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>@InsCount <span class="token operator">></span> 0 and @DelCount <span class="token operator">=</span> 0<span class="token punctuation">)</span> ---插入
+    begin
+        print<span class="token punctuation">(</span><span class="token string">'Insert'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    end
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>@InsCount <span class="token operator">></span> 0 and @DelCount <span class="token operator">></span> 0<span class="token punctuation">)</span> ---更新
+    begin
+      print<span class="token punctuation">(</span><span class="token string">'Update'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    end
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>@InsCount <span class="token operator">=</span>0 and @DelCount <span class="token operator">></span> 0<span class="token punctuation">)</span> ---删除
+    begin
+        print<span class="token punctuation">(</span><span class="token string">'Del'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    end
+end 
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
             </div>
             <hr />
 
@@ -578,9 +560,9 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Kylin | 关于写博客的七点反思》
+                    《触发器语法》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/06/11/kylin-songzai/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/07/05/hong-fa-qi-yu-fa/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Kylin
             </a> 采用
@@ -621,7 +603,7 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
         repo: 'lszai90.github.io',
         owner: 'lszai90',
         admin: "lszai90",
-        id: '2020/06/11/kylin-songzai/',
+        id: '2022/07/05/hong-fa-qi-yu-fa/',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -908,36 +890,40 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/06/19/rsa/">
+                <a href="/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="RSA">
+                        <img src="/medias/featureimages/24.jpg" class="responsive-img" alt="NetCore_解决请求数据大小限制">
                         
-                        <span class="card-title">RSA</span>
+                        <span class="card-title">NetCore_解决请求数据大小限制</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            利用Kestrel部署的应用配置接收数据的大小限制
+对于 Kestrel 托管的应用，默认的最大请求正文大小为 30,000,000 个字节，约为 28.6 MB。下面是处理数据大小限制的方式：
+
+注意：下面介绍的方式是基于Kestrel服
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-06-19
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-07-05
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
-                                </a>
-                            
-                            
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/NetCore/" target="_blank">
+                        <span class="chip bg-color">.NetCore</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -946,96 +932,44 @@ When？什么时候开始写的？Why？为什么会想起来写博客？What？
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/06/11/kylin-songzai/">
+                <a href="/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/27.jpg" class="responsive-img" alt="Kylin | 关于写博客的七点反思">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="统计表空间占用大小">
                         
-                        <span class="card-title">Kylin | 关于写博客的七点反思</span>
+                        <span class="card-title">统计表空间占用大小</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
                             
+CREATE TABLE #tablespaceinfo
+    (
+      nameinfo VARCHAR(500) ,
+      rowsinfo BIGINT ,
+      reserved VARCHAR(200) ,
 
-When？什么时候开始写的？Why？为什么会想起来写博客？What？都写一些什么主题的博客？Who？写出来的博客都是给谁看的？Where？都在什么平台写博客呢？How？按照什么流程来写博客？How much？要花多少时间和金钱来运营维护
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-06-11
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-07-05
                             </span>
                         <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
-                                </a>
-                            
-                            <a href="/categories/随笔/C/" class="post-category" target="_blank">
-                                    C#
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/" class="post-category" target="_blank">
-                                    .NetCore
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/" class="post-category" target="_blank">
-                                    ABP
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/" class="post-category" target="_blank">
-                                    ABP.IO
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/" class="post-category" target="_blank">
-                                    Sql
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/" class="post-category" target="_blank">
-                                    My Sql
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/" class="post-category" target="_blank">
-                                    Vue3
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/" class="post-category" target="_blank">
-                                    TS
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/" class="post-category" target="_blank">
-                                    Nodejs
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/" class="post-category" target="_blank">
-                                    MQ
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/" class="post-category" target="_blank">
-                                    Redis
-                                </a>
-                            
-                            <a href="/categories/随笔/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/Nginx/" class="post-category" target="_blank">
-                                    Nginx
-                                </a>
-                            
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/博客/" target="_blank">
-                        <span class="chip bg-color">博客</span>
+                    <a href="/tags/Sql/" target="_blank">
+                        <span class="chip bg-color">Sql</span>
                     </a>
                     
                 </div>

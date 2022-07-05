@@ -1,3 +1,6 @@
+https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/
+https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/
+https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/
 https://liszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/
 https://liszai90.github.io/2022/07/04/cursor/
 https://liszai90.github.io/2022/06/19/hello-world/
