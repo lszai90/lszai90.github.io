@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-05T00:52:24.549Z</updated>
+  <updated>2022-07-05T11:25:16.077Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>NetCore_解决请求数据大小限制</title>
-    <link href="https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/"/>
-    <id>https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/</id>
-    <published>2022-07-05T00:49:28.000Z</published>
-    <updated>2022-07-05T00:52:24.549Z</updated>
+    <title>pdfjs预览</title>
+    <link href="https://liszai90.github.io/2022/07/05/pdfjs-yu-lan/"/>
+    <id>https://liszai90.github.io/2022/07/05/pdfjs-yu-lan/</id>
+    <published>2022-07-05T11:21:07.000Z</published>
+    <updated>2022-07-05T11:25:16.077Z</updated>
     
     <summary type="html">
     
@@ -29,15 +29,38 @@
       
         
         
-          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;利用Kestrel部署的应用配置接收数据的大小限制
-对于 Kestrel 托管的应用，默认的最大请求正文大小为 30,000,000
+          &lt;h4 id=&quot;PDFJS在线预览【-Net-Core】&quot;&gt;&lt;a href=&quot;#PDFJS在线预览【-Net-Core】&quot; class=&quot;headerlink&quot; title=&quot;PDFJS在线预览【.Net Core】&quot;&gt;&lt;/a&gt;PDFJS在线预览【.Net
         
       
     
     </summary>
     
+      <category term=".NetCore" scheme="https://liszai90.github.io/categories/NetCore/"/>
     
-      <category term=".NetCore" scheme="https://liszai90.github.io/tags/NetCore/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>NetCore_解决请求数据大小限制</title>
+    <link href="https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/"/>
+    <id>https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/</id>
+    <published>2022-07-05T00:49:28.000Z</published>
+    <updated>2022-07-05T09:21:44.994Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h6 id=&quot;解决请求数据大小限制&quot;&gt;&lt;a href=&quot;#解决请求数据大小限制&quot; class=&quot;headerlink&quot; title=&quot;解决请求数据大小限制&quot;&gt;&lt;/a&gt;解决请求数据大小限制&lt;/h6&gt;&lt;pre class=&quot;line-numbers
+        
+      
+    
+    </summary>
+    
+      <category term=".NetCore" scheme="https://liszai90.github.io/categories/NetCore/"/>
+    
     
   </entry>
   
@@ -46,7 +69,7 @@
     <link href="https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/"/>
     <id>https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/</id>
     <published>2022-07-05T00:46:46.000Z</published>
-    <updated>2022-07-05T00:47:29.201Z</updated>
+    <updated>2022-07-05T09:22:30.508Z</updated>
     
     <summary type="html">
     
@@ -54,24 +77,23 @@
       
         
         
-          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;
-ALTER trigger &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;dbo&lt;span
+          &lt;h6 id=&quot;触发器语法&quot;&gt;&lt;a href=&quot;#触发器语法&quot; class=&quot;headerlink&quot; title=&quot;触发器语法&quot;&gt;&lt;/a&gt;触发器语法&lt;/h6&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code
         
       
     
     </summary>
     
+      <category term="Sql" scheme="https://liszai90.github.io/categories/Sql/"/>
     
-      <category term="Sql" scheme="https://liszai90.github.io/tags/Sql/"/>
     
   </entry>
   
   <entry>
-    <title>统计表空间占用大小</title>
+    <title></title>
     <link href="https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
     <id>https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
-    <published>2022-07-05T00:44:45.000Z</published>
-    <updated>2022-07-05T00:45:51.981Z</updated>
+    <published>2022-07-05T00:44:45.527Z</published>
+    <updated>2022-07-05T09:22:40.252Z</updated>
     
     <summary type="html">
     
@@ -79,15 +101,13 @@ ALTER trigger &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;dbo&
       
         
         
-          &lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;
-CREATE TABLE &lt;span class=&quot;token comment&quot;
+          &lt;hr&gt;
+&lt;p&gt;title: 统计表空间占用大小&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-07-05
         
       
     
     </summary>
     
-    
-      <category term="Sql" scheme="https://liszai90.github.io/tags/Sql/"/>
     
   </entry>
   
@@ -180,11 +200,11 @@ CREATE TABLE &lt;span class=&quot;token comment&quot;
   </entry>
   
   <entry>
-    <title>Kylin | 关于写博客的七点反思</title>
-    <link href="https://liszai90.github.io/2020/06/11/kylin-songzai/"/>
-    <id>https://liszai90.github.io/2020/06/11/kylin-songzai/</id>
-    <published>2020-06-11T07:27:31.000Z</published>
-    <updated>2022-06-14T01:33:56.584Z</updated>
+    <title></title>
+    <link href="https://liszai90.github.io/2022/06/09/kylin-songzai/"/>
+    <id>https://liszai90.github.io/2022/06/09/kylin-songzai/</id>
+    <published>2022-06-09T04:00:41.943Z</published>
+    <updated>2022-07-05T09:20:51.775Z</updated>
     
     <summary type="html">
     
@@ -192,42 +212,13 @@ CREATE TABLE &lt;span class=&quot;token comment&quot;
       
         
         
-          &lt;blockquote&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;When？什么时候开始写的？&quot;&gt;&lt;a href=&quot;#When？什么时候开始写的？&quot; class=&quot;headerlink&quot;
+          &lt;hr&gt;
+&lt;p&gt;title: Kylin | 关于写博客的七点反思&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-06-11
         
       
     
     </summary>
     
-      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-      <category term="C#" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/"/>
-    
-      <category term=".NetCore" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/"/>
-    
-      <category term="ABP" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/"/>
-    
-      <category term="ABP.IO" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/"/>
-    
-      <category term="Sql" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/"/>
-    
-      <category term="My Sql" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/"/>
-    
-      <category term="Vue3" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/"/>
-    
-      <category term="TS" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/"/>
-    
-      <category term="Nodejs" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/"/>
-    
-      <category term="MQ" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/"/>
-    
-      <category term="Redis" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/"/>
-    
-      <category term="Nginx" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/C/NetCore/ABP/ABP-IO/Sql/My-Sql/Vue3/TS/Nodejs/MQ/Redis/Nginx/"/>
-    
-    
-      <category term="博客" scheme="https://liszai90.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
     
   </entry>
   
