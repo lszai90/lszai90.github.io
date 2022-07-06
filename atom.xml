@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-05T11:25:16.077Z</updated>
+  <updated>2022-07-06T00:43:06.366Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Table作为参数</title>
+    <link href="https://liszai90.github.io/2022/07/06/table-zuo-wei-can-shu/"/>
+    <id>https://liszai90.github.io/2022/07/06/table-zuo-wei-can-shu/</id>
+    <published>2022-07-06T00:37:15.000Z</published>
+    <updated>2022-07-06T00:43:06.366Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;在开发过程中难免会遇到直接把DT作为参数直接传给数据库中进行处理。&lt;/p&gt;
+&lt;h4 id=&quot;存储&quot;&gt;&lt;a href=&quot;#存储&quot; class=&quot;headerlink&quot; title=&quot;存储&quot;&gt;&lt;/a&gt;存储&lt;/h4&gt;&lt;pre class=&quot;line-numbers
+        
+      
+    
+    </summary>
+    
+      <category term="Sql" scheme="https://liszai90.github.io/categories/Sql/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>pdfjs预览</title>

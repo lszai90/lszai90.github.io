@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Table作为参数</title>
+      <link href="/2022/07/06/table-zuo-wei-can-shu/"/>
+      <url>/2022/07/06/table-zuo-wei-can-shu/</url>
+      
+        <content type="html"><![CDATA[<p>在开发过程中难免会遇到直接把DT作为参数直接传给数据库中进行处理。</p><h4 id="存储"><a href="#存储" class="headerlink" title="存储"></a>存储</h4><pre class="line-numbers language-bash"><code class="language-bash">--数据库； CREATE PROCEDURE dbo.sp_InsertSingleUser   <span class="token punctuation">(</span>     @User UserTable READONLY   <span class="token punctuation">)</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><h4 id="C-后台"><a href="#C-后台" class="headerlink" title="C# 后台"></a>C# 后台</h4><pre class="line-numbers language-bash"><code class="language-bash">   --后台传入的例子   public  DataSet fnInsertSingleUser<span class="token punctuation">(</span>DataTable v_dt<span class="token punctuation">)</span>  <span class="token punctuation">{</span>         try         <span class="token punctuation">{</span>             SqlConnection cn<span class="token operator">=</span>new SqlConnection<span class="token punctuation">(</span>CONN<span class="token punctuation">)</span><span class="token punctuation">;</span>             SqlCommand cmd<span class="token operator">=</span> cn.CreateCommand<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             cmd.CommandType<span class="token operator">=</span> CommandType.StoredProcedure<span class="token punctuation">;</span>            cmd.CommandText<span class="token operator">=</span>@<span class="token string">"sp_InsertSingleUser"</span><span class="token punctuation">;</span>            SqlParameter p<span class="token operator">=</span> cmd.Parameters.AddWithValue<span class="token punctuation">(</span><span class="token string">"@User"</span>, v_dt<span class="token punctuation">)</span><span class="token punctuation">;</span>             DataSet ds <span class="token operator">=</span>new DataSet<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>             SqlDataAdapter da<span class="token operator">=</span>new SqlDataAdapter<span class="token punctuation">(</span>cmd<span class="token punctuation">)</span><span class="token punctuation">;</span>            da.Fill<span class="token punctuation">(</span>ds<span class="token punctuation">)</span><span class="token punctuation">;</span>        <span class="token punctuation">}</span>         catch <span class="token punctuation">(</span>Exception ex<span class="token punctuation">)</span>        <span class="token punctuation">{</span>            //写日志         <span class="token punctuation">}</span>  <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Sql </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pdfjs预览</title>
       <link href="/2022/07/05/pdfjs-yu-lan/"/>
       <url>/2022/07/05/pdfjs-yu-lan/</url>
