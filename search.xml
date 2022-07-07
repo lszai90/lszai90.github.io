@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>简单HttpClient请求例子</title>
+      <link href="/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/"/>
+      <url>/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/</url>
+      
+        <content type="html"><![CDATA[<p>一个简单的HttpClient例子</p><p>代码如下:</p><pre class="line-numbers language-bash"><code class="language-bash">using <span class="token punctuation">(</span>var client <span class="token operator">=</span> new HttpClient<span class="token punctuation">(</span><span class="token punctuation">))</span><span class="token punctuation">{</span>client.BaseAddress <span class="token operator">=</span> new Uri<span class="token punctuation">(</span><span class="token string">"http://localhost:1661/"</span><span class="token punctuation">)</span><span class="token punctuation">;</span>var requestJson <span class="token operator">=</span> JsonConvert.SerializeObject<span class="token punctuation">(</span>new<span class="token punctuation">{</span>   <span class="token function">id</span> <span class="token operator">=</span> <span class="token string">"1"</span>,      name <span class="token operator">=</span> <span class="token string">"2"</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>//抛到httpContentHttpContent httpContent <span class="token operator">=</span> new StringContent<span class="token punctuation">(</span>requestJson<span class="token punctuation">)</span><span class="token punctuation">;</span> httpContent.Headers.ContentType <span class="token operator">=</span> new MediaTypeHeaderValue<span class="token punctuation">(</span><span class="token string">"application/json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span> var result <span class="token operator">=</span> client.PostAsync<span class="token punctuation">(</span><span class="token string">"api/Product/AddProduct"</span>, httpContent<span class="token punctuation">)</span>.Result.Content.ReadAsStringAsync<span class="token punctuation">(</span><span class="token punctuation">)</span>.Result<span class="token punctuation">;</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> C# </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Table作为参数</title>
       <link href="/2022/07/06/table-zuo-wei-can-shu/"/>
       <url>/2022/07/06/table-zuo-wei-can-shu/</url>

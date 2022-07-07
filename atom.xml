@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-06T00:43:06.366Z</updated>
+  <updated>2022-07-07T00:48:24.754Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>简单HttpClient请求例子</title>
+    <link href="https://liszai90.github.io/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/"/>
+    <id>https://liszai90.github.io/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/</id>
+    <published>2022-07-07T00:45:05.000Z</published>
+    <updated>2022-07-07T00:48:24.754Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;一个简单的HttpClient例子&lt;/p&gt;
+&lt;p&gt;代码如下:&lt;/p&gt;
+&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;using &lt;span class=&quot;token
+        
+      
+    
+    </summary>
+    
+      <category term="C#" scheme="https://liszai90.github.io/categories/C/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Table作为参数</title>
