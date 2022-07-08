@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-07T00:48:24.754Z</updated>
+  <updated>2022-07-08T11:26:47.321Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MySql高往低不兼容解决方案</title>
+    <link href="https://liszai90.github.io/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/"/>
+    <id>https://liszai90.github.io/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/</id>
+    <published>2022-07-08T11:14:34.000Z</published>
+    <updated>2022-07-08T11:26:47.321Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;问题:&lt;/p&gt;
+&lt;p&gt;Unknown collation:
+        
+      
+    
+    </summary>
+    
+      <category term="MySql" scheme="https://liszai90.github.io/categories/MySql/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>mysql图文安装教程</title>
+    <link href="https://liszai90.github.io/2022/07/08/mysql-tu-wen-an-zhuang-jiao-cheng/"/>
+    <id>https://liszai90.github.io/2022/07/08/mysql-tu-wen-an-zhuang-jiao-cheng/</id>
+    <published>2022-07-08T00:56:23.000Z</published>
+    <updated>2022-07-08T11:30:29.548Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;​       &lt;/p&gt;
+&lt;p&gt;​     &lt;/p&gt;
+&lt;p&gt;MySQL
+        
+      
+    
+    </summary>
+    
+      <category term="MySql" scheme="https://liszai90.github.io/categories/MySql/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>简单HttpClient请求例子</title>
@@ -72,7 +123,7 @@
     <link href="https://liszai90.github.io/2022/07/05/pdfjs-yu-lan/"/>
     <id>https://liszai90.github.io/2022/07/05/pdfjs-yu-lan/</id>
     <published>2022-07-05T11:21:07.000Z</published>
-    <updated>2022-07-05T11:25:16.077Z</updated>
+    <updated>2022-07-08T11:27:08.291Z</updated>
     
     <summary type="html">
     
@@ -96,7 +147,7 @@
     <link href="https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/"/>
     <id>https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/</id>
     <published>2022-07-05T00:49:28.000Z</published>
-    <updated>2022-07-05T09:21:44.994Z</updated>
+    <updated>2022-07-08T11:26:58.091Z</updated>
     
     <summary type="html">
     
@@ -120,7 +171,7 @@
     <link href="https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/"/>
     <id>https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/</id>
     <published>2022-07-05T00:46:46.000Z</published>
-    <updated>2022-07-05T09:22:30.508Z</updated>
+    <updated>2022-07-08T11:27:18.396Z</updated>
     
     <summary type="html">
     
@@ -144,7 +195,7 @@
     <link href="https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
     <id>https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
     <published>2022-07-05T00:44:45.527Z</published>
-    <updated>2022-07-05T09:22:40.252Z</updated>
+    <updated>2022-07-08T11:27:29.385Z</updated>
     
     <summary type="html">
     
@@ -153,7 +204,7 @@
         
         
           &lt;hr&gt;
-&lt;p&gt;title: 统计表空间占用大小&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-07-05
+&lt;p&gt;title: 统计表空间占用大小&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-07-05 08:44:45&lt;br&gt;password:&lt;br&gt;summary:
         
       
     
@@ -167,7 +218,7 @@
     <link href="https://liszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/"/>
     <id>https://liszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/</id>
     <published>2022-07-04T00:50:08.000Z</published>
-    <updated>2022-07-04T00:52:54.116Z</updated>
+    <updated>2022-07-08T11:27:14.251Z</updated>
     
     <summary type="html">
     
@@ -191,7 +242,7 @@
     <link href="https://liszai90.github.io/2022/07/04/cursor/"/>
     <id>https://liszai90.github.io/2022/07/04/cursor/</id>
     <published>2022-07-04T00:36:02.000Z</published>
-    <updated>2022-07-04T00:43:14.267Z</updated>
+    <updated>2022-07-08T11:27:44.514Z</updated>
     
     <summary type="html">
     
