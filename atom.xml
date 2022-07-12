@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-08T11:26:47.321Z</updated>
+  <updated>2022-07-12T00:26:13.281Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>nvm</title>
+    <link href="https://liszai90.github.io/2022/07/11/nvm/"/>
+    <id>https://liszai90.github.io/2022/07/11/nvm/</id>
+    <published>2022-07-11T00:52:32.000Z</published>
+    <updated>2022-07-12T00:26:13.281Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;nvm-介绍及优点&quot;&gt;&lt;a href=&quot;#nvm-介绍及优点&quot; class=&quot;headerlink&quot; title=&quot;nvm 介绍及优点&quot;&gt;&lt;/a&gt;nvm 介绍及优点&lt;/h3&gt;&lt;p&gt;nvm的全称是 Node Version Manager，Node.js
+        
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="https://liszai90.github.io/categories/Vue/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>V2和V3区别</title>
+    <link href="https://liszai90.github.io/2022/07/11/v2-he-v3-qu-bie/"/>
+    <id>https://liszai90.github.io/2022/07/11/v2-he-v3-qu-bie/</id>
+    <published>2022-07-11T00:33:38.000Z</published>
+    <updated>2022-07-12T00:26:02.696Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;1、Vue2和Vue3双向数据绑定原理发⽣了改变&quot;&gt;&lt;a href=&quot;#1、Vue2和Vue3双向数据绑定原理发⽣了改变&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="https://liszai90.github.io/categories/Vue/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>MySql高往低不兼容解决方案</title>

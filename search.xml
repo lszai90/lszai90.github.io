@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>nvm</title>
+      <link href="/2022/07/11/nvm/"/>
+      <url>/2022/07/11/nvm/</url>
+      
+        <content type="html"><![CDATA[<h3 id="nvm-介绍及优点"><a href="#nvm-介绍及优点" class="headerlink" title="nvm 介绍及优点"></a>nvm 介绍及优点</h3><p>nvm的全称是 Node Version Manager，Node.js 版本管理器</p><p>使用它的好处有三点:<br>第一:nvm是命令行安装，有专业范，而且非常方便。尤其是在无图形界面的服务器上安装，命令行就显得更方便了。<br>第二:nvm中可以列出所有 Nodejs版本，让我们既可以选择安装最新版，也可以选择安装稍微稳定一些的LTS版本。<br>第三:nvm还可以同时安装多个 Nodejs版本，并在各个版本之间来回切换。</p><p>总之，nvm安装是目前专业前端开发者最常见的安装 Node.js的方式</p><h3 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h3><pre><code>https://github.com/coreybutler/nvm-windows/releases</code></pre><p><img src="https://lszai90.github.io/images/nvm/nvm01.png" alt></p><h3 id="查看是否安装好"><a href="#查看是否安装好" class="headerlink" title="查看是否安装好"></a>查看是否安装好</h3><pre><code> nvm v</code></pre><p>出现如下图:<br><img src="https://lszai90.github.io/images/nvm/nvm02.png" alt></p><h3 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h3><p>–基本命名<br>nvm install latest –安装最后一个版本<br>nvm install 16.3.2 –安装指定版本<br>nvm list           –查看安装了哪些版本的node.js<br>nvm use 16.3.2     –切换版本<br>nvm uninstall 16.3.2 –卸载哪个版本</p><h3 id="常用命名"><a href="#常用命名" class="headerlink" title="常用命名"></a>常用命名</h3><p>nvm arch ：显示node是运行在32位还是64位。<br>nvm install <version> [arch] ：安装node， version是特定版本也可以是最新稳定版本latest。可选参数arch指定安装32位还是64位版本，默认是系统位数。可以添加–insecure绕过远程服务器的SSL。<br>nvm list [available] ：显示已安装的列表。可选参数available，显示可安装的所有版本。list可简化为ls。<br>nvm on ：开启node.js版本管理。<br>nvm off ：关闭node.js版本管理。<br>nvm proxy [url] ：设置下载代理。不加可选参数url，显示当前代理。将url设置为none则移除代理。<br>nvm node_mirror [url] ：设置node镜像。默认是<a href="https://nodejs.org/dist/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。" target="_blank" rel="noopener">https://nodejs.org/dist/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。</a><br>nvm npm_mirror [url] ：设置npm镜像。<a href="https://github.com/npm/cli/archive/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。" target="_blank" rel="noopener">https://github.com/npm/cli/archive/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。</a><br>nvm uninstall <version> ：卸载指定版本node。<br>nvm use [version] [arch] ：使用制定版本node。可指定32/64位。<br>nvm root [path] ：设置存储不同版本node的目录。如果未设置，默认使用当前目录。<br>nvm version ：显示nvm版本。version可简化为v。</version></version></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>V2和V3区别</title>
+      <link href="/2022/07/11/v2-he-v3-qu-bie/"/>
+      <url>/2022/07/11/v2-he-v3-qu-bie/</url>
+      
+        <content type="html"><![CDATA[<h3 id="1、Vue2和Vue3双向数据绑定原理发⽣了改变"><a href="#1、Vue2和Vue3双向数据绑定原理发⽣了改变" class="headerlink" title="1、Vue2和Vue3双向数据绑定原理发⽣了改变"></a>1、Vue2和Vue3双向数据绑定原理发⽣了改变</h3><p>​      Vue2 的双向数据绑定是利⽤ES5 的⼀个 API Object.definePropert()对数据进⾏劫持 结合 发布订阅模式的⽅式来实现的。<br>​      Vue3 中使⽤了 es6 的 ProxyAPI 对数据代理。<br>​      相⽐于vue2.x，使⽤proxy的优势如下<br>​      defineProperty只能监听某个属性，不能对全对象监听<br>​      可以省去for in、闭包等内容来提升效率（直接绑定整个对象即可）<br>​      可以监听数组，不⽤再去单独的对数组做特异性操作 vue3.x可以检测到数组内部数据的变化</p><h3 id="2、生命周期"><a href="#2、生命周期" class="headerlink" title="2、生命周期"></a>2、生命周期</h3><p>LifeCycle(Hooks) 3.0当中的⽣命周期与2.0的⽣命周期出现了很⼤的不同：<br>beforeCreate -&gt; 请使⽤ setup() 创建时<br>created -&gt; 请使⽤ setup() 创建时</p><p>beforeMount -&gt; onBeforeMount  当这个钩子被调用时，组件已经完成了它的反应状态的设置，但是还没有创建 DOM 节点。它即将第一次执行它的 DOM 渲染效果在服务器端渲染期间不会调用此挂钩。</p><p>mounted -&gt; onMounted  组件在以下情况下被视为已挂载：<br>它的所有同步子组件都已挂载（不包括异步组件或<suspense>树内的组件）。<br>它自己的 DOM 树已创建并插入到父容器中。请注意，如果应用程序的根容器也在文档内，它只保证组件的 DOM 树在文档内。<br>这个钩子，通常用于执行需要访问组件渲染的 DOM 的effect副作用，或者用于将与 DOM 相关的代码，限制在服务器渲染应用程序中的客户端。<br>在服务器端渲染期间不会调用此挂钩。</suspense></p><p>beforeUpdate -&gt; onBeforeUpdate DOM更新之前</p><p>updated -&gt; onUpdated DOM更新完毕<br>beforeDestroy -&gt; onBeforeUnmount 即将销毁<br>destroyed -&gt; onUnmounted 销毁完毕</p><p>errorCaptured -&gt; onErrorCaptured</p><h3 id="3、性能优化"><a href="#3、性能优化" class="headerlink" title="3、性能优化"></a>3、性能优化</h3><p> 双向响应原理由Object.defineProperty改为基于ES6的Proxy，使其颗粒度更⼤，速度更快，且消除了之前存在的警告、重写了 Vdom ，使其突破了 Vdom 的性能瓶颈、进⾏了模板编译的优化、进⾏了更加⾼效的组件初始化<br>Tree-Shaking 的⽀持<br>⽀持了tree-shaking（剪枝）：像修剪树叶⼀样把不需要的东西给修剪掉，使 Vue3 的体积更⼩。<br>需要的模块才会打⼊到包⾥，优化后的 Vue3.0 的打包体积只有原来的⼀半（13kb）。哪怕把所有的功能都引⼊进来也只有23kb，依然⽐Vue2.x 更⼩。</p><p>像keep-alive、transition甚⾄v-for等功能都可以按需引⼊。</p><p>Composition API<br>composition-api是⼀个 Vue3 中新增新增的功能，它的灵感来⾃于React Hooks，是⽐mixin更强⼤的存在。<br>composition-api可以提⾼代码逻辑的可复⽤性，从⽽实现与模板的⽆关性；同时使代码的可压缩性更强。另外，把Reactivity模块独⽴开来，意味着 Vue3.0 的响应式模块可以与其他框架相组合。composition-api把复杂组件的逻辑抽地更紧凑，⽽且可以将公共逻辑进⾏抽取。Fragments<br>不再限制template只有⼀个根节点。<br>render函数也可以返回数组了，有点像React.Fragments<br>Better TypeScript Support<br>更好的类型推导，使得 Vue3 把TypeScript⽀持得⾮常好<br>Custom Renderer API<br>实现⽤DOM的⽅式进⾏WebGL编程</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>MySql高往低不兼容解决方案</title>
       <link href="/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/"/>
       <url>/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/</url>
