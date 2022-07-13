@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>httpClient忽略SSL</title>
+      <link href="/2022/07/13/httpclient-hu-lue-ssl/"/>
+      <url>/2022/07/13/httpclient-hu-lue-ssl/</url>
+      
+        <content type="html"><![CDATA[<p>是今天遇到HttpClient 请求时、客户提供的域名证书有问题；</p><p>如图:</p><p><img src="https://lszai90.github.io/images/httpClient/httpClient01.png" alt></p><p>解决办法:</p><p>在httpClient 请求前 加上此代码,完美解决。</p><pre><code>ServicePointManager.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) =&gt; true;</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> C# </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>nvm</title>
       <link href="/2022/07/11/nvm/"/>
       <url>/2022/07/11/nvm/</url>
