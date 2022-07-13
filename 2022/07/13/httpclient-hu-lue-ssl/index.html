@@ -470,7 +470,7 @@ ServicePointManager.ServerCertificateValidation">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    49
+                    57
                 </div>
                 
 
@@ -498,7 +498,8 @@ ServicePointManager.ServerCertificateValidation">
 <p><img src="https://lszai90.github.io/images/httpClient/httpClient01.png" alt></p>
 <p>解决办法:</p>
 <p>在httpClient 请求前 加上此代码,完美解决。</p>
-<pre><code>ServicePointManager.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) =&gt; true;</code></pre>
+<pre><code>ServicePointManager.ServerCertificateValidationCallback = (sender, certificate, chain, sslPolicyErrors) =&gt; true;
+ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12 | SecurityProtocolType.Tls11 | SecurityProtocolType.Tls;</code></pre>
             </div>
             <hr />
 
