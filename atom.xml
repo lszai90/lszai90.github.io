@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-13T02:52:15.384Z</updated>
+  <updated>2022-07-15T00:59:45.054Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>TypeScript学习章节</title>
+    <link href="https://liszai90.github.io/2022/07/14/typescript-xue-xi-zhang-jie/"/>
+    <id>https://liszai90.github.io/2022/07/14/typescript-xue-xi-zhang-jie/</id>
+    <published>2022-07-14T00:33:54.000Z</published>
+    <updated>2022-07-15T00:59:45.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;第一章-什么是TypeScript&quot;&gt;&lt;a href=&quot;#第一章-什么是TypeScript&quot; class=&quot;headerlink&quot; title=&quot;第一章:什么是TypeScript&quot;&gt;&lt;/a&gt;第一章:什么是TypeScript&lt;/h2&gt;&lt;p&gt;​        
+        
+      
+    
+    </summary>
+    
+      <category term="TS" scheme="https://liszai90.github.io/categories/TS/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>httpClient忽略SSL</title>
