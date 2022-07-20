@@ -314,7 +314,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -465,14 +465,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    414
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
                 
@@ -504,7 +504,73 @@
 <p><img src="https://lszai90.github.io/images/ts/TypeScript3.png" alt="TypeScript1.png"></p>
 <h3 id="3、TypeScript开发工具VSCode-自动编译-ts文件"><a href="#3、TypeScript开发工具VSCode-自动编译-ts文件" class="headerlink" title="3、TypeScript开发工具VSCode 自动编译.ts文件"></a>3、TypeScript开发工具VSCode 自动编译.ts文件</h3><h4 id="3-1-创建tsconfig-json文件-执行-tsc-–init-生成配置文件"><a href="#3-1-创建tsconfig-json文件-执行-tsc-–init-生成配置文件" class="headerlink" title="3.1 创建tsconfig.json文件  执行 tsc –init 生成配置文件"></a>3.1 创建tsconfig.json文件  执行 tsc –init 生成配置文件</h4><p>​       在文件tsconfig.json中</p>
 <pre><code> &quot;outDir&quot;: &quot;./js&quot;,    代表自动编译.ts文件 输出在js 文件下</code></pre><h4 id="3-2-自动监视配置-保存自动编译"><a href="#3-2-自动监视配置-保存自动编译" class="headerlink" title="3.2  自动监视配置(保存自动编译)"></a>3.2  自动监视配置(保存自动编译)</h4><p>​        在点击【终端】—&gt;运行任务—&gt;typescript–&gt;tsc监视</p>
-<h2 id="第三章-TypeScript中的数据类型"><a href="#第三章-TypeScript中的数据类型" class="headerlink" title="第三章:TypeScript中的数据类型"></a>第三章:TypeScript中的数据类型</h2>
+<h2 id="第三章-TypeScript中的数据类型"><a href="#第三章-TypeScript中的数据类型" class="headerlink" title="第三章:TypeScript中的数据类型"></a>第三章:TypeScript中的数据类型</h2><p>typescript 中为了使编写的代码更加规范,更有利于维护，增加了类型效验，在typescript 中主要有以下数据类型</p>
+<p>布尔类型: boolean</p>
+<p>数字类型:number</p>
+<p>字符串类型:string</p>
+<p>数组类型：array</p>
+<p>元组类型：tuple</p>
+<p>枚举类型：enum</p>
+<p>任意类型：any</p>
+<p>null  表示对象值缺失 和undefined 用于初始化变量为一个未定义的值</p>
+<p>void :用于标识方法返回值的类型，表示该方法没有返回值</p>
+<p>never: 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值</p>
+<h4 id="布尔类型-boolean-true-false"><a href="#布尔类型-boolean-true-false" class="headerlink" title="布尔类型: boolean    true  false"></a>布尔类型: boolean    true  false</h4><pre><code>var flag:boolean=true;</code></pre><h4 id="数字类型-number"><a href="#数字类型-number" class="headerlink" title="数字类型:number"></a>数字类型:number</h4><pre><code>var  a:number=123;</code></pre><h4 id="字符串类型-string"><a href="#字符串类型-string" class="headerlink" title="字符串类型:string"></a>字符串类型:string</h4><pre><code>var a1:string=&quot;ls&quot;;</code></pre><h4 id="数组类型：array"><a href="#数组类型：array" class="headerlink" title="数组类型：array"></a>数组类型：array</h4><pre><code>第一种定义数组的方式:
+
+数字类型数组
+var  arry:number[]=[1,2,3,4]
+字符类型数组
+var  arry1:string[]=[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;]
+
+第二种定义:
+var arry:Array&lt;number&gt;=[1,2,3,4]
+var arry1:Array&lt;string&gt;=[&#39;1&#39;,&#39;2&#39;,&#39;3&#39;,&#39;4&#39;]</code></pre><h4 id="元组类型：tuple"><a href="#元组类型：tuple" class="headerlink" title="元组类型：tuple"></a>元组类型：tuple</h4><p>元组类型属于数组的一种,元组类型用来表示已知元素数量和类型的数组，各元素的类型不必相同，对应位置的类型需要相同</p>
+<pre><code>var arry2:[string,number]=[&quot;ls&quot;,12]</code></pre><h4 id="枚举类型：enum"><a href="#枚举类型：enum" class="headerlink" title="枚举类型：enum"></a>枚举类型：enum</h4><p>如果不给=10 等，默认从0开始</p>
+<pre><code>enum  fromtype
+{
+   &quot;表单&quot;=10,
+   &quot;列表&quot;=20,
+   &quot;A&quot;=30
+}
+let  cc:fromtype=fromtype.A;
+//打印对应数值
+console.log(cc);
+也可以直接获取
+console.log(fromtype.A);</code></pre><h4 id="任意类型：any"><a href="#任意类型：any" class="headerlink" title="任意类型：any"></a>任意类型：any</h4><p>在编程过程中尽量不要用any.  只有当编程时类型不明确时才用。</p>
+<pre><code>var  a:any=&quot;1212&quot;;
+var  a:any=1;
+var  a:any=true;</code></pre><h4 id="null-和undefined"><a href="#null-和undefined" class="headerlink" title="null  和undefined"></a>null  和undefined</h4><pre><code>let num: number;
+//num = 1; // 编译正确
+//num = undefined;    // 编译错误
+//num = null;    // 编译错误
+
+
+let num:number|null|undefined;
+//num = 1; // 编译正确
+//num = undefined;    // 编译正确
+//num = null;    // 编译正确</code></pre><p>当我们定义变量时 如我们 这样定义 let num: number;  没有给他具体赋值 、那么我们在使用的时候就会报错。为了避免这种情况我们就 let num:number|null</p>
+<p>这样定义 如果没有赋值 我们直接使用num 那么他的值 就是null</p>
+<h4 id="void"><a href="#void" class="headerlink" title="void"></a>void</h4><p>用于标识方法返回值的类型，表示该方法没有返回值</p>
+<pre><code>//void  不需要返回
+function Sum():void{
+    console.log(&#39;ddd&#39;);
+}
+
+//如果需要返回
+function Sum1():Number{
+    return 1;
+}</code></pre><h4 id="never"><a href="#never" class="headerlink" title="never"></a>never</h4><p>never 是其它类型（包括 null 和 undefined）的子类型，代表从不会出现的值。这意味着声明为 never 类型的变量只能被 never 类型所赋值，在函数中它通常表现为抛出异常或无法执行到终止点（例如无限循环），示例代码如下：</p>
+<pre><code>let num:never;
+let num1:number;
+
+//第一 其他类型的不能给never类型赋值
+num=123;//错误  消息提示:不能将类型“number”分配给类型“never”。
+
+//第二 never 赋值给never
+num=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确
+
+//第三 never 类型也可以赋值给其他类型
+num1=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确</code></pre>
             </div>
             <hr />
 
@@ -873,7 +939,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="TypeScript学习章节">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="TypeScript学习章节">
                         
                         <span class="card-title">TypeScript学习章节</span>
                     </div>
@@ -915,7 +981,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1112,7 +1178,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">5.5k</span>
+            <span class="white-color">6.2k</span>
             
 
             <br>
