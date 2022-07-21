@@ -314,7 +314,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -465,14 +465,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    1.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    7 分
                 </div>
                 
                 
@@ -570,7 +570,85 @@ num=123;//错误  消息提示:不能将类型“number”分配给类型“neve
 num=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确
 
 //第三 never 类型也可以赋值给其他类型
-num1=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确</code></pre>
+num1=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确</code></pre><h2 id="第四章：函数"><a href="#第四章：函数" class="headerlink" title="第四章：函数"></a>第四章：函数</h2><h4 id="定义函数"><a href="#定义函数" class="headerlink" title="定义函数"></a>定义函数</h4><p>//ES5 定义函数方式</p>
+<pre><code>//第一种函数声明法
+function Run(){
+  console.log(&#39;ddd&#39;);
+}
+
+//第二种匿名函数
+var Run1=function(){
+    console.log(&#39;ddd&#39;);
+}</code></pre><p>//TS 定义函数方式‘</p>
+<pre><code>//第一种 函数声明法
+function run():string{
+   return  &#39;A&#39;;
+}
+
+//第二种 匿名函数
+var getinfo=function():string{
+    return &#39;B&#39;;
+}
+
+//第一种 函数声明法 传入参数
+function run(username:string):string{
+    return  username;
+}
+//第二种 匿名函数
+var getuserinfo=function(username:string,age:number):string{
+    return `${username}----${age}`;
+}</code></pre><p>最大的区别：就是传入和返回 全部需要定义类型、更好的编程规范。如果我们不需要返回参数那么我们也可以这样写:</p>
+<pre><code>function run():void{
+    console.log(&#39;ddd&#39;);
+}</code></pre><h4 id="可选参数："><a href="#可选参数：" class="headerlink" title="可选参数："></a>可选参数：</h4><pre><code>var getuserinfo=function(username:string,age?:number):string{
+    return `${username}----${age}`;
+}
+
+alert(getuserinfo(&#39;liu&#39;,10));
+alert(getuserinfo(&#39;liu&#39;));--age 可以不传</code></pre><h4 id="默认参数"><a href="#默认参数" class="headerlink" title="默认参数"></a>默认参数</h4><pre><code>var getuserinfo=function(username:string,age:number=10):string{
+    return `${username}----${age}`;
+}
+alert(getuserinfo(&#39;liu&#39;));--age 如果不传入 那么age 默认就是10,这个跟.Net 编程一样</code></pre><h4 id="剩余参数"><a href="#剩余参数" class="headerlink" title="剩余参数"></a>剩余参数</h4><p> 有一种情况，我们不知道要向函数传入多少个参数，这时候我们就可以使用剩余参数来定义。剩余参数语法允许我们将一个不确定数量的参数作为一个数组传入.</p>
+<pre><code>//像这样如果我们后面还有很多的参数，那么我们就需要在function的入口参数写很多
+var getUserInfo=function(A:number,B:number,C:number,D:number):number{
+    return A+B+C+D;
+}
+
+//在TS中有一个叫【剩余参数】那么我们可以简写
+var getNumberInfo=function(...result:number[]):number{
+    var SumValue:number=0;
+    for(var i=0;result.length;i++){
+        SumValue+=result[i];
+    }
+    return SumValue;
+}
+
+//还有一种写法  A=1 B=2 后面的参数都用剩余参数表示
+var getNumberInfo=function(A:number,B:number,...result:number[]):number{
+    var SumValue:number=A+B;
+    for(var i=0;result.length;i++){
+        SumValue+=result[i];
+    }
+    return SumValue;
+}
+alert(getNumberInfo(1,2,3,4,5,6,7,8))</code></pre><h4 id="函数的重载"><a href="#函数的重载" class="headerlink" title="函数的重载"></a>函数的重载</h4><p>ES5中函数重载：</p>
+<pre><code>//ES5 中函数方法名相同 后面一个会替换掉上一个 如:
+function run(A){
+
+}
+function run(A,B){
+
+}</code></pre><p>TS 函数的重载</p>
+<pre><code>//TS 类型不一样的重载
+function run(A:string):string;
+function run(A:number):string;
+function run(A:any):any{
+    if(typeof A===&#39;string&#39;){
+          return `我的名字叫做:${A}`;
+    }else{
+        return `我的年龄叫做:${A}`;
+    }
+}</code></pre>
             </div>
             <hr />
 
@@ -939,7 +1017,7 @@ num1=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="TypeScript学习章节">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="TypeScript学习章节">
                         
                         <span class="card-title">TypeScript学习章节</span>
                     </div>
@@ -981,7 +1059,7 @@ num1=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1178,7 +1256,7 @@ num1=(()=&gt;{throw new Error(&#39;execption&#39;)})();//正确</code></pre>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">6.2k</span>
+            <span class="white-color">6.8k</span>
             
 
             <br>
