@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-21T00:56:29.171Z</updated>
+  <updated>2022-07-22T00:49:59.224Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>abpvnext自动注入</title>
+    <link href="https://liszai90.github.io/2022/07/22/abpvnext-zi-dong-zhu-ru/"/>
+    <id>https://liszai90.github.io/2022/07/22/abpvnext-zi-dong-zhu-ru/</id>
+    <published>2022-07-22T00:30:34.000Z</published>
+    <updated>2022-07-22T00:49:59.224Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;​      我们在使用ABP
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>TypeScript学习章节</title>

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>abpvnext自动注入</title>
+      <link href="/2022/07/22/abpvnext-zi-dong-zhu-ru/"/>
+      <url>/2022/07/22/abpvnext-zi-dong-zhu-ru/</url>
+      
+        <content type="html"><![CDATA[<h2 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h2><p>​      我们在使用ABP vNext时，都知道该框架为我们实现了自动依赖注入(实现自动注入需要在项目里面创建Module类，并且将Module类上的DependsOn到相应的启动Module类或调用Module类，这步很关键)</p><h2 id="自动注入示例"><a href="#自动注入示例" class="headerlink" title="自动注入示例"></a>自动注入示例</h2><p>只要我们实现如下接口：<br>ITransientDependency 瞬时生命周期<br>ISingletonDependency 全局单例生命周期<br>IScopedDependency 作用域生命周期</p><p>如：</p><pre><code>pulic class Test:ITransientDependency {  // todo}</code></pre><h2 id="暗藏玄机"><a href="#暗藏玄机" class="headerlink" title="暗藏玄机"></a>暗藏玄机</h2><p>​        下面讲一下在真实的项目中遇到的“坑”,那就是在自动注入的时候系统会自动推断要注入的接口，并且是你实现的所有的接口他都会注入也不是放在第一个实现的接口才会注入，而是根据接口的名字来判断的，比如下面的类就会以接口IUserRepository注入：</p><pre><code>public class ReadOnlyBaseTemplateRepository:IReadOnlyBaseTemplateRepository,ISingletonDependency {}</code></pre><p>同理下面的类型也会以接口IUserRepository进行注入：</p><pre><code>public class EFCoreReadOnlyBaseTemplateRepository:IReadOnlyBaseTemplateRepository,ISingletonDependency {}</code></pre><p>但是下面这种情况就不能了：</p><pre><code>public class ReadOnlyEFCoreBaseTemplateRepository:IReadOnlyBaseTemplateRepository,ISingletonDependency {}</code></pre><p>提示的异常信息如下:</p><p>Autofac.Core.DependencyResolutionException: None of the constructors found with ‘Autofac.Core.Activators.Reflection.DefaultConstructorFinder’ on type ‘JGSoft.BaseTemplate.BaseTemplateAppService’ can be invoked with the available services and parameters:<br>Cannot resolve parameter ‘JGSoft.BaseTemplate.IReadOnlyBaseTemplateRepository _onlyBaseTemplateRepository’ of constructor ‘Void .ctor(JGSoft.BaseTemplate.IBaseTemplateRepository, Microsoft.Extensions.Localization.IStringLocalizer`1[JGSoft.Service.ModeObjectManagement.Localization.ModeObjectManagementResource], JGSoft.BaseTemplate.IReadOnlyBaseTemplateRepository)’.</p><p>一直告诉你没有注入。</p><p>然后查看了源码：</p><p>Volo.Abp.DependencyInjection.ExposeServicesAttribute.cs</p><pre><code>    private static List&lt;Type&gt; GetDefaultServices(Type type)    {        var serviceTypes = new List&lt;Type&gt;();        foreach (var interfaceType in type.GetTypeInfo().GetInterfaces())        {            var interfaceName = interfaceType.Name;            if (interfaceName.StartsWith(&quot;I&quot;))            {                interfaceName = interfaceName.Right(interfaceName.Length - 1);            }            if (type.Name.EndsWith(interfaceName))            {                serviceTypes.Add(interfaceType);            }        }        return serviceTypes;    }</code></pre><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>能看出，推断方法是去掉接口名的“I”之后【interfaceName.Right(interfaceName.Length - 1)】看这个类名是否是【type.Name.EndsWith(interfaceName)】这个字符串结尾，如果是则注入，如果不是则不注入，并且将会递归他所有实现的接口，如果有多个接口都满足条件，则将会以这些接口进行注入。<br>还有一点就是实现了这三个自动依赖注入的接口的类型的，都将会以自身类型注入到容器</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>TypeScript学习章节</title>
       <link href="/2022/07/14/typescript-xue-xi-zhang-jie/"/>
       <url>/2022/07/14/typescript-xue-xi-zhang-jie/</url>
