@@ -314,7 +314,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -465,14 +465,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.7k
+                    2.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    7 分
+                    9 分
                 </div>
                 
                 
@@ -648,7 +648,81 @@ function run(A:any):any{
     }else{
         return `我的年龄叫做:${A}`;
     }
-}</code></pre>
+}
+
+//TS 参数不一样的重载
+function run(Name:string):string;
+function run(Name:string,age:number):string;
+function run(Name:any,age?:any):any{
+    if(age){
+       return `我的名字:${Name}年龄:${age}`;
+    }else{
+        return `我的名字:${Name}`;
+    }
+}
+alert(run(&#39;lius&#39;,20));//不会报错
+alert(run(&#39;lius&#39;));//不会报错</code></pre><h4 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h4><p>箭头函数也叫Lambda 函数，箭头函数this 指向问题、箭头函数里面的this 指向上下文</p>
+<pre><code>
+//ES5 写法
+setTimeout(function(){
+    console.log(&#39;runing&#39;);
+}, 1000);
+
+//ES6 写法
+setTimeout(() =&gt; {
+    console.log(&#39;runing&#39;);
+}, 1000);</code></pre><h2 id="第五章：类"><a href="#第五章：类" class="headerlink" title="第五章：类"></a>第五章：类</h2><h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><h5 id="ES5中的继承"><a href="#ES5中的继承" class="headerlink" title="ES5中的继承"></a>ES5中的继承</h5><pre><code>//类
+//ES5 中的类
+function Person(){
+  this.Name=&#39;lius&#39;;
+  this.Age=&#39;30&#39;;
+  this.Run=function(){
+    alert(`${this.Name}在跑步`);
+  }
+}
+//静态方法
+Person.Print=function(){
+    alert(&#39;正在打印&#39;);
+}
+//原型链
+Person.prototype.Sex=&#39;男&#39;;//在原型链上添加属性
+Person.prototype.Worker=function(){
+    alert(`${this.Name}在工作`);
+}
+//静态方法不需要实例化
+Person.Print();
+
+//我们调用时
+var p=new Person();
+alert(p.Name);
+alert(p.Run());
+alert(p.Worker());
+//ES5中的集成 分为2种
+//第一种:构造函数的继承
+function Web(){
+    Person.call(this);//继承
+}
+var w=new Web();
+alert(w.Name);
+alert(w.Run());
+alert(w.Worker());// 构造函数继承 对于原型链上的方法和属性都调用不了
+//第二种:原型链的继承
+var  w=new Web(){
+
+}
+w.prototype=new Person();//原型链的继承 
+alert(w.Name);
+alert(w.Run());
+alert(w.Worker()); //都可以调用的到</code></pre><p> //ES5 继承 总结有以下几点</p>
+<p>//第一:原型链和构造函数有什么区别</p>
+<p>  //原型链上的属性可以被多个实例共享，构造函数不会</p>
+<p>//第二:原型链的继承和构造函数继承有什么区别</p>
+<p>  //原型链的继承:可以调用、类本身的属性和方法还有原型链上扩展的方法和属性。</p>
+<p>  //构造函数的继承:只能调用、类本身的属性和方法。</p>
+<p>//第三:静态方法申明</p>
+<p>  //静态方法不需要实例化</p>
+<p>  //Person.Print();</p>
+
             </div>
             <hr />
 
@@ -1016,7 +1090,7 @@ function run(A:any):any{
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="abpvnext自动注入">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="abpvnext自动注入">
                         
                         <span class="card-title">abpvnext自动注入</span>
                     </div>
@@ -1057,7 +1131,7 @@ function run(A:any):any{
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1254,7 +1328,7 @@ function run(A:any):any{
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">7.3k</span>
+            <span class="white-color">7.8k</span>
             
 
             <br>
