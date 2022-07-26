@@ -314,7 +314,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -465,14 +465,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.7k
+                    2.9k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    11 分
+                    12 分
                 </div>
                 
                 
@@ -819,6 +819,63 @@ w.run();// liuss 正在跑步 正在跑步-Two</code></pre><h4 id="静态属性"
   }
 }
 alert(Person.run())</code></pre><p>总结：静态关键字【static】静态成员可以直接通过类名调用.</p>
+<h4 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h4><p>父类定义一个方法，让子类去实现、每个子类有不同的表现。</p>
+<pre><code>//动物类
+class Animal {
+  public name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+  eat() {}
+}
+
+class dog extends Animal {
+  constructor(name: string) {
+    super(name);
+  }
+  eat(): void {
+    alert(`${this.name}在吃肉`);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name: string) {
+    super(name);
+  }
+  eat(): void {
+    alert(`${this.name}吃耗子`);
+  }
+}</code></pre><h4 id="抽象类"><a href="#抽象类" class="headerlink" title="抽象类"></a>抽象类</h4><p>typescript  抽象类，它是提供其他类继承的基类，不能直接被实例化。</p>
+<p>用abstract 关键字定义抽象类和抽象方法，抽象类中的抽象方法不包含具体的实现必须在派生类中实现。</p>
+<p>abstract 关键字只能放在抽象类里面。</p>
+<p>抽象类和抽象方法用来定义标准。</p>
+<pre><code>//抽象 动物类
+abstract class Animal {
+  public name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+  abstract eat(): string;
+}
+//小狗
+class Dog extends Animal {
+  constructor(name: string) {
+    super(name);
+  }
+  eat(): string {
+    return `${this.name} 在吃东西`;
+  }
+}
+
+class Cat extends Animal {
+  constructor(name: string) {
+    super(name);
+  }
+  eat(): string {
+    return `${this.name} 在吃🐟`;
+  }
+}
+</code></pre><p>第六章 接口</p>
 
             </div>
             <hr />
@@ -1165,7 +1222,7 @@ alert(Person.run())</code></pre><p>总结：静态关键字【static】静态成
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="abpvnext自动注入">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="abpvnext自动注入">
                         
                         <span class="card-title">abpvnext自动注入</span>
                     </div>
@@ -1206,7 +1263,7 @@ alert(Person.run())</code></pre><p>总结：静态关键字【static】静态成
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1403,7 +1460,7 @@ alert(Person.run())</code></pre><p>总结：静态关键字【static】静态成
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">8.2k</span>
+            <span class="white-color">8.5k</span>
             
 
             <br>
