@@ -314,7 +314,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -465,14 +465,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    2.9k
+                    3.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    12 分
+                    14 分
                 </div>
                 
                 
@@ -875,8 +875,97 @@ class Cat extends Animal {
     return `${this.name} 在吃🐟`;
   }
 }
-</code></pre><p>第六章 接口</p>
+</code></pre><h2 id="第六章-接口"><a href="#第六章-接口" class="headerlink" title="第六章 接口"></a>第六章 接口</h2><h4 id="属性接口"><a href="#属性接口" class="headerlink" title="属性接口:"></a>属性接口:</h4><pre><code>
+function Run(name: string): void {
+  console.log(&quot;&quot;);
+}
+Run(&quot;dddd&quot;);</code></pre><h4 id="对象接口"><a href="#对象接口" class="headerlink" title="对象接口"></a>对象接口</h4><p>接口行为和方法的规范 对批量方法进行约束</p>
+<pre><code>interface DtoInput {
+  fristname: string;
+  age?: number;
+}
+// 对象约束
+function RunTwo(dto: DtoInput) {
+  if (dto) {
+    console.log(`${dto.fristname}`);
+  }
+}
 
+//调用
+RunTwo({ fristname: &quot;ls&quot; }); //正确 因为age 是不必填写
+RunTwo({ fristname: &quot;ls&quot;, age: 12 });</code></pre><p>对象 可选属性【?】</p>
+<pre><code>//接口  可选属性【?】
+interface DtoInput {
+  fristname: string;
+  age?: number;
+}</code></pre><pre><code>//调用方法
+interface config {
+  type: string;
+  data: string;
+  url: string;
+  dataType: string;
+}
+
+function ajax(config: config) {
+  var xhr = new XMLHttpRequest();
+  //打开链接
+  xhr.open(config.type, config.url, true);
+  xhr.send(config.data); //发送数据
+  xhr.onreadystatechange = function () {
+    if (xhr.status == 200 &amp;&amp; xhr.readyState == 4) {
+      if ((config.dataType = &quot;json&quot;)) {
+        JSON.parse(xhr.responseText);
+      } else {
+        xhr.responseText;
+      }
+    }
+  };
+}
+
+ajax({
+  type: &quot;get&quot;,
+  data: &quot;username=ls&quot;,
+  url: &quot;https://baidu.com&quot;,
+  dataType: &quot;json&quot;,
+});</code></pre><h4 id="原生JS-封装的接口"><a href="#原生JS-封装的接口" class="headerlink" title="原生JS 封装的接口"></a>原生JS 封装的接口</h4><pre><code>//调用方法
+interface config {
+  type: string;
+  data: string;
+  url: string;
+  dataType: string;
+}
+
+function ajax(config: config) {
+  var xhr = new XMLHttpRequest();
+  //打开链接
+  xhr.open(config.type, config.url, true);
+  xhr.send(config.data); //发送数据
+  xhr.onreadystatechange = function () {
+    if (xhr.status == 200 &amp;&amp; xhr.readyState == 4) {
+      if ((config.dataType = &quot;json&quot;)) {
+        JSON.parse(xhr.responseText);
+      } else {
+        xhr.responseText;
+      }
+    }
+  };
+}
+
+ajax({
+  type: &quot;get&quot;,
+  data: &quot;username=ls&quot;,
+  url: &quot;https://baidu.com&quot;,
+  dataType: &quot;json&quot;,
+});</code></pre><h4 id="函数类型接口"><a href="#函数类型接口" class="headerlink" title="函数类型接口"></a>函数类型接口</h4><p>函数类型接口对输入 输出进行约束</p>
+<pre><code>//函数类型接口对输入 输出进行约束
+interface One {
+  (key: string, value: string): string;
+}
+
+var one1: One = function (key: string, value: string): string {
+  return key + &quot;_&quot; + value;
+};
+</code></pre>
             </div>
             <hr />
 
@@ -1222,7 +1311,7 @@ class Cat extends Animal {
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="abpvnext自动注入">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="abpvnext自动注入">
                         
                         <span class="card-title">abpvnext自动注入</span>
                     </div>
@@ -1263,7 +1352,7 @@ class Cat extends Animal {
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1460,7 +1549,7 @@ class Cat extends Animal {
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">8.5k</span>
+            <span class="white-color">8.8k</span>
             
 
             <br>
