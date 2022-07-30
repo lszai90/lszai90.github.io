@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://liszai90.github.io/"/>
-  <updated>2022-07-22T00:49:59.224Z</updated>
+  <updated>2022-07-30T09:22:31.228Z</updated>
   <id>https://liszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>wsdl.exe与svcutil.exe区别</title>
+    <link href="https://liszai90.github.io/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/"/>
+    <id>https://liszai90.github.io/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/</id>
+    <published>2022-07-30T02:39:00.000Z</published>
+    <updated>2022-07-30T09:22:31.228Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h3&gt;&lt;p&gt;今天在利用wsdl.exe和svcutil生成 代理类时、发现2者生成出来的代理类结构不一样。嘿嘿 探究一下！&lt;/p&gt;
+&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>abpvnext自动注入</title>
