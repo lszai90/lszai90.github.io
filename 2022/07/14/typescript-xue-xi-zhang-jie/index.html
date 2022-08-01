@@ -314,7 +314,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -465,14 +465,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    3.2k
+                    3.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    14 分
+                    16 分
                 </div>
                 
                 
@@ -956,7 +956,7 @@ ajax({
   data: &quot;username=ls&quot;,
   url: &quot;https://baidu.com&quot;,
   dataType: &quot;json&quot;,
-});</code></pre><h4 id="函数类型接口"><a href="#函数类型接口" class="headerlink" title="函数类型接口"></a>函数类型接口</h4><p>函数类型接口对输入 输出进行约束</p>
+});</code></pre><h4 id="函数类型接口"><a href="#函数类型接口" class="headerlink" title="函数类型接口"></a>函数类型接口</h4><p>函数类型接口对输入 输出进行约束   还可以进行批量约束</p>
 <pre><code>//函数类型接口对输入 输出进行约束
 interface One {
   (key: string, value: string): string;
@@ -965,7 +965,111 @@ interface One {
 var one1: One = function (key: string, value: string): string {
   return key + &quot;_&quot; + value;
 };
-</code></pre>
+</code></pre><h4 id="可索引接口"><a href="#可索引接口" class="headerlink" title="可索引接口"></a>可索引接口</h4><p>数据 对象的约束 (不常用)</p>
+<pre><code>interface UserArr {
+  [index: number]: string;
+}
+var aa: UserArr = [&quot;2&quot;, &quot;3&quot;];
+console.log(aa[0]);</code></pre><h4 id="类类型接口"><a href="#类类型接口" class="headerlink" title="类类型接口"></a>类类型接口</h4><p>关键字:implements  实现</p>
+<pre><code>
+interface Anli {
+  name: string;
+  eat(str: string): void;
+}
+
+//implements  实现接口  
+class dog implements Anli {
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+  eat(): void {
+    console.log(this.name + &quot;吃食物&quot;);
+  }
+}
+
+var dogs=new dog(&#39;kk&#39;);
+dogs.eat();</code></pre><h4 id="接口扩展"><a href="#接口扩展" class="headerlink" title="接口扩展"></a>接口扩展</h4><pre><code>//动物接口
+interface Anli {
+  eat(): void;
+}
+//人的也是动物
+interface People extends Anli {
+  work(): void;
+}
+//具体的人名
+class XM implements People {
+  public name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+  eat(): void {
+    console.log(&quot;dd&quot;);
+  }
+  work(): void {
+    console.log(&quot;aa&quot;);
+  }
+}
+
+
+复杂实现   extends 类 里面必须用Supper()  在进行 implements 实现
+class DoSomethings {
+  public name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
+  //做具体事情
+  codeing() {
+    console.log(this.name + &quot;学习tsCode&quot;);
+  }
+}
+
+//首先我们继承DoSomethins 然后再实现我们的接口
+class XMExt extends DoSomethings implements People {
+  constructor(name: string) {
+    super(name);
+  }
+
+  eat(): void {
+    console.log(&quot;1&quot;);
+  }
+  work(): void {
+    console.log(&quot;2&quot;);
+  }
+}
+
+var dd=new XMExt(&#39;lius&#39;);
+dd.codeing();
+dd.eat();
+dd.work();</code></pre><h2 id="第七章-泛型"><a href="#第七章-泛型" class="headerlink" title="第七章  泛型"></a>第七章  泛型</h2><p>泛型的定义</p>
+<p>可以支持任意类型</p>
+<pre><code>//泛型  具体是什么类型是前端调用的时候 决定【传入的类型和返回的类型必须一致】
+function GetData&lt;T&gt;(value: T): T {
+  return value;
+}</code></pre><p>泛型函数</p>
+<pre><code>//泛型类
+//比如我有一个最小堆的算法 需要同时支持返回数字和字符串两种类型 通过泛型来实现
+class Progam {
+  private list: number[] = [];
+  add(val: number) {
+    this.list.push(val);
+  }
+  //求最新数
+  min(): number {
+    var num = this.list[0];
+    for (let index = 0; index &lt; this.list.length; index++) {
+      if (num &gt; this.list[index]) {
+        num = this.list[index];
+      }
+    }
+    return num;
+  }
+}
+
+
+</code></pre><p>泛型类</p>
+<p>泛型接口</p>
+
             </div>
             <hr />
 
@@ -1311,7 +1415,7 @@ var one1: One = function (key: string, value: string): string {
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="abpvnext自动注入">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="abpvnext自动注入">
                         
                         <span class="card-title">abpvnext自动注入</span>
                     </div>
@@ -1352,7 +1456,7 @@ var one1: One = function (key: string, value: string): string {
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1549,7 +1653,7 @@ var one1: One = function (key: string, value: string): string {
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">9.8k</span>
+            <span class="white-color">10.2k</span>
             
 
             <br>
