@@ -5,9 +5,9 @@
   <subtitle>程序猿的生活</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://liszai90.github.io/"/>
+  <link href="https://lszai90.github.io/"/>
   <updated>2022-07-30T09:22:31.228Z</updated>
-  <id>https://liszai90.github.io/</id>
+  <id>https://lszai90.github.io/</id>
   
   <author>
     <name>Kylin</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>wsdl.exe与svcutil.exe区别</title>
-    <link href="https://liszai90.github.io/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/"/>
-    <id>https://liszai90.github.io/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/</id>
+    <link href="https://lszai90.github.io/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/"/>
+    <id>https://lszai90.github.io/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/</id>
     <published>2022-07-30T02:39:00.000Z</published>
     <updated>2022-07-30T09:22:31.228Z</updated>
     
@@ -36,15 +36,15 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
   
   <entry>
     <title>abpvnext自动注入</title>
-    <link href="https://liszai90.github.io/2022/07/22/abpvnext-zi-dong-zhu-ru/"/>
-    <id>https://liszai90.github.io/2022/07/22/abpvnext-zi-dong-zhu-ru/</id>
+    <link href="https://lszai90.github.io/2022/07/22/abpvnext-zi-dong-zhu-ru/"/>
+    <id>https://lszai90.github.io/2022/07/22/abpvnext-zi-dong-zhu-ru/</id>
     <published>2022-07-22T00:30:34.000Z</published>
     <updated>2022-07-22T00:49:59.224Z</updated>
     
@@ -60,15 +60,15 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
   
   <entry>
     <title>TypeScript学习章节</title>
-    <link href="https://liszai90.github.io/2022/07/14/typescript-xue-xi-zhang-jie/"/>
-    <id>https://liszai90.github.io/2022/07/14/typescript-xue-xi-zhang-jie/</id>
+    <link href="https://lszai90.github.io/2022/07/14/typescript-xue-xi-zhang-jie/"/>
+    <id>https://lszai90.github.io/2022/07/14/typescript-xue-xi-zhang-jie/</id>
     <published>2022-07-14T00:33:54.000Z</published>
     <updated>2022-08-06T00:52:57.783Z</updated>
     
@@ -84,15 +84,15 @@
     
     </summary>
     
-      <category term="TS" scheme="https://liszai90.github.io/categories/TS/"/>
+      <category term="TS" scheme="https://lszai90.github.io/categories/TS/"/>
     
     
   </entry>
   
   <entry>
     <title>httpClient忽略SSL</title>
-    <link href="https://liszai90.github.io/2022/07/13/httpclient-hu-lue-ssl/"/>
-    <id>https://liszai90.github.io/2022/07/13/httpclient-hu-lue-ssl/</id>
+    <link href="https://lszai90.github.io/2022/07/13/httpclient-hu-lue-ssl/"/>
+    <id>https://lszai90.github.io/2022/07/13/httpclient-hu-lue-ssl/</id>
     <published>2022-07-13T00:37:54.000Z</published>
     <updated>2022-07-13T02:52:15.384Z</updated>
     
@@ -110,15 +110,15 @@
     
     </summary>
     
-      <category term="C#" scheme="https://liszai90.github.io/categories/C/"/>
+      <category term="C#" scheme="https://lszai90.github.io/categories/C/"/>
     
     
   </entry>
   
   <entry>
     <title>nvm</title>
-    <link href="https://liszai90.github.io/2022/07/11/nvm/"/>
-    <id>https://liszai90.github.io/2022/07/11/nvm/</id>
+    <link href="https://lszai90.github.io/2022/07/11/nvm/"/>
+    <id>https://lszai90.github.io/2022/07/11/nvm/</id>
     <published>2022-07-11T00:52:32.000Z</published>
     <updated>2022-07-12T00:26:13.281Z</updated>
     
@@ -134,15 +134,15 @@
     
     </summary>
     
-      <category term="Vue" scheme="https://liszai90.github.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://lszai90.github.io/categories/Vue/"/>
     
     
   </entry>
   
   <entry>
     <title>V2和V3区别</title>
-    <link href="https://liszai90.github.io/2022/07/11/v2-he-v3-qu-bie/"/>
-    <id>https://liszai90.github.io/2022/07/11/v2-he-v3-qu-bie/</id>
+    <link href="https://lszai90.github.io/2022/07/11/v2-he-v3-qu-bie/"/>
+    <id>https://lszai90.github.io/2022/07/11/v2-he-v3-qu-bie/</id>
     <published>2022-07-11T00:33:38.000Z</published>
     <updated>2022-07-12T00:26:02.696Z</updated>
     
@@ -158,15 +158,15 @@
     
     </summary>
     
-      <category term="Vue" scheme="https://liszai90.github.io/categories/Vue/"/>
+      <category term="Vue" scheme="https://lszai90.github.io/categories/Vue/"/>
     
     
   </entry>
   
   <entry>
     <title>MySql高往低不兼容解决方案</title>
-    <link href="https://liszai90.github.io/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/"/>
-    <id>https://liszai90.github.io/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/</id>
+    <link href="https://lszai90.github.io/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/"/>
+    <id>https://lszai90.github.io/2022/07/08/mysql-gao-wang-di-bu-jian-rong-jie-jue-fang-an/</id>
     <published>2022-07-08T11:14:34.000Z</published>
     <updated>2022-07-08T11:26:47.321Z</updated>
     
@@ -183,15 +183,15 @@
     
     </summary>
     
-      <category term="MySql" scheme="https://liszai90.github.io/categories/MySql/"/>
+      <category term="MySql" scheme="https://lszai90.github.io/categories/MySql/"/>
     
     
   </entry>
   
   <entry>
     <title>mysql图文安装教程</title>
-    <link href="https://liszai90.github.io/2022/07/08/mysql-tu-wen-an-zhuang-jiao-cheng/"/>
-    <id>https://liszai90.github.io/2022/07/08/mysql-tu-wen-an-zhuang-jiao-cheng/</id>
+    <link href="https://lszai90.github.io/2022/07/08/mysql-tu-wen-an-zhuang-jiao-cheng/"/>
+    <id>https://lszai90.github.io/2022/07/08/mysql-tu-wen-an-zhuang-jiao-cheng/</id>
     <published>2022-07-08T00:56:23.000Z</published>
     <updated>2022-07-08T11:30:29.548Z</updated>
     
@@ -209,15 +209,15 @@
     
     </summary>
     
-      <category term="MySql" scheme="https://liszai90.github.io/categories/MySql/"/>
+      <category term="MySql" scheme="https://lszai90.github.io/categories/MySql/"/>
     
     
   </entry>
   
   <entry>
     <title>简单HttpClient请求例子</title>
-    <link href="https://liszai90.github.io/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/"/>
-    <id>https://liszai90.github.io/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/</id>
+    <link href="https://lszai90.github.io/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/"/>
+    <id>https://lszai90.github.io/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/</id>
     <published>2022-07-07T00:45:05.000Z</published>
     <updated>2022-07-13T00:40:47.163Z</updated>
     
@@ -235,15 +235,15 @@
     
     </summary>
     
-      <category term="C#" scheme="https://liszai90.github.io/categories/C/"/>
+      <category term="C#" scheme="https://lszai90.github.io/categories/C/"/>
     
     
   </entry>
   
   <entry>
     <title>Table作为参数</title>
-    <link href="https://liszai90.github.io/2022/07/06/table-zuo-wei-can-shu/"/>
-    <id>https://liszai90.github.io/2022/07/06/table-zuo-wei-can-shu/</id>
+    <link href="https://lszai90.github.io/2022/07/06/table-zuo-wei-can-shu/"/>
+    <id>https://lszai90.github.io/2022/07/06/table-zuo-wei-can-shu/</id>
     <published>2022-07-06T00:37:15.000Z</published>
     <updated>2022-07-06T00:43:06.366Z</updated>
     
@@ -260,15 +260,15 @@
     
     </summary>
     
-      <category term="Sql" scheme="https://liszai90.github.io/categories/Sql/"/>
+      <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
     
     
   </entry>
   
   <entry>
     <title>pdfjs预览</title>
-    <link href="https://liszai90.github.io/2022/07/05/pdfjs-yu-lan/"/>
-    <id>https://liszai90.github.io/2022/07/05/pdfjs-yu-lan/</id>
+    <link href="https://lszai90.github.io/2022/07/05/pdfjs-yu-lan/"/>
+    <id>https://lszai90.github.io/2022/07/05/pdfjs-yu-lan/</id>
     <published>2022-07-05T11:21:07.000Z</published>
     <updated>2022-07-08T11:27:08.291Z</updated>
     
@@ -284,15 +284,15 @@
     
     </summary>
     
-      <category term=".NetCore" scheme="https://liszai90.github.io/categories/NetCore/"/>
+      <category term=".NetCore" scheme="https://lszai90.github.io/categories/NetCore/"/>
     
     
   </entry>
   
   <entry>
     <title>NetCore_解决请求数据大小限制</title>
-    <link href="https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/"/>
-    <id>https://liszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/</id>
+    <link href="https://lszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/"/>
+    <id>https://lszai90.github.io/2022/07/05/netcore-jie-jue-qing-qiu-shu-ju-da-xiao-xian-zhi/</id>
     <published>2022-07-05T00:49:28.000Z</published>
     <updated>2022-07-08T11:26:58.091Z</updated>
     
@@ -308,15 +308,15 @@
     
     </summary>
     
-      <category term=".NetCore" scheme="https://liszai90.github.io/categories/NetCore/"/>
+      <category term=".NetCore" scheme="https://lszai90.github.io/categories/NetCore/"/>
     
     
   </entry>
   
   <entry>
     <title>触发器语法</title>
-    <link href="https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/"/>
-    <id>https://liszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/</id>
+    <link href="https://lszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/"/>
+    <id>https://lszai90.github.io/2022/07/05/hong-fa-qi-yu-fa/</id>
     <published>2022-07-05T00:46:46.000Z</published>
     <updated>2022-07-08T11:27:18.396Z</updated>
     
@@ -332,15 +332,15 @@
     
     </summary>
     
-      <category term="Sql" scheme="https://liszai90.github.io/categories/Sql/"/>
+      <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
     
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
-    <id>https://liszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
+    <link href="https://lszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
+    <id>https://lszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
     <published>2022-07-05T00:44:45.527Z</published>
     <updated>2022-07-08T11:27:29.385Z</updated>
     
@@ -362,8 +362,8 @@
   
   <entry>
     <title>sql事务语法</title>
-    <link href="https://liszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/"/>
-    <id>https://liszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/</id>
+    <link href="https://lszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/"/>
+    <id>https://lszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/</id>
     <published>2022-07-04T00:50:08.000Z</published>
     <updated>2022-07-08T11:27:14.251Z</updated>
     
@@ -379,15 +379,15 @@
     
     </summary>
     
-      <category term="Sql" scheme="https://liszai90.github.io/categories/Sql/"/>
+      <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
     
     
   </entry>
   
   <entry>
     <title>cursor</title>
-    <link href="https://liszai90.github.io/2022/07/04/cursor/"/>
-    <id>https://liszai90.github.io/2022/07/04/cursor/</id>
+    <link href="https://lszai90.github.io/2022/07/04/cursor/"/>
+    <id>https://lszai90.github.io/2022/07/04/cursor/</id>
     <published>2022-07-04T00:36:02.000Z</published>
     <updated>2022-07-08T11:27:44.514Z</updated>
     
@@ -403,15 +403,15 @@
     
     </summary>
     
-      <category term="Sql" scheme="https://liszai90.github.io/categories/Sql/"/>
+      <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
     
     
   </entry>
   
   <entry>
     <title>利用Hexo创建自身博客</title>
-    <link href="https://liszai90.github.io/2022/06/19/hello-world/"/>
-    <id>https://liszai90.github.io/2022/06/19/hello-world/</id>
+    <link href="https://lszai90.github.io/2022/06/19/hello-world/"/>
+    <id>https://lszai90.github.io/2022/06/19/hello-world/</id>
     <published>2022-06-19T02:50:27.603Z</published>
     <updated>2022-07-04T00:43:09.451Z</updated>
     
@@ -427,15 +427,15 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
   
   <entry>
     <title>RSA</title>
-    <link href="https://liszai90.github.io/2022/06/19/rsa/"/>
-    <id>https://liszai90.github.io/2022/06/19/rsa/</id>
+    <link href="https://lszai90.github.io/2022/06/19/rsa/"/>
+    <id>https://lszai90.github.io/2022/06/19/rsa/</id>
     <published>2022-06-19T01:06:25.000Z</published>
     <updated>2022-07-04T00:43:06.230Z</updated>
     
@@ -443,15 +443,15 @@
     
     </summary>
     
-      <category term="随笔" scheme="https://liszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
   
   <entry>
     <title></title>
-    <link href="https://liszai90.github.io/2022/06/09/kylin-songzai/"/>
-    <id>https://liszai90.github.io/2022/06/09/kylin-songzai/</id>
+    <link href="https://lszai90.github.io/2022/06/09/kylin-songzai/"/>
+    <id>https://lszai90.github.io/2022/06/09/kylin-songzai/</id>
     <published>2022-06-09T04:00:41.943Z</published>
     <updated>2022-07-05T09:20:51.775Z</updated>
     
