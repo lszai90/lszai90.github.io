@@ -329,7 +329,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -480,14 +480,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    4.5k
+                    5.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    20 分
+                    23 分
                 </div>
                 
                 
@@ -508,6 +508,7 @@
 <p>​       TypeScript 是 JavaScript 的超集，扩展了 JavaScript 的语法，因此现有的 JavaScript 代码可与 TypeScript 一起工作无需任何修改，TypeScript 通过类型注解提供编译时的静态类型检查。TypeScript 可处理已有的 JavaScript 代码，并只对其中的 TypeScript 代码进行编译,TypeScript是面向对象编程。</p>
 <p>如图：可以看出他们之间的关系</p>
 <p><img src="https://lszai90.github.io/images/ts/TypeScript1.png" alt="TypeScript1.png"></p>
+<p><a href="https://www.typescriptlang.org/" target="_blank" rel="noopener">https://www.typescriptlang.org/</a></p>
 <h2 id="第二章-安装及编译"><a href="#第二章-安装及编译" class="headerlink" title="第二章:安装及编译"></a>第二章:安装及编译</h2><h3 id="1、通过几种安装方式"><a href="#1、通过几种安装方式" class="headerlink" title="1、通过几种安装方式"></a>1、通过几种安装方式</h3><pre><code>第一种:npm install -g typescript   --需要安装nodejs
 第二种:cnpm install -g typescript  --如果使用cnpm 请先装 cnpm
 第三种:yarn global add typescript  --如果使用yarn 请先装 yarn</code></pre><p>typescript 安装完成后、在运行Cmd输入命名：</p>
@@ -1197,7 +1198,7 @@ ddd.add(users);
 <p>两个模块之间的关系是通过在文件级别上使用 import 和 export 建立的。</p>
 <p>模块使用模块加载器去导入其它的模块。 在运行时，模块加载器的作用是在执行此模块代码前去查找并执行这个模块的所有依赖。 大家最熟知的JavaScript模块加载器是服务于 Node.js 的 CommonJS 和服务于 Web 应用的 Require.js。</p>
 <p>此外还有有 SystemJs 和 Webpack。</p>
-<pre><code>简单的模块 暴露及导入
+<h4 id="简单的模块【Demo】"><a href="#简单的模块【Demo】" class="headerlink" title="简单的模块【Demo】"></a>简单的模块【Demo】</h4><pre><code>简单的模块 暴露及导入
 db.ts 文件
 
 var dbconn = &quot;dddd&quot;;
@@ -1250,7 +1251,113 @@ export { dbconn, getdata, savedata };
 <p>注意：export   在模块中可以出现多次、export default  一个模块中只能出现一次。</p>
 <p>export  getdate  暴露时 我们导入的 时候 写法：import { getdata } from “./modules/db”; 应该用{} 包裹起来</p>
 <p>export default  getdate   暴露时 我们导入的 时候 写法 import getdata from “./modules/db”;  不用{}包裹起来</p>
+<h2 id="TypeScript-命名空间"><a href="#TypeScript-命名空间" class="headerlink" title="TypeScript 命名空间"></a>TypeScript 命名空间</h2><p>命名空间一个最明确的目的就是解决重名问题。</p>
+<p>假设这样一种情况，当一个班上有两个名叫小明的学生时，为了明确区分它们，我们在使用名字之外，不得不使用一些额外的信息，比如他们的姓（王小明，李小明），或者他们父母的名字等等。</p>
+<p>命名空间定义了标识符的可见范围，一个标识符可在多个名字空间中定义，它在不同名字空间中的含义是互不相干的。这样，在一个新的名字空间中可定义任何标识符，它们不会与任何已有的标识符发生冲突，因为已有的定义都处于其他名字空间中</p>
+<h4 id="命名空间语法"><a href="#命名空间语法" class="headerlink" title="命名空间语法"></a>命名空间语法</h4><pre><code>namespace A{
+  var dbconn = &quot;dddd&quot;;
+  //export 暴露方法
+ export function getdata(): any[] {
+    console.log(&quot;dddd&quot;);
+    return [
+      {
+        Lname: &quot;lius&quot;,
+      },
+    ];
+  }
+  export function savedata(): boolean {
+    console.log(&quot;dddd&quot;);
+    return true;
+  }
+  //export { dbconn, getdata, savedata };
+  //默认导出只能在 ECMAScript-style 模块中使用
+  //export default getdata;
+}</code></pre><p>可以直接把命名空间进行暴露出</p>
+<pre><code>export namespace A{
+  var dbconn = &quot;dddd&quot;;
+  //export 暴露方法
+ export function getdata(): any[] {
+    console.log(&quot;dddd&quot;);
+    return [
+      {
+        Lname: &quot;lius&quot;,
+      },
+    ];
+  }
+  export function savedata(): boolean {
+    console.log(&quot;dddd&quot;);
+    return true;
+  }
+  //export { dbconn, getdata, savedata };
+  //默认导出只能在 ECMAScript-style 模块中使用
+  //export default getdata;
+}</code></pre><p>还可以这样引用</p>
+<pre><code>// In a .d.ts file or .ts file that is not a module:
+/// &lt;reference path=&quot;myModules.d.ts&quot; /&gt;
+相当于就是
+import * as m from &quot;SomeModule&quot;;</code></pre><h2 id="TypeScript装饰器"><a href="#TypeScript装饰器" class="headerlink" title="TypeScript装饰器"></a>TypeScript装饰器</h2><p>在不修改原类的情况下、进行类的属性、方法扩展。</p>
+<h4 id="普通的装饰器"><a href="#普通的装饰器" class="headerlink" title="普通的装饰器"></a>普通的装饰器</h4><pre><code>//装饰器
+function logClass(Pararms: any) {
+  //这个就是代表的是HttpClient的类
+  Pararms.prototype.apiUrl = &quot;apiaddress&quot;;
+  Pararms.prototype.run = function () {
+    console.log(&quot;我正在跑步&quot;);
+  };
+}
 
+@logClass
+class HttpClient {
+  constructor() {}
+  getUser() {}
+}
+
+//调用一下；
+var hp: any = new HttpClient();
+console.log(hp.apiUrl);
+hp.run();</code></pre><p>注意一点就是必须在tsconfig中配置一下：”experimentalDecorators”: true,   不然会有警告信息</p>
+<p>Experimental support for decorators is a feature that is subject to change in a future release. Set the ‘experimentalDecorators’ option in your ‘tsconfig’ or ‘jsconfig’ to remove this warning</p>
+<h4 id="工厂装饰器"><a href="#工厂装饰器" class="headerlink" title="工厂装饰器"></a>工厂装饰器</h4><pre><code>function logClassA(Pararms: string) {
+ //返回function 就是代表的【HttpClientA】
+  return function (target: any) {
+    console.log(Pararms);
+    //console.log(target);
+    target.prototype.apiUrl=Pararms;
+  };
+}
+
+@logClassA(&quot;http://api&quot;)
+class HttpClientA {
+  constructor() {}
+  getUserInfo() {}
+}
+
+var   hpa:any=new HttpClientA();
+console.log(hpa.apiUrl)</code></pre><p>这里就是给装式器传入参数。</p>
+<h4 id="类装式器"><a href="#类装式器" class="headerlink" title="类装式器"></a>类装式器</h4><p>修改原有类的构造函数及方法</p>
+<pre><code>function logClass(target: any) {
+  console.log(target);
+  //返回类 继承于Target
+  return class extends target {
+    apiUrl = &quot;重载后的ApiUrl&quot;;
+    getUserInfo() {
+      console.log(this.apiUrl + &quot;---&quot;);
+    }
+  };
+}
+
+@logClass
+class HttpClient {
+  public apiUrl: string | undefined;
+  constructor() {
+    this.apiUrl = &quot;我是之前的apiUrl&quot;;
+  }
+  getUserInfo() {
+    console.log(this.apiUrl);
+  }
+}
+
+var httpa: any = new HttpClient();
+httpa.getUserInfo();</code></pre>
             </div>
             <hr />
 
@@ -1596,7 +1703,7 @@ export { dbconn, getdata, savedata };
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="abpvnext自动注入">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="abpvnext自动注入">
                         
                         <span class="card-title">abpvnext自动注入</span>
                     </div>
@@ -1637,7 +1744,7 @@ export { dbconn, getdata, savedata };
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1834,7 +1941,7 @@ export { dbconn, getdata, savedata };
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">11.1k</span>
+            <span class="white-color">11.8k</span>
             
 
             <br>
