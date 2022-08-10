@@ -329,7 +329,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -480,14 +480,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    5.2k
+                    5.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    23 分
+                    24 分
                 </div>
                 
                 
@@ -1251,7 +1251,7 @@ export { dbconn, getdata, savedata };
 <p>注意：export   在模块中可以出现多次、export default  一个模块中只能出现一次。</p>
 <p>export  getdate  暴露时 我们导入的 时候 写法：import { getdata } from “./modules/db”; 应该用{} 包裹起来</p>
 <p>export default  getdate   暴露时 我们导入的 时候 写法 import getdata from “./modules/db”;  不用{}包裹起来</p>
-<h2 id="TypeScript-命名空间"><a href="#TypeScript-命名空间" class="headerlink" title="TypeScript 命名空间"></a>TypeScript 命名空间</h2><p>命名空间一个最明确的目的就是解决重名问题。</p>
+<h2 id="第九章-TypeScript-命名空间"><a href="#第九章-TypeScript-命名空间" class="headerlink" title="第九章:TypeScript 命名空间"></a>第九章:TypeScript 命名空间</h2><p>命名空间一个最明确的目的就是解决重名问题。</p>
 <p>假设这样一种情况，当一个班上有两个名叫小明的学生时，为了明确区分它们，我们在使用名字之外，不得不使用一些额外的信息，比如他们的姓（王小明，李小明），或者他们父母的名字等等。</p>
 <p>命名空间定义了标识符的可见范围，一个标识符可在多个名字空间中定义，它在不同名字空间中的含义是互不相干的。这样，在一个新的名字空间中可定义任何标识符，它们不会与任何已有的标识符发生冲突，因为已有的定义都处于其他名字空间中</p>
 <h4 id="命名空间语法"><a href="#命名空间语法" class="headerlink" title="命名空间语法"></a>命名空间语法</h4><pre><code>namespace A{
@@ -1295,7 +1295,7 @@ export { dbconn, getdata, savedata };
 <pre><code>// In a .d.ts file or .ts file that is not a module:
 /// &lt;reference path=&quot;myModules.d.ts&quot; /&gt;
 相当于就是
-import * as m from &quot;SomeModule&quot;;</code></pre><h2 id="TypeScript装饰器"><a href="#TypeScript装饰器" class="headerlink" title="TypeScript装饰器"></a>TypeScript装饰器</h2><p>在不修改原类的情况下、进行类的属性、方法扩展。</p>
+import * as m from &quot;SomeModule&quot;;</code></pre><h2 id="第十章-TypeScript装饰器"><a href="#第十章-TypeScript装饰器" class="headerlink" title="第十章:TypeScript装饰器"></a>第十章:TypeScript装饰器</h2><p>在不修改原类的情况下、进行类的属性、方法扩展。</p>
 <h4 id="普通的装饰器"><a href="#普通的装饰器" class="headerlink" title="普通的装饰器"></a>普通的装饰器</h4><pre><code>//装饰器
 function logClass(Pararms: any) {
   //这个就是代表的是HttpClient的类
@@ -1357,7 +1357,58 @@ class HttpClient {
 }
 
 var httpa: any = new HttpClient();
-httpa.getUserInfo();</code></pre>
+httpa.getUserInfo();</code></pre><h4 id="属性装饰器"><a href="#属性装饰器" class="headerlink" title="属性装饰器"></a>属性装饰器</h4><pre><code>//属性装饰器
+function logProperty(Params:any){
+   return function(target:any,Params:any){
+      console.log(target);
+      console.log(Params);
+      target[Params]=&#39;apiaddressto&#39;;
+   }
+}
+
+class HttpClient {
+  @logProperty(&#39;http://baidu.com&#39;)
+  public apiUrl: string | undefined;
+  constructor() {
+
+  }
+  getUserInfo() {
+   console.log(this.apiUrl);
+  }
+}
+
+var HttpC=new HttpClient();
+HttpC.getUserInfo();</code></pre><h4 id="方法装饰器"><a href="#方法装饰器" class="headerlink" title="方法装饰器"></a>方法装饰器</h4><p>3个参数</p>
+<p>1、如果是静态对象 获取的是构造函数,如果是类 则获取的是类的原型</p>
+<p>2、Params 获取方法成员</p>
+<p>3、Val 成员的属性描述符</p>
+<pre><code>//方法装饰器
+function logMethod(Params: any) {
+  return function (target: any, Params: any,Val:any) {
+    console.log(target);
+    console.log(Params);
+    console.log(Val.value);
+  };
+}
+
+class HttpClient {
+  public apiUrl: string | undefined;
+  constructor() {}
+  @logMethod(&quot;http://ddd&quot;)
+  getUserInfo() {
+    console.log(&quot;AAAAAA&quot;);
+  }
+}
+
+var HttpC = new HttpClient();
+HttpC.getUserInfo();
+
+输出是这样：
+target:{constructor: ƒ, getUserInfo: ƒ}constructor: class HttpClientgetUserInfo: ƒ getUserInfo()[[Prototype]]: Object
+getUserInfo
+getUserInfo() {
+        console.log(&quot;AAAAAA&quot;);
+    }</code></pre>
             </div>
             <hr />
 
@@ -1703,7 +1754,7 @@ httpa.getUserInfo();</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="abpvnext自动注入">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="abpvnext自动注入">
                         
                         <span class="card-title">abpvnext自动注入</span>
                     </div>
@@ -1744,7 +1795,7 @@ httpa.getUserInfo();</code></pre>
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="httpClient忽略SSL">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="httpClient忽略SSL">
                         
                         <span class="card-title">httpClient忽略SSL</span>
                     </div>
@@ -1941,7 +1992,7 @@ httpa.getUserInfo();</code></pre>
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">11.8k</span>
+            <span class="white-color">12k</span>
             
 
             <br>
