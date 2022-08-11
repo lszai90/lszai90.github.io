@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Vue3+TypeScript</title>
+      <link href="/2022/08/10/vue3-typescript/"/>
+      <url>/2022/08/10/vue3-typescript/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vue介绍"><a href="#Vue介绍" class="headerlink" title="Vue介绍"></a>Vue介绍</h2><p>​         Vue (发音为 /vjuː/，类似 <strong>view</strong>) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任。</p><p><a href="https://cn.vuejs.org/guide/introduction.html" target="_blank" rel="noopener">https://cn.vuejs.org/guide/introduction.html</a></p><h2 id="安装Vue官方脚手架及创建项目"><a href="#安装Vue官方脚手架及创建项目" class="headerlink" title="安装Vue官方脚手架及创建项目"></a>安装Vue官方脚手架及创建项目</h2><h3 id="1、通过Vue-cli-脚手架安装-前提是你需要装yarn或者npm"><a href="#1、通过Vue-cli-脚手架安装-前提是你需要装yarn或者npm" class="headerlink" title="1、通过Vue-cli 脚手架安装[前提是你需要装yarn或者npm]"></a>1、通过Vue-cli 脚手架安装[前提是你需要装yarn或者npm]</h3><p>yarn下载地址：<a href="https://yarn.bootcss.com/docs/install/#windows-stable" target="_blank" rel="noopener">https://yarn.bootcss.com/docs/install/#windows-stable</a></p><pre><code>yarn install -g @vue/clinpm install -g @vue/cli</code></pre><p>安装好后cmd输入以下命名：</p><pre><code>E:\Vue学习项目&gt;vue -V@vue/cli 5.0.8</code></pre><p>出现版本就代表已安装</p><p>通过Vue-Cli创建项目</p><pre><code>vue create hello-vue3cmd 转入项目文件夹运行yarn serve </code></pre><p>这个创建出来的的项目是 Vue+js的项目  默认的是webpackage进行打包</p><h3 id="2、通过Vite创建项目"><a href="#2、通过Vite创建项目" class="headerlink" title="2、通过Vite创建项目"></a>2、通过Vite创建项目</h3><p>什么是Vite</p><p>Vite（法语意为 “快速的”，发音 <code>/vit/</code>，发音同 “veet”）是一种新型前端构建工具，能够显著提升前端开发体验。它主要由两部分组成：</p><ul><li>一个开发服务器，它基于 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" target="_blank" rel="noopener">原生 ES 模块</a> 提供了 <a href="https://cn.vitejs.dev/guide/features.html" target="_blank" rel="noopener">丰富的内建功能</a>，如速度快到惊人的 <a href="https://cn.vitejs.dev/guide/features.html#hot-module-replacement" target="_blank" rel="noopener">模块热更新（HMR）</a>。</li><li>一套构建指令，它使用 <a href="https://rollupjs.org/" target="_blank" rel="noopener">Rollup</a> 打包你的代码，并且它是预配置的，可输出用于生产环境的高度优化过的静态资源。</li></ul><p>Vite 意在提供开箱即用的配置，同时它的 <a href="https://cn.vitejs.dev/guide/api-plugin.html" target="_blank" rel="noopener">插件 API</a> 和 <a href="https://cn.vitejs.dev/guide/api-javascript.html" target="_blank" rel="noopener">JavaScript API</a> 带来了高度的可扩展性，并有完整的类型支持。</p><p>你可以在 <a href="https://cn.vitejs.dev/guide/why.html" target="_blank" rel="noopener">为什么选 Vite</a> 中了解更多关于项目的设计初衷。</p><p>致于Vite我会有一个专门的一篇博客进行讲诉,Vite和webpackage的却别。</p><p>Vite的官网地址：<a href="https://cn.vitejs.dev/guide/" target="_blank" rel="noopener">https://cn.vitejs.dev/guide/</a></p><p>创建项目</p><pre><code>&gt; npm  init vite-app  项目&gt; cd 项目&gt; npm install &gt; npm run dev</code></pre><p>这个创建出来的的项目是 Vue+js的项目</p><h3 id="3、如何通过Vite创建-Vue3-Vite-TypeScript的项目"><a href="#3、如何通过Vite创建-Vue3-Vite-TypeScript的项目" class="headerlink" title="3、如何通过Vite创建 Vue3+Vite+TypeScript的项目"></a>3、如何通过Vite创建 Vue3+Vite+TypeScript的项目</h3><pre><code>&gt;npm create vite&gt;输入项目名&gt;选择Vue&gt;选择Vue-ts&gt;cd vite-project&gt;npm install&gt;npm run dev</code></pre><p>待更新…….</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vue </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>wsdl.exe与svcutil.exe区别</title>
       <link href="/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/"/>
       <url>/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/</url>

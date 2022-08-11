@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2022-07-30T09:22:31.228Z</updated>
+  <updated>2022-08-11T00:53:49.978Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Vue3+TypeScript</title>
+    <link href="https://lszai90.github.io/2022/08/10/vue3-typescript/"/>
+    <id>https://lszai90.github.io/2022/08/10/vue3-typescript/</id>
+    <published>2022-08-10T00:38:25.000Z</published>
+    <updated>2022-08-11T00:53:49.978Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Vue介绍&quot;&gt;&lt;a href=&quot;#Vue介绍&quot; class=&quot;headerlink&quot; title=&quot;Vue介绍&quot;&gt;&lt;/a&gt;Vue介绍&lt;/h2&gt;&lt;p&gt;​         Vue (发音为 /vjuː/，类似 &lt;strong&gt;view&lt;/strong&gt;)
+        
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="https://lszai90.github.io/categories/Vue/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>wsdl.exe与svcutil.exe区别</title>
