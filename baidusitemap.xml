@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lszai90.github.io/2022/08/23/web-xing-neng-you-hua/</loc>
+    <lastmod>2022-08-23</lastmod>
+  </url>  <url>
     <loc>https://lszai90.github.io/2022/08/10/vue3-typescript/</loc>
-    <lastmod>2022-08-11</lastmod>
+    <lastmod>2022-08-20</lastmod>
+  </url>  <url>
+    <loc>https://lszai90.github.io/2022/08/15/vite-he-webpack-qu-bie/</loc>
+    <lastmod>2022-08-15</lastmod>
   </url>  <url>
     <loc>https://lszai90.github.io/2022/07/14/typescript-xue-xi-zhang-jie/</loc>
     <lastmod>2022-08-10</lastmod>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2022-08-11T00:53:49.978Z</updated>
+  <updated>2022-08-23T00:22:29.353Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -17,11 +17,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Web性能优化</title>
+    <link href="https://lszai90.github.io/2022/08/23/web-xing-neng-you-hua/"/>
+    <id>https://lszai90.github.io/2022/08/23/web-xing-neng-you-hua/</id>
+    <published>2022-08-23T00:19:14.000Z</published>
+    <updated>2022-08-23T00:22:29.353Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Web性能优化】&quot;&gt;&lt;a href=&quot;#Web性能优化】&quot; class=&quot;headerlink&quot; title=&quot;[Web性能优化】&quot;&gt;&lt;/a&gt;[Web性能优化】&lt;/h1&gt;&lt;h2 id=&quot;1-减少HTTP请求&quot;&gt;&lt;a href=&quot;#1-减少HTTP请求&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vite和webpack区别</title>
+    <link href="https://lszai90.github.io/2022/08/15/vite-he-webpack-qu-bie/"/>
+    <id>https://lszai90.github.io/2022/08/15/vite-he-webpack-qu-bie/</id>
+    <published>2022-08-15T00:25:07.000Z</published>
+    <updated>2022-08-15T00:57:18.865Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;​       最近在学习Vue3 Vite TypeScript 在打包过程中发现了Vite和WebPack 打包区别。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="https://lszai90.github.io/categories/Vue/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>Vue3+TypeScript</title>
     <link href="https://lszai90.github.io/2022/08/10/vue3-typescript/"/>
     <id>https://lszai90.github.io/2022/08/10/vue3-typescript/</id>
     <published>2022-08-10T00:38:25.000Z</published>
-    <updated>2022-08-11T00:53:49.978Z</updated>
+    <updated>2022-08-20T00:33:29.671Z</updated>
     
     <summary type="html">
     
@@ -452,45 +501,6 @@
     </summary>
     
       <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>RSA</title>
-    <link href="https://lszai90.github.io/2022/06/19/rsa/"/>
-    <id>https://lszai90.github.io/2022/06/19/rsa/</id>
-    <published>2022-06-19T01:06:25.000Z</published>
-    <updated>2022-07-04T00:43:06.230Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2022/06/09/kylin-songzai/"/>
-    <id>https://lszai90.github.io/2022/06/09/kylin-songzai/</id>
-    <published>2022-06-09T04:00:41.943Z</published>
-    <updated>2022-07-05T09:20:51.775Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;title: Kylin | 关于写博客的七点反思&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-06-11
-        
-      
-    
-    </summary>
     
     
   </entry>
