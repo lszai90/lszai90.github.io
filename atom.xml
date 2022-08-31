@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2022-08-23T00:31:07.534Z</updated>
+  <updated>2022-08-31T02:38:44.929Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>发送及接收邮件</title>
+    <link href="https://lszai90.github.io/2022/08/30/fa-song-ji-jie-shou-you-jian/"/>
+    <id>https://lszai90.github.io/2022/08/30/fa-song-ji-jie-shou-you-jian/</id>
+    <published>2022-08-30T00:26:30.000Z</published>
+    <updated>2022-08-31T02:38:44.929Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;最近在做一个项目时用到了发送邮件及接收邮件。空闲时把他总结下来、希望能帮助其他的人。&lt;/p&gt;
+&lt;h2 id=&quot;实现&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="C#" scheme="https://lszai90.github.io/categories/C/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Web性能优化</title>
@@ -45,7 +70,7 @@
     <link href="https://lszai90.github.io/2022/08/15/vite-he-webpack-qu-bie/"/>
     <id>https://lszai90.github.io/2022/08/15/vite-he-webpack-qu-bie/</id>
     <published>2022-08-15T00:25:07.000Z</published>
-    <updated>2022-08-15T00:57:18.865Z</updated>
+    <updated>2022-08-24T00:06:35.202Z</updated>
     
     <summary type="html">
     
@@ -70,7 +95,7 @@
     <link href="https://lszai90.github.io/2022/08/10/vue3-typescript/"/>
     <id>https://lszai90.github.io/2022/08/10/vue3-typescript/</id>
     <published>2022-08-10T00:38:25.000Z</published>
-    <updated>2022-08-20T00:33:29.671Z</updated>
+    <updated>2022-08-29T00:07:20.691Z</updated>
     
     <summary type="html">
     
@@ -477,30 +502,6 @@
     </summary>
     
       <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>利用Hexo创建自身博客</title>
-    <link href="https://lszai90.github.io/2022/06/19/hello-world/"/>
-    <id>https://lszai90.github.io/2022/06/19/hello-world/</id>
-    <published>2022-06-19T02:50:27.603Z</published>
-    <updated>2022-07-04T00:43:09.451Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
