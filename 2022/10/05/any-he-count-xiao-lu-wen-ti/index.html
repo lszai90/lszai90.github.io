@@ -4,12 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="wsdl.exe与svcutil.exe区别, C# .NetCore  ABP ABP.IO  Vue TS NodeJS MYSQL SERVER MQ Redis dapper ">
+    <meta name="keywords" content="Any和Count效率问题, C# .NetCore  ABP ABP.IO  Vue TS NodeJS MYSQL SERVER MQ Redis dapper ">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="导言今天在利用wsdl.exe和svcutil生成 代理类时、发现2者生成出来的代理类结构不一样。嘿嘿 探究一下！
-什么是wsdl​       The Web Services Description Language tool gene">
+    <meta name="description" content="Linq中Count()和Any()引发的效率问题
+当yield循环低于100000次的话，count()和Any()的执行时间差不多，count()时间略大于any()所耗费的时间，当大于100000次的话，count()执行时间就远比A">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>wsdl.exe与svcutil.exe区别 | Kylin的博客</title>
+    <title>Any和Count效率问题 | Kylin的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -330,13 +330,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/25.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/6.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        wsdl.exe与svcutil.exe区别
+                        Any和Count效率问题
                     </div>
                 </div>
             </div>
@@ -467,7 +467,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-07-30
+                    2022-10-05
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -481,14 +481,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    981
+                    273
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    1 分
                 </div>
                 
                 
@@ -504,115 +504,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h3><p>今天在利用wsdl.exe和svcutil生成 代理类时、发现2者生成出来的代理类结构不一样。嘿嘿 探究一下！</p>
-<h3 id="什么是wsdl"><a href="#什么是wsdl" class="headerlink" title="什么是wsdl"></a>什么是wsdl</h3><p>​       The Web Services Description Language tool generates code for XML Web services and XML Web service clients from WSDL contract files, XSD schemas, and .discomap discovery documents.</p>
-<p>Web服务描述语言工具从WSDL规约文件、XSD架构和.discomap发现文档中生成XML Web服务和XML Web服务客户端的代码。wsdl.exe 默认生成同步和异步的方法。</p>
-<p>语法：</p>
-<pre><code>wsdl [options] {URL | path}</code></pre><table>
-<thead>
-<tr>
-<th align="left">Argument</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><em>URL</em></td>
-<td align="left">The URL to a WSDL contract file (.wsdl), XSD schema file (.xsd), or discovery document (.disco). Note that you cannot specify a URL to a .discomap discovery document.</td>
-</tr>
-<tr>
-<td align="left"><em>path</em></td>
-<td align="left">The path to a local WSDL contract file (.wsdl), XSD schema file (.xsd), or discovery document (.disco or .discomap).</td>
-</tr>
-</tbody></table>
-<table>
-<thead>
-<tr>
-<th align="left">Option</th>
-<th align="left">Description</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left"><strong>/appsettingurlkey:*</strong>key<em>or<strong>/urlkey:*</strong>key</em></td>
-<td align="left">Specifies the configuration key to use in order to read the default value for the URL property when generating code.</td>
-</tr>
-<tr>
-<td align="left"><strong>/appsettingbaseurl:*</strong>baseurl<em>or<strong>/baseurl:*</strong>baseurl</em></td>
-<td align="left">Specifies the base URL to use when calculating the URL fragment. The tool calculates the URL fragment by converting the relative URL from the <em>baseurl</em> argument to the URL in the WSDL document. You must specify the <strong>/appsettingurlkey</strong> option with this option.</td>
-</tr>
-<tr>
-<td align="left"><strong>/d</strong>[<strong>omain</strong>]<strong>:*</strong>domain*</td>
-<td align="left">Specifies the domain name to use when connecting to a server that requires authentication.</td>
-</tr>
-<tr>
-<td align="left"><strong>/l</strong>[<strong>anguage</strong>]<strong>:*</strong>language*</td>
-<td align="left">Specifies the language to use for the generated proxy class. You can specify <strong>CS</strong> (C#; default), <strong>VB</strong> (Visual Basic), <strong>JS</strong> (JScript) or <strong>VJS</strong> (Visual J#) as the language argument. You can also specify the fully qualified name of a class that implements the <a href="https://msdn.microsoft.com/en-us/library/ds075xdx(v=vs.71)" target="_blank" rel="noopener">System.CodeDom.Compiler.CodeDomProvider Class</a>.</td>
-</tr>
-<tr>
-<td align="left"><strong>/n</strong>[<strong>amespace</strong>]<strong>:*</strong>namespace*</td>
-<td align="left">Specifies the namespace for the generated proxy or template. The default namespace is the global namespace.</td>
-</tr>
-<tr>
-<td align="left"><strong>/nologo</strong></td>
-<td align="left">Suppresses the Microsoft startup banner display.</td>
-</tr>
-<tr>
-<td align="left"><strong>/o</strong>[<strong>ut</strong>]<strong>:*</strong>filename*</td>
-<td align="left">Specifies the file in which to save the generated proxy code. The tool derives the default file name from the XML Web service name. The tool saves generated datasets in different files.</td>
-</tr>
-<tr>
-<td align="left"><strong>/parsableerrors</strong></td>
-<td align="left">Displays errors in a format similar to the error reporting format used by language compilers.</td>
-</tr>
-<tr>
-<td align="left"><strong>/p</strong>[<strong>assword</strong>]<strong>:*</strong>password*</td>
-<td align="left">Specifies the password to use when connecting to a server that requires authentication.</td>
-</tr>
-<tr>
-<td align="left"><strong>/protocol:*</strong>protocol*</td>
-<td align="left">Specifies the protocol to implement. You can specify <strong>SOAP</strong> (default), <strong>HttpGet</strong>, <strong>HttpPost</strong>, or a custom protocol specified in the configuration file.</td>
-</tr>
-<tr>
-<td align="left"><strong>/proxy:*</strong>URL*</td>
-<td align="left">Specifies the URL of the proxy server to use for HTTP requests. The default is to use the system proxy setting.</td>
-</tr>
-<tr>
-<td align="left"><strong>/proxydomain:*</strong>domain<em>or<strong>/pd:*</strong>domain</em></td>
-<td align="left">Specifies the domain to use when connecting to a proxy server that requires authentication.</td>
-</tr>
-<tr>
-<td align="left"><strong>/proxypassword:*</strong>password<em>or<strong>/pp:*</strong>password</em></td>
-<td align="left">Specifies the password to use when connecting to a proxy server that requires authentication.</td>
-</tr>
-<tr>
-<td align="left"><strong>/proxyusername:*</strong>username<em>or<strong>/pu:*</strong>username</em></td>
-<td align="left">Specifies the user name to use when connecting to a proxy server that requires authentication.</td>
-</tr>
-<tr>
-<td align="left"><strong>/server</strong></td>
-<td align="left">Generates an abstract class for an XML Web service based on the contracts. The default is to generate client proxy classes.</td>
-</tr>
-<tr>
-<td align="left"><strong>/u</strong>[<strong>sername</strong>]<strong>:*</strong>username*</td>
-<td align="left">Specifies the user name to use when connecting to a server that requires authentication.</td>
-</tr>
-<tr>
-<td align="left"><strong>/?</strong></td>
-<td align="left">Displays command syntax and options for the tool.</td>
-</tr>
-</tbody></table>
-<p>例如:</p>
-<pre><code>wsdl http://hostServer/WebserviceRoot/WebServiceName.asmx?WSDL
---out:代表输出的文件名字
-wsdl /out:myProxyClass.cs http://hostServer/WebserviceRoot/WebServiceName.asmx?WSDL
---language 
-wsdl /language:VB /out:myProxyClass.vb http://hostServer/WebserviceRoot/WebServiceName.asmx?WSDL</code></pre><h3 id="什么是svcutil"><a href="#什么是svcutil" class="headerlink" title="什么是svcutil"></a>什么是svcutil</h3><p>​         The ServiceModel Metadata Utility tool is used to generate service model code from metadata documents, and metadata documents from service model code.</p>
-<p>ServiceModel元数据实用工具用于从元数据文档生成服务模型代码，并从服务模型代码生成元数据文档。</p>
-<p>参考地址:<a href="https://docs.microsoft.com/en-us/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe?redirectedfrom=MSDN" target="_blank" rel="noopener">https://docs.microsoft.com/en-us/dotnet/framework/wcf/servicemodel-metadata-utility-tool-svcutil-exe?redirectedfrom=MSDN</a></p>
-<h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><p>1、 这两个工具的主要区别在于 wsdl.exe 工具与 ASMX 服务一起使用并且只生成代理代码；Svcutil.exe 工具与 WCF 服务一起使用，它可以在元数据和代码之间来回转换。</p>
-<p>2、wsdl.exe 的默认行为是同时生成同步和异步方法，而 Svcutil.exe 工具仅在使用/async选项时才会生成异步方法。Svcutil.exe 工具还支持 WCF 中的新功能，例如 wsdl文件中可用于描述服务安全要求的策略部分.</p>
-<p>3、在 wsdl.exe 和 Svcutil.exe 工具之间，只能使用 Svcutil.exe 工具来生成元数据</p>
-<p>4、许多服务使用独立的 XML Schema (XSD) 文件来定义由其他服务共享的通用数据类型。这种方法非常常见，Wsdl.exe 和 Svcutil.exe 工具都可用于从 XML 架构生成适当的数据类型或数据协定。但是，Svcutil.exe 工具在用于 XSD 文件时会受到限制。具体来说，Svcutil.exe 工具只能从 XSD 文件生成数据协定，这意味着它不支持基于属性的架构。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>学无止境。</p>
+                <p>Linq中Count()和Any()引发的效率问题</p>
+<p>当yield循环低于100000次的话，count()和Any()的执行时间差不多，count()时间略大于any()所耗费的时间，<br>当大于100000次的话，count()执行时间就远比Any()执行时间多很多！<br>例如上面的程序执行结果，count耗时2233毫秒，any却只耗时3毫秒<br>原因分析:<br>Any()：<br>public static bool Any<tsource>(this IEnumerable<tsource> source)<br>{<br>    if (source == null)<br>    {<br>        throw Error.ArgumentNull(“source”);<br>    }<br>    using (IEnumerator<tsource> enumerator = source.GetEnumerator())<br>    {<br>        if (enumerator.MoveNext())<br>        {<br>            return true;<br>        }<br>    }<br>    return false;<br>}</tsource></tsource></tsource></p>
+<p>Count():<br>public static int Count<tsource>(this IEnumerable<tsource> source)<br>{<br>    if (source == null)<br>    {<br>        throw Error.ArgumentNull(“source”);<br>    }<br>    ICollection<tsource> is2 = source as ICollection<tsource>;<br>    if (is2 != null)<br>    {<br>        return is2.Count;<br>    }<br>    ICollection is3 = source as ICollection;<br>    if (is3 != null)<br>    {<br>        return is3.Count;<br>    }<br>    int num = 0;<br>    using (IEnumerator<tsource> enumerator = source.GetEnumerator())<br>    {<br>        while (enumerator.MoveNext())<br>        {<br>            num++;<br>        }<br>    }<br>    return num;<br>}<br>无论循环多少次，Any方法执行的时间总是最少的，大概10毫秒之内，我想大家从Any的源码可以知道这个原因，Any方法先判断集合是否为空，然后判断集合是否有数据，只进行一次movenext()，并未进行循环查询集合数量！所以耗费的时间当然一直是最少的了！</tsource></tsource></tsource></tsource></tsource></p>
 
             </div>
             <hr />
@@ -647,9 +541,9 @@ wsdl /language:VB /out:myProxyClass.vb http://hostServer/WebserviceRoot/WebServi
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《wsdl.exe与svcutil.exe区别》
+                    《Any和Count效率问题》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/07/30/wsdl-exe-yu-svcutil-exe-qu-bie/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2022/10/05/any-he-count-xiao-lu-wen-ti/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Kylin
             </a> 采用
@@ -951,41 +845,43 @@ wsdl /language:VB /out:myProxyClass.vb http://hostServer/WebserviceRoot/WebServi
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/08/10/vue3-typescript/">
+                <a href="/2022/10/05/any-he-count-xiao-lu-wen-ti/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="Vue3+TypeScript">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Any和Count效率问题">
                         
-                        <span class="card-title">Vue3+TypeScript</span>
+                        <span class="card-title">Any和Count效率问题</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            学习 Vue3 + TypeScript 笔记记录
+                            Any和Count效率问题
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-10
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-10-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Vue/" class="post-category" target="_blank">
-                                    Vue
+                            <a href="/categories/随笔/" class="post-category" target="_blank">
+                                    随笔
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -996,31 +892,35 @@ wsdl /language:VB /out:myProxyClass.vb http://hostServer/WebserviceRoot/WebServi
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/07/22/abpvnext-zi-dong-zhu-ru/">
+                <a href="/2022/08/30/fa-song-ji-jie-shou-you-jian/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="abpvnext自动注入">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="发送及接收邮件">
                         
-                        <span class="card-title">abpvnext自动注入</span>
+                        <span class="card-title">发送及接收邮件</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            abpvnext自动注入暗藏玄机,记录一下、为了更好的避坑。
+                            导言最近在做一个项目时用到了发送邮件及接收邮件。空闲时把他总结下来、希望能帮助其他的人。
+实现发送邮件我们使用的是SMTP协议、接收邮件使用的是POP3协议，不废话了直接上代码：
+发送邮件:
+
+namespace KylinEmailCor
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-07-22
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-08-30
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
+                            <a href="/categories/C/" class="post-category" target="_blank">
+                                    C#
                                 </a>
                             
                             

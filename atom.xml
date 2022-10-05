@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2022-08-31T02:38:44.929Z</updated>
+  <updated>2022-10-05T06:12:03.796Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Any和Count效率问题</title>
+    <link href="https://lszai90.github.io/2022/10/05/any-he-count-xiao-lu-wen-ti/"/>
+    <id>https://lszai90.github.io/2022/10/05/any-he-count-xiao-lu-wen-ti/</id>
+    <published>2022-10-05T06:08:47.000Z</published>
+    <updated>2022-10-05T06:12:03.796Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linq中Count()和Any()引发的效率问题&lt;/p&gt;
+&lt;p&gt;当yield循环低于100000次的话，count()和Any()的执行时间差不多，count()时间略大于any()所耗费的时间，&lt;br&gt;当大于100000次的话，count()执行时间就远比Any()执行
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>发送及接收邮件</title>
@@ -472,30 +497,6 @@
         
         
           &lt;h6 id=&quot;Sql-Server-事务语法&quot;&gt;&lt;a href=&quot;#Sql-Server-事务语法&quot; class=&quot;headerlink&quot; title=&quot;Sql Server 事务语法&quot;&gt;&lt;/a&gt;Sql Server 事务语法&lt;/h6&gt;&lt;pre
-        
-      
-    
-    </summary>
-    
-      <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>cursor</title>
-    <link href="https://lszai90.github.io/2022/07/04/cursor/"/>
-    <id>https://lszai90.github.io/2022/07/04/cursor/</id>
-    <published>2022-07-04T00:36:02.000Z</published>
-    <updated>2022-07-08T11:27:44.514Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h6 id=&quot;Sql-Server-游标语法&quot;&gt;&lt;a href=&quot;#Sql-Server-游标语法&quot; class=&quot;headerlink&quot; title=&quot;Sql Server 游标语法&quot;&gt;&lt;/a&gt;Sql Server 游标语法&lt;/h6&gt;&lt;pre
         
       
     

@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Any和Count效率问题</title>
+      <link href="/2022/10/05/any-he-count-xiao-lu-wen-ti/"/>
+      <url>/2022/10/05/any-he-count-xiao-lu-wen-ti/</url>
+      
+        <content type="html"><![CDATA[<p>Linq中Count()和Any()引发的效率问题</p><p>当yield循环低于100000次的话，count()和Any()的执行时间差不多，count()时间略大于any()所耗费的时间，<br>当大于100000次的话，count()执行时间就远比Any()执行时间多很多！<br>例如上面的程序执行结果，count耗时2233毫秒，any却只耗时3毫秒<br>原因分析:<br>Any()：<br>public static bool Any<tsource>(this IEnumerable<tsource> source)<br>{<br>    if (source == null)<br>    {<br>        throw Error.ArgumentNull(“source”);<br>    }<br>    using (IEnumerator<tsource> enumerator = source.GetEnumerator())<br>    {<br>        if (enumerator.MoveNext())<br>        {<br>            return true;<br>        }<br>    }<br>    return false;<br>}</tsource></tsource></tsource></p><p>Count():<br>public static int Count<tsource>(this IEnumerable<tsource> source)<br>{<br>    if (source == null)<br>    {<br>        throw Error.ArgumentNull(“source”);<br>    }<br>    ICollection<tsource> is2 = source as ICollection<tsource>;<br>    if (is2 != null)<br>    {<br>        return is2.Count;<br>    }<br>    ICollection is3 = source as ICollection;<br>    if (is3 != null)<br>    {<br>        return is3.Count;<br>    }<br>    int num = 0;<br>    using (IEnumerator<tsource> enumerator = source.GetEnumerator())<br>    {<br>        while (enumerator.MoveNext())<br>        {<br>            num++;<br>        }<br>    }<br>    return num;<br>}<br>无论循环多少次，Any方法执行的时间总是最少的，大概10毫秒之内，我想大家从Any的源码可以知道这个原因，Any方法先判断集合是否为空，然后判断集合是否有数据，只进行一次movenext()，并未进行循环查询集合数量！所以耗费的时间当然一直是最少的了！</tsource></tsource></tsource></tsource></tsource></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>发送及接收邮件</title>
       <link href="/2022/08/30/fa-song-ji-jie-shou-you-jian/"/>
       <url>/2022/08/30/fa-song-ji-jie-shou-you-jian/</url>
