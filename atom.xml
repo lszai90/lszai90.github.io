@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2022-10-05T06:12:03.796Z</updated>
+  <updated>2022-11-07T03:24:17.963Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Office文档结构破坏</title>
+    <link href="https://lszai90.github.io/2022/11/07/office-wen-dang-jie-gou-po-pi/"/>
+    <id>https://lszai90.github.io/2022/11/07/office-wen-dang-jie-gou-po-pi/</id>
+    <published>2022-11-07T02:47:39.000Z</published>
+    <updated>2022-11-07T03:24:17.963Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h1&gt;&lt;p&gt;​          突发事件客户导出的excel 用WPS 能打开、Office的打开提示”&lt;strong&gt;已删除的部件: 有 XML
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Any和Count效率问题</title>
@@ -479,30 +503,6 @@
       
     
     </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>sql事务语法</title>
-    <link href="https://lszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/"/>
-    <id>https://lszai90.github.io/2022/07/04/sql-shi-wu-yu-fa/</id>
-    <published>2022-07-04T00:50:08.000Z</published>
-    <updated>2022-07-08T11:27:14.251Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h6 id=&quot;Sql-Server-事务语法&quot;&gt;&lt;a href=&quot;#Sql-Server-事务语法&quot; class=&quot;headerlink&quot; title=&quot;Sql Server 事务语法&quot;&gt;&lt;/a&gt;Sql Server 事务语法&lt;/h6&gt;&lt;pre
-        
-      
-    
-    </summary>
-    
-      <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
     
     
   </entry>

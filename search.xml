@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Office文档结构破坏</title>
+      <link href="/2022/11/07/office-wen-dang-jie-gou-po-pi/"/>
+      <url>/2022/11/07/office-wen-dang-jie-gou-po-pi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="导言"><a href="#导言" class="headerlink" title="导言"></a>导言</h1><p>​          突发事件客户导出的excel 用WPS 能打开、Office的打开提示”<strong>已删除的部件: 有 XML 错误的 /xl/sharedStrings.xml。 (字符串) xml 字符非法。 行 32，列 24。已删除的记录: /xl/worksheets/sheet1.xml 部分的 单元格信息</strong>“.然后一阵疯狂的百度。</p><h1 id="解决思路："><a href="#解决思路：" class="headerlink" title="解决思路："></a>解决思路：</h1><p>​          首先：看提示我们应该知道 “非法字符破坏了execl的文档结构 导致execl打不开”。不知道是我们国产软件(WPS)把这些问题规避了还是怎么的WPS能打开，OFFICE不能打开。</p><p>xlsx是什么文件的格式:</p><p>​        xlsx是微软“Office Excel”中表格文件的格式；xlsx格式本质上是一个zip文件，主要保存的内容是XML格式的，但文件并不是直接保存在磁盘，而是保存在一个zip文件，然后取扩展名为“.xlsx”；将“.xlsx”格式的文件后缀改为ZIP后解压，解压出来的文件夹中有word这样一个文件夹，它包含了Word文档的大部分内容。</p><p>有了xlsx说明,那我们操作的步骤就有了：</p><p>1、把xlsx 后缀名：改为 .zip或者.rar.</p><p>2、再解压我们得到了此目录：</p><p>![image-20221107110053415](F:\MyDataInfo\My blog 博客\Kylinblog\source_posts\Office文档结构破坏\Office001.png)</p><p>看着是不是很熟悉【注意之前的错误提示】。</p><p>3、点开xl下：</p><p>![image-20221107110256722](F:\MyDataInfo\My blog 博客\Kylinblog\source_posts\Office文档结构破坏\Office002.png)</p><p>4、新建一个execl 打开加载 sharedStrings.xml  然后就会提示你在 哪一行有非法字符</p><p>![image-20221107110352409](F:\MyDataInfo\My blog 博客\Kylinblog\source_posts\Office文档结构破坏\Office003.png)</p><p>5、找到这一行我们怎么来进行找到这个特殊字符的ASCCII码:</p><p>​      利用Sql 查看这个截取出来字符的。</p><p>​     select   char(ASCCII(Substring(‘字段’,0,1)))</p><p>​     UPDATE  表名 SET 字段=REPLACE(字段,CHAR(11),’’)  进行替换。</p><p>​     重新导出: OFFICE也能打开了 非常完美。</p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>问题追根究、总会浮出水面。最重要的解决办法还是通过前端或者后端 把这些非法字符拦截掉不能直接到数据库里面。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Any和Count效率问题</title>
       <link href="/2022/10/05/any-he-count-xiao-lu-wen-ti/"/>
       <url>/2022/10/05/any-he-count-xiao-lu-wen-ti/</url>
