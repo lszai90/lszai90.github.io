@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>git基本操作</title>
+      <link href="/2022/11/19/git-ji-ben-cao-zuo/"/>
+      <url>/2022/11/19/git-ji-ben-cao-zuo/</url>
+      
+        <content type="html"><![CDATA[<p>git init –初始仓库<br>git add *  –添加文件 到暂存区<br>git commit -m “描述” –提交</p><p>—添加仓储<br>git remote add  仓储名字  <a href="https://xxxxxxx/srmtest.git" target="_blank" rel="noopener">https://xxxxxxx/srmtest.git</a></p><p>git push 仓储名字  main</p><p>–创建分支<br>git checkout -b  分支名称</p><p>–使用指定的本地/远程分支创建分支<br>git checkout -b  新分支名称  原分支名称</p><p>–删除分支<br>git branch -d  分支名字<br>–切换分支(不存在则会依据当前分支创建)<br>git checkout  分支名字</p><p>–推送到指定分支<br>git push 仓储名字 分支名字</p><p>–解决冲突后继续变基</p><p>git rebase –continue</p><p>–中止变基</p><p>git rebase –abort</p><p>–软重置commit，即保留commit里面的更改和暂存，HEAD代表当前本地最新的提交，后面跟几个^符号就代表前几个提交，亦可以输入指定commit的Hash</p><p>git reset  –soft HEAD^</p><p>–储藏当前的更改</p><p>git stash save -m “储藏的标题”</p><p>–拉取远程仓库的代码</p><p>git pull</p><p>–应用储藏的代码，0代表最新的储藏，以此类推，亦可以输入 标题或Hash</p><p>git stash apply 0 </p><p>–删除储藏的代码</p><p>git stash drop 0</p><p>右键设置PowerShell菜单<br>cmd   regedit 打开注册表<br>HKEY_CLASSES_ROOT—&gt;Directory–&gt;Background—&gt;Shell<br> 新建OpenPowerShellHere 项  数据=PowerShell 打开<br>在新建command  数据=powershell.exe -noexit -command Set-Location -literalPath ‘%V’</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Office文档结构破坏</title>
       <link href="/2022/11/07/office-wen-dang-jie-gou-po-pi/"/>
       <url>/2022/11/07/office-wen-dang-jie-gou-po-pi/</url>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2022-11-07T03:24:17.963Z</updated>
+  <updated>2022-11-19T11:14:16.457Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git基本操作</title>
+    <link href="https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/"/>
+    <id>https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/</id>
+    <published>2022-11-18T16:26:52.000Z</published>
+    <updated>2022-11-19T11:14:16.457Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;git init –初始仓库&lt;br&gt;git add *  –添加文件 到暂存区&lt;br&gt;git commit -m “描述” –提交&lt;/p&gt;
+&lt;p&gt;—添加仓储&lt;br&gt;git remote add  仓储名字  &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Office文档结构破坏</title>
@@ -480,29 +505,6 @@
     </summary>
     
       <category term="Sql" scheme="https://lszai90.github.io/categories/Sql/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
-    <id>https://lszai90.github.io/2022/07/05/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
-    <published>2022-07-05T00:44:45.527Z</published>
-    <updated>2022-07-08T11:27:29.385Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;title: 统计表空间占用大小&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-07-05 08:44:45&lt;br&gt;password:&lt;br&gt;summary:
-        
-      
-    
-    </summary>
     
     
   </entry>
