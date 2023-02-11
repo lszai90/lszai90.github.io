@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Windows-Docker-安装-RabbitMQ</title>
+      <link href="/2023/02/11/windows-docker-an-zhuang-rabbitmq/"/>
+      <url>/2023/02/11/windows-docker-an-zhuang-rabbitmq/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Windows安装RabbitMQ教程"><a href="#Windows安装RabbitMQ教程" class="headerlink" title="Windows安装RabbitMQ教程"></a>Windows安装RabbitMQ教程</h3><h3 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h3><pre><code>docker pull rabbitmq:3.6.10 rabbitmq:management</code></pre><h3 id="Run-Docker"><a href="#Run-Docker" class="headerlink" title="Run Docker"></a>Run Docker</h3><pre><code>docker run -d --hostname docker_rabbit --name rabbit -e RABBITMQ_DEFAULT_USER=guest -e RABBITMQ_DEFAULT_PASS=guest -p 15672:15672 -p 5672:5672 rabbitmq:management</code></pre><p>-d 后台运行容器；</p><p>–name 指定容器名；</p><p>-p 指定服务运行的端口（5672：应用访问端口；15672：控制台Web端口号）；</p><p>-v 映射目录或文件(根据自行需要配置)；</p><p>–hostname 主机名（RabbitMQ的一个重要注意事项是它根据所谓的 “节点名称” 存储数据，默认为主机名）；</p><p>-e 指定环境变量；（RABBITMQ_DEFAULT_VHOST：默认虚拟机名；RABBITMQ_DEFAULT_USER：默认的用户名；</p><p>RABBITMQ_DEFAULT_PASS：默认用户名的密码）</p><h3 id="当遇到Guest登录时候-提示not-authorised"><a href="#当遇到Guest登录时候-提示not-authorised" class="headerlink" title="当遇到Guest登录时候 提示not_authorised"></a>当遇到Guest登录时候 提示not_authorised</h3><p>进入容器</p><pre><code>1、docker exec -it 容器Id /bin/bash添加用户和密码2、rabbitmqctl add_user jgsoft jgsoft@给用户添加administrator的权限3、rabbitmqctl set_user_tags jgsoft administrator</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Windows Docker 安装 Redis</title>
       <link href="/2023/02/11/windows-docker-an-zhuang-redis/"/>
       <url>/2023/02/11/windows-docker-an-zhuang-redis/</url>

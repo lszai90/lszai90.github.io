@@ -1,3 +1,4 @@
+https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/
 https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/
 https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-mysql/
 https://lszai90.github.io/2022/12/08/tong-ji-biao-kong-jian-zhan-yong-da-xiao/
