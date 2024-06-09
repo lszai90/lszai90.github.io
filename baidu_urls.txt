@@ -1,4 +1,4 @@
-https://lszai90.github.io/2024/04/19/zai-docker-linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/
+https://lszai90.github.io/2024/06/09/linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/
 https://lszai90.github.io/2024/03/28/abp.vnext-she-zhi-mo-ren-yu-yan-qu/
 https://lszai90.github.io/2023/07/13/abp-vnext-fen-bu-shi-shi-wu/
 https://lszai90.github.io/2023/05/13/abp-vnext-kuo-zhan-icurrentuser-deng-lu-shi-zeng-jia-claim/

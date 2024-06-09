@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2024-04-19T05:42:23.348Z</updated>
+  <updated>2024-06-09T01:56:10.762Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -18,10 +18,10 @@
   
   <entry>
     <title></title>
-    <link href="https://lszai90.github.io/2024/04/19/zai-docker-linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/"/>
-    <id>https://lszai90.github.io/2024/04/19/zai-docker-linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/</id>
-    <published>2024-04-19T05:32:30.905Z</published>
-    <updated>2024-04-19T05:42:23.348Z</updated>
+    <link href="https://lszai90.github.io/2024/06/09/linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/"/>
+    <id>https://lszai90.github.io/2024/06/09/linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/</id>
+    <published>2024-06-09T01:51:57.663Z</published>
+    <updated>2024-06-09T01:56:10.762Z</updated>
     
     <summary type="html">
     
@@ -29,7 +29,8 @@
       
         
         
-          &lt;h3 id=&quot;在-Docker-Linux-容器中使用-DevExpress-报告生成-PDF-时，SKFontManager-抛出异常&quot;&gt;&lt;a
+          &lt;hr&gt;
+&lt;p&gt;title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出异常’&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date:
         
       
     
