@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Kylin的博客</title>
+  
+  <subtitle>程序猿的生活</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://lszai90.github.io/"/>
+  <updated>2024-04-19T05:42:23.348Z</updated>
+  <id>https://lszai90.github.io/</id>
+  
+  <author>
+    <name>Kylin</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2024/04/19/zai-docker-linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/"/>
+    <id>https://lszai90.github.io/2024/04/19/zai-docker-linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/</id>
+    <published>2024-04-19T05:32:30.905Z</published>
+    <updated>2024-04-19T05:42:23.348Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;在-Docker-Linux-容器中使用-DevExpress-报告生成-PDF-时，SKFontManager-抛出异常&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>设置默认语言区</title>
+    <link href="https://lszai90.github.io/2024/03/28/abp.vnext-she-zhi-mo-ren-yu-yan-qu/"/>
+    <id>https://lszai90.github.io/2024/03/28/abp.vnext-she-zhi-mo-ren-yu-yan-qu/</id>
+    <published>2024-03-28T01:06:25.000Z</published>
+    <updated>2024-03-28T02:46:55.162Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;设置默认语言区&quot;&gt;&lt;a href=&quot;#设置默认语言区&quot; class=&quot;headerlink&quot; title=&quot;设置默认语言区&quot;&gt;&lt;/a&gt;设置默认语言区&lt;/h3&gt;&lt;h4 id=&quot;第一种-abp-vnext设置默认区的方式：&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Abp VNext 分布式事物</title>
+    <link href="https://lszai90.github.io/2023/07/13/abp-vnext-fen-bu-shi-shi-wu/"/>
+    <id>https://lszai90.github.io/2023/07/13/abp-vnext-fen-bu-shi-shi-wu/</id>
+    <published>2023-07-13T00:30:34.000Z</published>
+    <updated>2023-07-13T01:34:54.185Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;​      &lt;/p&gt;
+&lt;h3 id=&quot;ABP-VNext-分布式事物-Two-Phase-Commit&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2023/05/13/abp-vnext-kuo-zhan-icurrentuser-deng-lu-shi-zeng-jia-claim/"/>
+    <id>https://lszai90.github.io/2023/05/13/abp-vnext-kuo-zhan-icurrentuser-deng-lu-shi-zeng-jia-claim/</id>
+    <published>2023-05-13T02:21:35.079Z</published>
+    <updated>2023-05-13T06:50:58.740Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;第一步-XXXXX-IdentityServer-中添加需要在ICurrentUser-显示的字段信息&quot;&gt;&lt;a href=&quot;#第一步-XXXXX-IdentityServer-中添加需要在ICurrentUser-显示的字段信息&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2023/04/23/abp-vnext-kuo-jian-yong-hu-biao/"/>
+    <id>https://lszai90.github.io/2023/04/23/abp-vnext-kuo-jian-yong-hu-biao/</id>
+    <published>2023-04-23T15:21:51.963Z</published>
+    <updated>2023-04-23T15:29:16.434Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;EntityFrameworkCore-ExtensionMappings&quot;&gt;&lt;a href=&quot;#EntityFrameworkCore-ExtensionMappings&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2023/03/07/redis/"/>
+    <id>https://lszai90.github.io/2023/03/07/redis/</id>
+    <published>2023-03-07T10:31:52.404Z</published>
+    <updated>2023-03-07T11:35:00.108Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Redis&quot;&gt;&lt;a href=&quot;#Redis&quot; class=&quot;headerlink&quot; title=&quot;Redis&quot;&gt;&lt;/a&gt;Redis&lt;/h3&gt;&lt;p&gt;当出现 StackExchange.Redis.RedisConnectionException: No
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows-Docker-安装-RabbitMQ</title>
+    <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/"/>
+    <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/</id>
+    <published>2023-02-11T15:32:34.000Z</published>
+    <updated>2024-04-06T01:14:38.311Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Windows安装RabbitMQ教程&quot;&gt;&lt;a href=&quot;#Windows安装RabbitMQ教程&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows Docker 安装 Redis</title>
+    <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/"/>
+    <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/</id>
+    <published>2023-02-11T14:54:06.000Z</published>
+    <updated>2024-04-06T01:07:15.997Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Windows安装Redis教程&quot;&gt;&lt;a href=&quot;#Windows安装Redis教程&quot; class=&quot;headerlink&quot; title=&quot;Windows安装Redis教程&quot;&gt;&lt;/a&gt;Windows安装Redis教程&lt;/h3&gt;&lt;h4 id=&quot;拉取镜像&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Windows Docker 安装 MySql</title>
+    <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-mysql/"/>
+    <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-mysql/</id>
+    <published>2023-02-11T14:41:16.000Z</published>
+    <updated>2024-04-06T01:13:04.415Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Windows安装MySQL教程&quot;&gt;&lt;a href=&quot;#Windows安装MySQL教程&quot; class=&quot;headerlink&quot; title=&quot;Windows安装MySQL教程&quot;&gt;&lt;/a&gt;Windows安装MySQL教程&lt;/h3&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2023/02/02/api-wen-dang-mo-ban/"/>
+    <id>https://lszai90.github.io/2023/02/02/api-wen-dang-mo-ban/</id>
+    <published>2023-02-02T03:18:42.882Z</published>
+    <updated>2023-02-02T03:21:04.777Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;整改通知发布&quot;&gt;&lt;a href=&quot;#整改通知发布&quot; class=&quot;headerlink&quot; title=&quot;整改通知发布&quot;&gt;&lt;/a&gt;整改通知发布&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h3 id=&quot;整改通知发布-明细保存&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2022/12/08/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
+    <id>https://lszai90.github.io/2022/12/08/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
+    <published>2022-12-07T21:31:12.461Z</published>
+    <updated>2022-07-08T11:27:29.385Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;p&gt;title: 统计表空间占用大小&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-07-05 08:44:45&lt;br&gt;password:&lt;br&gt;summary:
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2022/12/08/kylin-songzai/"/>
+    <id>https://lszai90.github.io/2022/12/08/kylin-songzai/</id>
+    <published>2022-12-07T21:31:11.299Z</published>
+    <updated>2022-07-05T09:20:51.775Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;hr&gt;
+&lt;p&gt;title: Kylin | 关于写博客的七点反思&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-06-11
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>利用Hexo创建自身博客</title>
+    <link href="https://lszai90.github.io/2022/12/08/hello-world/"/>
+    <id>https://lszai90.github.io/2022/12/08/hello-world/</id>
+    <published>2022-12-07T21:31:11.230Z</published>
+    <updated>2022-07-04T00:43:09.451Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>git基本操作</title>
+    <link href="https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/"/>
+    <id>https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/</id>
+    <published>2022-11-18T16:26:52.000Z</published>
+    <updated>2024-06-06T09:56:24.010Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;git-config&quot;&gt;&lt;a href=&quot;#git-config&quot; class=&quot;headerlink&quot; title=&quot;git config&quot;&gt;&lt;/a&gt;git config&lt;/h4&gt;&lt;p&gt;git config –list –查看本地配置&lt;br&gt;git
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Office文档结构破坏</title>
+    <link href="https://lszai90.github.io/2022/11/07/office-wen-dang-jie-gou-po-pi/"/>
+    <id>https://lszai90.github.io/2022/11/07/office-wen-dang-jie-gou-po-pi/</id>
+    <published>2022-11-07T02:47:39.000Z</published>
+    <updated>2022-11-07T03:24:17.963Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h1&gt;&lt;p&gt;​          突发事件客户导出的excel 用WPS 能打开、Office的打开提示”&lt;strong&gt;已删除的部件: 有 XML
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Any和Count效率问题</title>
+    <link href="https://lszai90.github.io/2022/10/05/any-he-count-xiao-lu-wen-ti/"/>
+    <id>https://lszai90.github.io/2022/10/05/any-he-count-xiao-lu-wen-ti/</id>
+    <published>2022-10-05T06:08:47.000Z</published>
+    <updated>2022-10-05T06:12:03.796Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Linq中Count()和Any()引发的效率问题&lt;/p&gt;
+&lt;p&gt;当yield循环低于100000次的话，count()和Any()的执行时间差不多，count()时间略大于any()所耗费的时间，&lt;br&gt;当大于100000次的话，count()执行时间就远比Any()执行
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>发送及接收邮件</title>
+    <link href="https://lszai90.github.io/2022/08/30/fa-song-ji-jie-shou-you-jian/"/>
+    <id>https://lszai90.github.io/2022/08/30/fa-song-ji-jie-shou-you-jian/</id>
+    <published>2022-08-30T00:26:30.000Z</published>
+    <updated>2022-08-31T02:38:44.929Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;最近在做一个项目时用到了发送邮件及接收邮件。空闲时把他总结下来、希望能帮助其他的人。&lt;/p&gt;
+&lt;h2 id=&quot;实现&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="C#" scheme="https://lszai90.github.io/categories/C/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Web性能优化</title>
+    <link href="https://lszai90.github.io/2022/08/23/web-xing-neng-you-hua/"/>
+    <id>https://lszai90.github.io/2022/08/23/web-xing-neng-you-hua/</id>
+    <published>2022-08-23T00:19:14.000Z</published>
+    <updated>2022-08-23T00:31:07.534Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Web性能优化】&quot;&gt;&lt;a href=&quot;#Web性能优化】&quot; class=&quot;headerlink&quot; title=&quot;[Web性能优化】&quot;&gt;&lt;/a&gt;[Web性能优化】&lt;/h1&gt;&lt;h2 id=&quot;1-减少HTTP请求&quot;&gt;&lt;a href=&quot;#1-减少HTTP请求&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>vite和webpack区别</title>
+    <link href="https://lszai90.github.io/2022/08/15/vite-he-webpack-qu-bie/"/>
+    <id>https://lszai90.github.io/2022/08/15/vite-he-webpack-qu-bie/</id>
+    <published>2022-08-15T00:25:07.000Z</published>
+    <updated>2022-08-24T00:06:35.202Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;​       最近在学习Vue3 Vite TypeScript 在打包过程中发现了Vite和WebPack 打包区别。&lt;/p&gt;
+&lt;h2
+        
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="https://lszai90.github.io/categories/Vue/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vue3+TypeScript</title>
+    <link href="https://lszai90.github.io/2022/08/10/vue3-typescript/"/>
+    <id>https://lszai90.github.io/2022/08/10/vue3-typescript/</id>
+    <published>2022-08-10T00:38:25.000Z</published>
+    <updated>2022-08-29T00:07:20.691Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Vue介绍&quot;&gt;&lt;a href=&quot;#Vue介绍&quot; class=&quot;headerlink&quot; title=&quot;Vue介绍&quot;&gt;&lt;/a&gt;Vue介绍&lt;/h2&gt;&lt;p&gt;​         Vue (发音为 /vjuː/，类似 &lt;strong&gt;view&lt;/strong&gt;)
+        
+      
+    
+    </summary>
+    
+      <category term="Vue" scheme="https://lszai90.github.io/categories/Vue/"/>
+    
+    
+  </entry>
+  
+</feed>
