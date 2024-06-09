@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Docker安装SqlServer并开启代理</title>
+      <link href="/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/"/>
+      <url>/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Docker中安装SqlServer"><a href="#Docker中安装SqlServer" class="headerlink" title="Docker中安装SqlServer"></a>Docker中安装SqlServer</h3><h4 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h4><pre><code>docker pull mcr.microsoft.com/mssql/server:2019-latest</code></pre><h4 id="构建sqlserver"><a href="#构建sqlserver" class="headerlink" title="构建sqlserver"></a>构建sqlserver</h4><pre><code>docker run -e &quot;ACCEPT_EULA=Y&quot; -e &quot;MSSQL_SA_PASSWORD=JGSoft@123456&quot;  -p 1433:1433 -m 2000M --memory 2000M --name sqlserver --hostname sqlserver  -d  mcr.microsoft.com/mssql/server:2019-latest</code></pre><h4 id="查看SqlServer-错误日志"><a href="#查看SqlServer-错误日志" class="headerlink" title="查看SqlServer 错误日志"></a>查看SqlServer 错误日志</h4><pre><code>docker exec -t sqlserver cat /var/opt/mssql/log/errorlog</code></pre><h4 id="连接到-SQL-Server-容器内部"><a href="#连接到-SQL-Server-容器内部" class="headerlink" title="连接到 SQL Server[容器内部]"></a>连接到 SQL Server[容器内部]</h4><pre><code>docker exec -it sqlserver &quot;bash&quot;</code></pre><h4 id="登陆SQL-Server-容器内部"><a href="#登陆SQL-Server-容器内部" class="headerlink" title="登陆SQL Server[容器内部]"></a>登陆SQL Server[容器内部]</h4><pre><code>/opt/mssql-tools/bin/sqlcmd -S localhost -U &lt;userid&gt; -P &quot;&lt;YourNewStrong@Passw0rd&gt;&quot;</code></pre><h4 id="开启SQL-SERVER-代理"><a href="#开启SQL-SERVER-代理" class="headerlink" title="开启SQL SERVER 代理"></a>开启SQL SERVER 代理</h4><pre><code>/opt/mssql/bin/mssql-conf set sqlagent.enabled true然后重启docker restart sqlserver</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Docker </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Oracle 中大文本和二进制如何存储</title>
       <link href="/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/"/>
       <url>/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/</url>

@@ -1,3 +1,4 @@
+https://lszai90.github.io/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/
 https://lszai90.github.io/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/
 https://lszai90.github.io/2024/06/09/linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/
 https://lszai90.github.io/2024/03/28/abp.vnext-she-zhi-mo-ren-yu-yan-qu/
