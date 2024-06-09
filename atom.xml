@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2024-06-09T01:56:10.762Z</updated>
+  <updated>2024-06-09T02:16:39.888Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Oracle 中大文本和二进制如何存储</title>
+    <link href="https://lszai90.github.io/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/"/>
+    <id>https://lszai90.github.io/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/</id>
+    <published>2024-06-09T02:07:02.000Z</published>
+    <updated>2024-06-09T02:16:39.888Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Oracle中大文版和二进制如何存储&quot;&gt;&lt;a href=&quot;#Oracle中大文版和二进制如何存储&quot; class=&quot;headerlink&quot; title=&quot;Oracle中大文版和二进制如何存储&quot;&gt;&lt;/a&gt;Oracle中大文版和二进制如何存储&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title></title>
@@ -456,30 +480,6 @@
         
           &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;​       最近在学习Vue3 Vite TypeScript 在打包过程中发现了Vite和WebPack 打包区别。&lt;/p&gt;
 &lt;h2
-        
-      
-    
-    </summary>
-    
-      <category term="Vue" scheme="https://lszai90.github.io/categories/Vue/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Vue3+TypeScript</title>
-    <link href="https://lszai90.github.io/2022/08/10/vue3-typescript/"/>
-    <id>https://lszai90.github.io/2022/08/10/vue3-typescript/</id>
-    <published>2022-08-10T00:38:25.000Z</published>
-    <updated>2022-08-29T00:07:20.691Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Vue介绍&quot;&gt;&lt;a href=&quot;#Vue介绍&quot; class=&quot;headerlink&quot; title=&quot;Vue介绍&quot;&gt;&lt;/a&gt;Vue介绍&lt;/h2&gt;&lt;p&gt;​         Vue (发音为 /vjuː/，类似 &lt;strong&gt;view&lt;/strong&gt;)
         
       
     

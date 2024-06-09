@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>Oracle 中大文本和二进制如何存储</title>
+      <link href="/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/"/>
+      <url>/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Oracle中大文版和二进制如何存储"><a href="#Oracle中大文版和二进制如何存储" class="headerlink" title="Oracle中大文版和二进制如何存储"></a>Oracle中大文版和二进制如何存储</h3><h4 id="问题由来"><a href="#问题由来" class="headerlink" title="问题由来"></a>问题由来</h4><p>最近项目从SqlServer迁移到Oracle 数据中,遇到大文本和二进制流的问题故作为日常的记录、方便以后查阅</p><h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><h5 id="二进制流"><a href="#二进制流" class="headerlink" title="二进制流"></a>二进制流</h5><pre><code>/// &lt;summary&gt;/// 业务打印模板/// &lt;/summary&gt;builder.Entity&lt;BizType_Report&gt;(b =&gt;{    b.ToTable(&quot;Sys_BizType_Report&quot;, options.Schema);    b.Property(p =&gt; p.RReport).HasColumnType(&quot;BLOB&quot;);    b.ConfigureByConvention();});</code></pre><h5 id="大文本"><a href="#大文本" class="headerlink" title="大文本"></a>大文本</h5><pre><code>builder.Entity&lt;Sys_BaseModuleVueCode&gt;(b =&gt;{    b.ToTable(options.TablePrefix + &quot;BaseModuleVueCode&quot;);    b.Property(p =&gt; p.VueJson).HasColumnType(&quot;CLOB&quot;);});</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/2024/06/09/linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/"/>
       <url>/2024/06/09/linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/</url>
