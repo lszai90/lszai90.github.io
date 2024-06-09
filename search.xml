@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Docker中安装ES和Kibana</title>
+      <link href="/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/"/>
+      <url>/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Docker中安装ES和Kibana"><a href="#Docker中安装ES和Kibana" class="headerlink" title="Docker中安装ES和Kibana"></a>Docker中安装ES和Kibana</h3><h4 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h4><pre><code>docker pull docker.elastic.co/elasticsearch/elasticsearch:7.14.0</code></pre><h4 id="启动镜像"><a href="#启动镜像" class="headerlink" title="启动镜像"></a>启动镜像</h4><pre><code>docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; docker.elastic.co/elasticsearch/elasticsearch:7.14.0</code></pre><h4 id="拉取-Kibana-镜像"><a href="#拉取-Kibana-镜像" class="headerlink" title="拉取 Kibana 镜像"></a>拉取 Kibana 镜像</h4><pre><code>docker pull docker.elastic.co/kibana/kibana:7.14.0 </code></pre><h4 id="创建软连接-link-elasticsearch"><a href="#创建软连接-link-elasticsearch" class="headerlink" title="创建软连接-link elasticsearch"></a>创建软连接-link elasticsearch</h4><pre><code>docker run -d --name kibana --link elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:7.14.0</code></pre><h4 id="将-kibana设置中文（可选）"><a href="#将-kibana设置中文（可选）" class="headerlink" title="将 kibana设置中文（可选）"></a>将 kibana设置中文（可选）</h4><h5 id="进入容器内部"><a href="#进入容器内部" class="headerlink" title="进入容器内部"></a>进入容器内部</h5><pre><code>docker exec -it 0bcd8fda4c27 /bin/bash</code></pre><h5 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h5><p>在config文件夹中找到kibana.yml文件，并用文本编辑器打开。在文件中找到i18n.locale属性，并将其值更改为zh-CN，表示设置为中文。如果找不到该属性，可以在文件中添加以下行：<br>i18n.locale: “zh-CN”</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Docker安装SqlServer并开启代理</title>
       <link href="/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/"/>
       <url>/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/</url>
