@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>C#反射执行方法</title>
+      <link href="/2024/06/11/c-fan-she-zhi-xing-fang-fa/"/>
+      <url>/2024/06/11/c-fan-she-zhi-xing-fang-fa/</url>
+      
+        <content type="html"><![CDATA[<h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><h4 id="获取当前程序集运行路径"><a href="#获取当前程序集运行路径" class="headerlink" title="获取当前程序集运行路径"></a>获取当前程序集运行路径</h4><pre><code> string currentDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);</code></pre><h4 id="反射执行其方法"><a href="#反射执行其方法" class="headerlink" title="反射执行其方法"></a>反射执行其方法</h4><p>assemblyPath 程序集路径 xxxxx.dll<br>typeName  命名空间.类名<br>methodName 执行方法</p><pre><code>   DirectoryInfo directory = new DirectoryInfo(currentDirectory);   FileInfo[] fileInfos = directory.GetFiles(assemblyPath);   if (fileInfos.Length &gt; 0)   {       try       {           string DirectoryName = fileInfos[0].FullName;           // 加载程序集            Assembly assembly = Assembly.Load(File.ReadAllBytes(DirectoryName));           // 获取类型           Type type = assembly.GetType(typeName);           // 创建实例           object instance = Activator.CreateInstance(type);           // 获取方法           MethodInfo method = type.GetMethod(methodName);           // 执行方法           method.Invoke(instance, null);       }       catch (Exception ex)       {           Console.WriteLine(&quot;发生错误: &quot; + ex.Message);       }   }</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 随笔 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> C# </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Docker中安装ES和Kibana</title>
       <link href="/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/"/>
       <url>/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/</url>

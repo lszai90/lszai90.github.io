@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2024-06-09T02:40:28.764Z</updated>
+  <updated>2024-06-11T00:58:28.578Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>C#反射执行方法</title>
+    <link href="https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/"/>
+    <id>https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/</id>
+    <published>2024-06-11T00:52:24.000Z</published>
+    <updated>2024-06-11T00:58:28.578Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;基本语法&quot;&gt;&lt;a href=&quot;#基本语法&quot; class=&quot;headerlink&quot; title=&quot;基本语法&quot;&gt;&lt;/a&gt;基本语法&lt;/h3&gt;&lt;h4 id=&quot;获取当前程序集运行路径&quot;&gt;&lt;a href=&quot;#获取当前程序集运行路径&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="C#" scheme="https://lszai90.github.io/tags/C/"/>
+    
+  </entry>
   
   <entry>
     <title>Docker中安装ES和Kibana</title>
@@ -464,31 +490,6 @@
     </summary>
     
       <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>发送及接收邮件</title>
-    <link href="https://lszai90.github.io/2022/08/30/fa-song-ji-jie-shou-you-jian/"/>
-    <id>https://lszai90.github.io/2022/08/30/fa-song-ji-jie-shou-you-jian/</id>
-    <published>2022-08-30T00:26:30.000Z</published>
-    <updated>2022-08-31T02:38:44.929Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h2&gt;&lt;p&gt;最近在做一个项目时用到了发送邮件及接收邮件。空闲时把他总结下来、希望能帮助其他的人。&lt;/p&gt;
-&lt;h2 id=&quot;实现&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="C#" scheme="https://lszai90.github.io/categories/C/"/>
     
     
   </entry>
