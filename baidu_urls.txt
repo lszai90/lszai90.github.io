@@ -1,3 +1,4 @@
+https://lszai90.github.io/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/
 https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/
 https://lszai90.github.io/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/
 https://lszai90.github.io/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/

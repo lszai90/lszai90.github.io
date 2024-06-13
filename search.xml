@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Liunx服务器时间和本地时间不一致</title>
+      <link href="/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/"/>
+      <url>/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Liunx-服务器时间和本地不一致"><a href="#Liunx-服务器时间和本地不一致" class="headerlink" title="Liunx 服务器时间和本地不一致"></a>Liunx 服务器时间和本地不一致</h3><h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><h5 id="第一步-Dockerfile"><a href="#第一步-Dockerfile" class="headerlink" title="第一步 Dockerfile"></a>第一步 Dockerfile</h5><pre><code># 设置上海时区.(Set your own time zone.)ENV TZ=Asia/ShanghaiRUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &amp;&amp; echo &#39;$TZ&#39; &gt; /etc/timezone</code></pre><h5 id="第二步-同步网络时间"><a href="#第二步-同步网络时间" class="headerlink" title="第二步 同步网络时间"></a>第二步 同步网络时间</h5><pre><code>首先查看同步时间 timedatectl status</code></pre><pre><code>第二 安装 ntpyum install ntp</code></pre><pre><code>第三:同步时间ntpdate time.nist.gov</code></pre><pre><code>如果失败--查看 ntpd 状态systemctl status ntpd</code></pre><pre><code>如果是 active(dead)重启 ntpd 服务systemctl restart ntpd.service</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Liunx </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Liunx </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>C#反射执行方法</title>
       <link href="/2024/06/11/c-fan-she-zhi-xing-fang-fa/"/>
       <url>/2024/06/11/c-fan-she-zhi-xing-fang-fa/</url>

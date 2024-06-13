@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2024-06-11T00:58:28.578Z</updated>
+  <updated>2024-06-13T06:35:27.880Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Liunx服务器时间和本地时间不一致</title>
+    <link href="https://lszai90.github.io/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/"/>
+    <id>https://lszai90.github.io/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/</id>
+    <published>2024-06-13T06:30:09.000Z</published>
+    <updated>2024-06-13T06:35:27.880Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Liunx-服务器时间和本地不一致&quot;&gt;&lt;a href=&quot;#Liunx-服务器时间和本地不一致&quot; class=&quot;headerlink&quot; title=&quot;Liunx 服务器时间和本地不一致&quot;&gt;&lt;/a&gt;Liunx 服务器时间和本地不一致&lt;/h3&gt;&lt;h4
+        
+      
+    
+    </summary>
+    
+      <category term="Liunx" scheme="https://lszai90.github.io/categories/Liunx/"/>
+    
+    
+      <category term="Liunx" scheme="https://lszai90.github.io/tags/Liunx/"/>
+    
+  </entry>
   
   <entry>
     <title>C#反射执行方法</title>
@@ -459,31 +485,6 @@
         
         
           &lt;h1 id=&quot;导言&quot;&gt;&lt;a href=&quot;#导言&quot; class=&quot;headerlink&quot; title=&quot;导言&quot;&gt;&lt;/a&gt;导言&lt;/h1&gt;&lt;p&gt;​          突发事件客户导出的excel 用WPS 能打开、Office的打开提示”&lt;strong&gt;已删除的部件: 有 XML
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Any和Count效率问题</title>
-    <link href="https://lszai90.github.io/2022/10/05/any-he-count-xiao-lu-wen-ti/"/>
-    <id>https://lszai90.github.io/2022/10/05/any-he-count-xiao-lu-wen-ti/</id>
-    <published>2022-10-05T06:08:47.000Z</published>
-    <updated>2022-10-05T06:12:03.796Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Linq中Count()和Any()引发的效率问题&lt;/p&gt;
-&lt;p&gt;当yield循环低于100000次的话，count()和Any()的执行时间差不多，count()时间略大于any()所耗费的时间，&lt;br&gt;当大于100000次的话，count()执行时间就远比Any()执行
         
       
     

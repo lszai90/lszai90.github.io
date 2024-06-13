@@ -4,12 +4,13 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="C# .NetCore  ABP ABP.IO  Vue TS NodeJS MYSQL SERVER MQ Redis dapper ">
+    <meta name="keywords" content="Liunx服务器时间和本地时间不一致, C# .NetCore  ABP ABP.IO  Vue TS NodeJS MYSQL SERVER MQ Redis dapper ">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="
-title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出异常’top: falsecover: falsetoc: truemathjax: truedate: 2024-06-09 09">
+    <meta name="description" content="Liunx 服务器时间和本地不一致解决办法第一步 Dockerfile# 设置上海时区.(Set your own time zone.)
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zonein">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -17,7 +18,7 @@ title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出�
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Kylin的博客</title>
+    <title>Liunx服务器时间和本地时间不一致 | Kylin的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -330,13 +331,13 @@ title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        
+                        Liunx服务器时间和本地时间不一致
                     </div>
                 </div>
             </div>
@@ -446,11 +447,24 @@ title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出�
                 <div class="col s7">
                     
                     <div class="article-tag">
-                        <span class="chip bg-color">无标签</span>
+                        
+                        <a href="/tags/Liunx/" target="_blank">
+                            <span class="chip bg-color">Liunx</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/Liunx/" class="post-category" target="_blank">
+                            Liunx
+                        </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -458,7 +472,7 @@ title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出�
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2024-06-09
+                    2024-06-13
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -472,14 +486,14 @@ title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出�
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    546
+                    116
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    3 分
+                    1 分
                 </div>
                 
                 
@@ -495,33 +509,16 @@ title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出�
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <hr>
-<p>title: ‘Linux容器中使用DevExpress报告生成PDF时,SKFontManager 抛出异常’<br>top: false<br>cover: false<br>toc: true<br>mathjax: true<br>date: 2024-06-09 09:51:57<br>password:<br>summary: 在项目使用SkiaSharp抛出异常 The type initializer for ‘SkiaSharp.SKFontManager’ threw an exception<br>tags:<br>categories:<br>—随记</p>
-<h3 id="问题原因"><a href="#问题原因" class="headerlink" title="问题原因"></a>问题原因</h3><pre><code>    2024-04-19 10:11:28 [ERR] [Volo.Abp.AspNetCore.Mvc.ExceptionHandling.AbpExceptionFilter] [1] [69] - The type initializer for &#39;SkiaSharp.SKFontManager&#39; threw an exception.
-    System.TypeInitializationException: The type initializer for &#39;SkiaSharp.SKFontManager&#39; threw an exception.
-    ---&gt; System.DllNotFoundException: Unable to load shared library &#39;libSkiaSharp&#39; or one of its dependencies. In order to help diagnose loading problems, consider using a tool like strace. If you&#39;re using glibc, consider setting the LD_DEBUG environment variable: 
-    libfontconfig.so.1: cannot open shared object file: No such file or directory
-    /usr/share/dotnet/shared/Microsoft.NETCore.App/7.0.17/libSkiaSharp.so: cannot open shared object file: No such file or directory
-    /app/libSkiaSharp.so: cannot open shared object file: No such file or directory
-    /app/runtimes/linux-x64/native/liblibSkiaSharp.so: cannot open shared object file: No such file or directory
-    /usr/share/dotnet/shared/Microsoft.NETCore.App/7.0.17/liblibSkiaSharp.so: cannot open shared object file: No such file or directory
-    /app/liblibSkiaSharp.so: cannot open shared object file: No such file or directory
-    /app/runtimes/linux-x64/native/libSkiaSharp: cannot open shared object file: No such file or directory
-    /usr/share/dotnet/shared/Microsoft.NETCore.App/7.0.17/libSkiaSharp: cannot open shared object file: No such file or directory
-    /app/libSkiaSharp: cannot open shared object file: No such file or directory
-    /app/runtimes/linux-x64/native/liblibSkiaSharp: cannot open shared object file: No such file or directory
-    /usr/share/dotnet/shared/Microsoft.NETCore.App/7.0.17/liblibSkiaSharp: cannot open shared object file: No such file or directory
-    /app/liblibSkiaSharp: cannot open shared object file: No such file or directory</code></pre><h3 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h3><h4 id="在项目引用包"><a href="#在项目引用包" class="headerlink" title="在项目引用包"></a>在项目引用包</h4><pre><code>    &lt;PackageReference Include=&quot;DevExpress.Drawing.Skia&quot; Version=&quot;23.2.3&quot; /&gt;
-    &lt;PackageReference Include=&quot;DevExpress.Drawing.Skia.es&quot; Version=&quot;23.2.3&quot; /&gt;
-    &lt;PackageReference Include=&quot;DevExpress.Drawing.Skia.de&quot; Version=&quot;23.2.3&quot; /&gt;
-    &lt;PackageReference Include=&quot;DevExpress.Drawing.Skia.ja&quot; Version=&quot;23.2.3&quot; /&gt;
-    &lt;PackageReference Include=&quot;DevExpress.Drawing.es&quot; Version=&quot;23.2.3&quot; /&gt;
-    &lt;PackageReference Include=&quot;DevExpress.Drawing.de&quot; Version=&quot;23.2.3&quot; /&gt;
-    &lt;PackageReference Include=&quot;DevExpress.Drawing.ja&quot; Version=&quot;23.2.3&quot; /&gt;
-    &lt;PackageReference Include=&quot;SkiaSharp&quot; Version=&quot;2.88.8&quot; /&gt;
-    &lt;PackageReference Include=&quot;SkiaSharp.NativeAssets.Linux.NoDependencies&quot; Version=&quot;2.88.8&quot; /&gt;</code></pre><h4 id="在容器中安装"><a href="#在容器中安装" class="headerlink" title="在容器中安装"></a>在容器中安装</h4><pre><code>apt-get update &amp;&amp; \
-apt-get install libfreetype6 libfontconfig1 libjpeg62-turbo libpng16-16 zlib1g libx11-6 libxext6 libxrandr2 libxinerama1 libxcursor1 libxi6 </code></pre><h4 id="为了防止每次手工安装-可以写在DockFile中"><a href="#为了防止每次手工安装-可以写在DockFile中" class="headerlink" title="为了防止每次手工安装 可以写在DockFile中"></a>为了防止每次手工安装 可以写在DockFile中</h4><pre><code>RUN apt-get update &amp;&amp; \
-apt-get install libfreetype6 libfontconfig1 libjpeg62-turbo libpng16-16 zlib1g libx11-6 libxext6 libxrandr2 libxinerama1 libxcursor1 libxi6 </code></pre>
+                <h3 id="Liunx-服务器时间和本地不一致"><a href="#Liunx-服务器时间和本地不一致" class="headerlink" title="Liunx 服务器时间和本地不一致"></a>Liunx 服务器时间和本地不一致</h3><h4 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h4><h5 id="第一步-Dockerfile"><a href="#第一步-Dockerfile" class="headerlink" title="第一步 Dockerfile"></a>第一步 Dockerfile</h5><pre><code># 设置上海时区.(Set your own time zone.)
+ENV TZ=Asia/Shanghai
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime &amp;&amp; echo &#39;$TZ&#39; &gt; /etc/timezone</code></pre><h5 id="第二步-同步网络时间"><a href="#第二步-同步网络时间" class="headerlink" title="第二步 同步网络时间"></a>第二步 同步网络时间</h5><pre><code>首先查看同步时间
+ timedatectl status</code></pre><pre><code>第二 安装 ntp
+yum install ntp</code></pre><pre><code>第三:同步时间
+ntpdate time.nist.gov</code></pre><pre><code>如果失败
+--查看 ntpd 状态
+systemctl status ntpd</code></pre><pre><code>如果是 active(dead)
+重启 ntpd 服务
+systemctl restart ntpd.service</code></pre>
             </div>
             <hr />
 
@@ -555,9 +552,9 @@ apt-get install libfreetype6 libfontconfig1 libjpeg62-turbo libpng16-16 zlib1g l
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《》
+                    《Liunx服务器时间和本地时间不一致》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2024/06/09/linux-rong-qi-zhong-shi-yong-devexpress-bao-gao-sheng-cheng-pdf-shi-skfontmanager-pao-chu-yi-chang/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Kylin
             </a> 采用
@@ -859,32 +856,80 @@ apt-get install libfreetype6 libfontconfig1 libjpeg62-turbo libpng16-16 zlib1g l
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2024/06/09/oracle-zhong-da-wen-ben-he-er-jin-zhi-ru-he-cun-chu/">
+                <a href="/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="Oracle 中大文本和二进制如何存储">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Liunx服务器时间和本地时间不一致">
                         
-                        <span class="card-title">Oracle 中大文本和二进制如何存储</span>
+                        <span class="card-title">Liunx服务器时间和本地时间不一致</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Oracle中大文版和二进制如何存储问题由来最近项目从SqlServer迁移到Oracle 数据中,遇到大文本和二进制流的问题故作为日常的记录、方便以后查阅
-解决办法二进制流/// &lt;summary&gt;
-/// 业务打印模板
-//
+                            Liunx服务器时间和本地时间不一致
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2024-06-09
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-06-13
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Liunx/" class="post-category" target="_blank">
+                                    Liunx
+                                </a>
+                            
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Liunx/" target="_blank">
+                        <span class="chip bg-color">Liunx</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2024/06/11/c-fan-she-zhi-xing-fang-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="C#反射执行方法">
+                        
+                        <span class="card-title">C#反射执行方法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            C#反射
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-06-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -898,48 +943,12 @@ apt-get install libfreetype6 libfontconfig1 libjpeg62-turbo libpng16-16 zlib1g l
                     </div>
                 </div>
                 
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2024/03/28/abp.vnext-she-zhi-mo-ren-yu-yan-qu/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="设置默认语言区">
-                        
-                        <span class="card-title">设置默认语言区</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            设置默认语言区第一种: abp.vnext设置默认区的方式：Configure&lt;AbpLocalizationOptions&gt;(options =&gt;
-{
-    options.Resources
-        .Add
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-03-28
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fa fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/C/" target="_blank">
+                        <span class="chip bg-color">C#</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1083,6 +1092,25 @@ apt-get install libfreetype6 libfontconfig1 libjpeg62-turbo libpng16-16 zlib1g l
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">
