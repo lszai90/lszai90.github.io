@@ -4,27 +4,12 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="C# .NetCore  ABP ABP.IO  Vue TS NodeJS MYSQL SERVER MQ Redis dapper ">
+    <meta name="keywords" content="sql转linq(Linqer), C# .NetCore  ABP ABP.IO  Vue TS NodeJS MYSQL SERVER MQ Redis dapper ">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="整改通知发布
-整改通知发布_明细保存
-
-   请求路径
-   /api/services/app/CrudProviderRectification/PRSaveAsync
-
-
-  请求方式
-   PSOT
-
- 
-
-
-
-请求参数
-
-   参">
+    <meta name="description" content="Sql转Linq由于对linq语法不是很精通、通过工具进行效验
+参考地址https://learn.microsoft.com/zh-cn/previous-versions/dotnet/netframework-4.0/bb386987">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -32,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Kylin的博客</title>
+    <title>sql转linq(Linqer) | Kylin的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -345,13 +330,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        
+                        sql转linq(Linqer)
                     </div>
                 </div>
             </div>
@@ -467,13 +452,22 @@
                 </div>
                 <div class="col s5 right-align">
                     
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                        <a href="/categories/Linq/" class="post-category" target="_blank">
+                            Linq
+                        </a>
+                        
+                    </div>
+                    
                 </div>
             </div>
 
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-02-02
+                    2024-06-14
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -487,7 +481,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    96
+                    270
                 </div>
                 
 
@@ -510,57 +504,15 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="整改通知发布"><a href="#整改通知发布" class="headerlink" title="整改通知发布"></a>整改通知发布</h2><p><br><br></p>
-<h3 id="整改通知发布-明细保存"><a href="#整改通知发布-明细保存" class="headerlink" title="整改通知发布_明细保存"></a>整改通知发布_明细保存</h3><table border="2">
-<tr>
-   <td style="background: lightgray;">请求路径</td>
-   <td>/api/services/app/CrudProviderRectification/PRSaveAsync</td>
-</tr>
-<tr>
-  <td style="background: lightgray;">请求方式</td>
-   <td>PSOT</td>
-</tr>
-</table> 
+                <h3 id="Sql转Linq"><a href="#Sql转Linq" class="headerlink" title="Sql转Linq"></a>Sql转Linq</h3><p>由于对linq语法不是很精通、通过工具进行效验</p>
+<h4 id="参考地址"><a href="#参考地址" class="headerlink" title="参考地址"></a>参考地址</h4><pre><code>https://learn.microsoft.com/zh-cn/previous-versions/dotnet/netframework-4.0/bb386987(v=vs.100)?redirectedfrom=MSDN</code></pre><h4 id="如何使用sqlmetal"><a href="#如何使用sqlmetal" class="headerlink" title="如何使用sqlmetal"></a>如何使用sqlmetal</h4><p>下载地址</p>
+<p>注意<br>使用 Visual Studio 的开发人员还可以使用对象关系设计器生成实体类。对于大型数据库，这种命令行方式具有很好的可伸缩性。由于 SqlMetal 是一个命令行工具，因此可以在生成过程中使用它。有关更多信息，请参见 对象关系设计器（O/R 设计器） 和 对象关系设计器（O/R 设计器） 和 对象关系设计器（O/R 设计器）.</p>
+<h4 id="由于通过Linqer生成文件非常慢且容易失败"><a href="#由于通过Linqer生成文件非常慢且容易失败" class="headerlink" title="由于通过Linqer生成文件非常慢且容易失败"></a>由于通过Linqer生成文件非常慢且容易失败</h4><p>通过命令生成</p>
+<pre><code>---.dbml
+sqlmetal /conn:server=172.22.1.145,1433;database=JGSRM-v4;uid=sa;pwd=jgsoft@123;TrustServerCertificate=True /dbml:D:\MyDataInfo\SQL转Linq工具\dbmlfile\zongshen.dbml
+--.designer.cs
+sqlmetal /conn:server=172.22.1.145,1433;database=JGSRM-v4;uid=sa;pwd=jgsoft@123;TrustServerCertificate=True  /code:D:\MyDataInfo\SQL转Linq工具\dbmlfile\zongshen.designer.cs</code></pre><h4 id="在Linqer选择文件路径"><a href="#在Linqer选择文件路径" class="headerlink" title="在Linqer选择文件路径"></a>在Linqer选择文件路径</h4><p>这里就不插入图片</p>
 
-<br>
-
-<h4 id="请求参数"><a href="#请求参数" class="headerlink" title="请求参数"></a>请求参数</h4><table border="2">
-<tr style="background: lightgray;">
-   <td>参数名</td>
-   <td>数据类型</td>
-   <td>必填</td>
-   <td>最大长度</td>
-   <td>说明</td>
-</tr>
-<tr>
-   <td>id</td>
-   <td>long</td>
-   <td>是</td>
-   <td>N/A</td>
-   <td>数据的Id</td>
-</tr>
-</table> 
-
-<h4 id="请求示例"><a href="#请求示例" class="headerlink" title="请求示例"></a>请求示例</h4><pre><code></code></pre><br>
-
-<h4 id="响应参数"><a href="#响应参数" class="headerlink" title="响应参数"></a>响应参数</h4><table border="2">
-<tr style="background: lightgray;">
-   <td>参数名</td>
-   <td>数据类型</td>
-   <td>必有值</td>
-   <td>最大长度</td>
-   <td>说明</td>
-</tr>
-<tr>
-   <td>id</td>
-   <td>long</td>
-   <td>是</td>
-   <td>N/A</td>
-   <td>数据的Id</td>
-</tr>
-</table> 
-
-<h4 id="响应示例"><a href="#响应示例" class="headerlink" title="响应示例"></a>响应示例</h4><pre><code></code></pre>
             </div>
             <hr />
 
@@ -594,9 +546,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《》
+                    《sql转linq(Linqer)》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2023/02/02/api-wen-dang-mo-ban/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2024/06/14/sql-zhuan-linq-linqer/" property="cc:attributionName"
                rel="cc:attributionURL">
                 Kylin
             </a> 采用
@@ -898,43 +850,43 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2023/02/11/windows-docker-an-zhuang-mysql/">
+                <a href="/2024/06/14/sql-zhuan-linq-linqer/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Windows Docker 安装 MySql">
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="sql转linq(Linqer)">
                         
-                        <span class="card-title">Windows Docker 安装 MySql</span>
+                        <span class="card-title">sql转linq(Linqer)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Windows安装MySQL教程https://blog.csdn.net/u012643122/article/details/125899829
-查看镜像docker search mysql拉取镜像5.7
-1、docker pull 
+                            sql转linq
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2023-02-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-06-14
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/随笔/" class="post-category" target="_blank">
-                                    随笔
+                            <a href="/categories/Linq/" class="post-category" target="_blank">
+                                    Linq
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -945,30 +897,44 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/12/08/tong-ji-biao-kong-jian-zhan-yong-da-xiao/">
+                <a href="/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Liunx服务器时间和本地时间不一致">
                         
-                        <span class="card-title"></span>
+                        <span class="card-title">Liunx服务器时间和本地时间不一致</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
-title: 统计表空间占用大小top: falsecover: falsetoc: truemathjax: truedate: 2022-07-05 08:44:45password:summary: 统计表空间占用大小tags:ca
+                            Liunx服务器时间和本地时间不一致
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2022-12-08
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-06-13
                             </span>
                         <span class="publish-author">
                             
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/Liunx/" class="post-category" target="_blank">
+                                    Liunx
+                                </a>
+                            
+                            
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Liunx/" target="_blank">
+                        <span class="chip bg-color">Liunx</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1112,6 +1078,25 @@ title: 统计表空间占用大小top: falsecover: falsetoc: truemathjax: trueda
     
 
 </main>
+
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\(', '\)']]}
+    });
+</script>
+
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+<!-- 代码语言 -->
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+<!-- 代码块复制 -->
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+<script type="text/javascript" src="/libs/codeBlock/clipboard.min.js"></script>
+<!-- 代码块收缩 -->
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script> 
+<!-- 代码块折行 -->
+<style type="text/css">code[class*="language-"], pre[class*="language-"] { white-space: pre !important; }</style>
 
 
     <footer class="page-footer bg-color">
