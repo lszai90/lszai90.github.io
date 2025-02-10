@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2024-11-13T15:08:15.000Z</updated>
+  <updated>2025-02-10T02:20:42.447Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,124 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AbpVNext审计日志学习</title>
+    <link href="https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/"/>
+    <id>https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/</id>
+    <published>2025-02-10T02:07:37.000Z</published>
+    <updated>2025-02-10T02:20:42.447Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Abp-VNext-日志分为4类日志&quot;&gt;&lt;a href=&quot;#Abp-VNext-日志分为4类日志&quot; class=&quot;headerlink&quot; title=&quot;Abp VNext 日志分为4类日志&quot;&gt;&lt;/a&gt;Abp VNext
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>NetCoreDump分析</title>
+    <link href="https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/"/>
+    <id>https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/</id>
+    <published>2025-02-08T05:56:05.000Z</published>
+    <updated>2025-02-10T06:55:09.157Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;  由于.NET CORE 程序部署在Liunx 随着时间推移 耗用的内存只增不减,内存消耗异常、记录一下如何分析，参考文章:&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term=".NetCore" scheme="https://lszai90.github.io/categories/NetCore/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>微信小程序开发</title>
+    <link href="https://lszai90.github.io/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/"/>
+    <id>https://lszai90.github.io/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/</id>
+    <published>2024-11-20T03:48:56.000Z</published>
+    <updated>2024-11-20T03:49:47.074Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;微信小程序开发&quot;&gt;&lt;a href=&quot;#微信小程序开发&quot; class=&quot;headerlink&quot; title=&quot;微信小程序开发&quot;&gt;&lt;/a&gt;微信小程序开发&lt;/h3&gt;&lt;p&gt;小程序地址&lt;br&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Abp VNext扩展登陆方式</title>
+    <link href="https://lszai90.github.io/2024/11/18/abp-vnext-kuo-zhan-deng-lu-fang-shi/"/>
+    <id>https://lszai90.github.io/2024/11/18/abp-vnext-kuo-zhan-deng-lu-fang-shi/</id>
+    <published>2024-11-18T13:36:51.000Z</published>
+    <updated>2024-11-19T09:56:35.030Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;Abp-VNext-OAuth-2-0-grant-type-扩展登陆方式&quot;&gt;&lt;a href=&quot;#Abp-VNext-OAuth-2-0-grant-type-扩展登陆方式&quot; class=&quot;headerlink&quot; title=&quot;Abp-VNext OAuth
+        
+      
+    
+    </summary>
+    
+    
+      <category term="随笔" scheme="https://lszai90.github.io/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MinIO使用手册</title>
+    <link href="https://lszai90.github.io/2024/11/13/minio-shi-yong-shou-ce/"/>
+    <id>https://lszai90.github.io/2024/11/13/minio-shi-yong-shou-ce/</id>
+    <published>2024-11-13T15:11:03.000Z</published>
+    <updated>2024-11-19T09:58:11.788Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;简介-MinIO&quot;&gt;&lt;a href=&quot;#简介-MinIO&quot; class=&quot;headerlink&quot; title=&quot;简介 MinIO&quot;&gt;&lt;/a&gt;简介 MinIO&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;MinIO 是一款高性能、分布式的对象存储系统. 它是一款软件产品,
+        
+      
+    
+    </summary>
+    
+      <category term="工具" scheme="https://lszai90.github.io/categories/%E5%B7%A5%E5%85%B7/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>sql转linq(Linqer)</title>
@@ -312,7 +430,7 @@
     <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/"/>
     <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/</id>
     <published>2023-02-11T15:32:34.000Z</published>
-    <updated>2024-04-06T01:14:38.311Z</updated>
+    <updated>2024-11-14T05:39:02.667Z</updated>
     
     <summary type="html">
     
@@ -336,7 +454,7 @@
     <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/"/>
     <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/</id>
     <published>2023-02-11T14:54:06.000Z</published>
-    <updated>2024-04-06T01:07:15.997Z</updated>
+    <updated>2025-02-07T06:53:02.154Z</updated>
     
     <summary type="html">
     
@@ -369,123 +487,6 @@
         
         
           &lt;h3 id=&quot;Windows安装MySQL教程&quot;&gt;&lt;a href=&quot;#Windows安装MySQL教程&quot; class=&quot;headerlink&quot; title=&quot;Windows安装MySQL教程&quot;&gt;&lt;/a&gt;Windows安装MySQL教程&lt;/h3&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2023/02/02/api-wen-dang-mo-ban/"/>
-    <id>https://lszai90.github.io/2023/02/02/api-wen-dang-mo-ban/</id>
-    <published>2023-02-02T03:18:42.882Z</published>
-    <updated>2023-02-02T03:21:04.777Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;整改通知发布&quot;&gt;&lt;a href=&quot;#整改通知发布&quot; class=&quot;headerlink&quot; title=&quot;整改通知发布&quot;&gt;&lt;/a&gt;整改通知发布&lt;/h2&gt;&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h3 id=&quot;整改通知发布-明细保存&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2022/12/08/tong-ji-biao-kong-jian-zhan-yong-da-xiao/"/>
-    <id>https://lszai90.github.io/2022/12/08/tong-ji-biao-kong-jian-zhan-yong-da-xiao/</id>
-    <published>2022-12-07T21:31:12.461Z</published>
-    <updated>2022-07-08T11:27:29.385Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;title: 统计表空间占用大小&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2022-07-05 08:44:45&lt;br&gt;password:&lt;br&gt;summary:
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2022/12/08/kylin-songzai/"/>
-    <id>https://lszai90.github.io/2022/12/08/kylin-songzai/</id>
-    <published>2022-12-07T21:31:11.299Z</published>
-    <updated>2022-07-05T09:20:51.775Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;hr&gt;
-&lt;p&gt;title: Kylin | 关于写博客的七点反思&lt;br&gt;top: false&lt;br&gt;cover: false&lt;br&gt;toc: true&lt;br&gt;mathjax: true&lt;br&gt;date: 2020-06-11
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>利用Hexo创建自身博客</title>
-    <link href="https://lszai90.github.io/2022/12/08/hello-world/"/>
-    <id>https://lszai90.github.io/2022/12/08/hello-world/</id>
-    <published>2022-12-07T21:31:11.230Z</published>
-    <updated>2022-07-04T00:43:09.451Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>git基本操作</title>
-    <link href="https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/"/>
-    <id>https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/</id>
-    <published>2022-11-18T16:26:52.000Z</published>
-    <updated>2024-06-06T09:56:24.010Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h4 id=&quot;git-config&quot;&gt;&lt;a href=&quot;#git-config&quot; class=&quot;headerlink&quot; title=&quot;git config&quot;&gt;&lt;/a&gt;git config&lt;/h4&gt;&lt;p&gt;git config –list –查看本地配置&lt;br&gt;git
         
       
     

@@ -331,7 +331,7 @@ docker pull redis:5.0.14 建立文件夹为了配置保留数据和配置文件�
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/24.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -482,14 +482,14 @@ docker pull redis:5.0.14 建立文件夹为了配置保留数据和配置文件�
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    619
+                    2.1k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    2 分
+                    9 分
                 </div>
                 
                 
@@ -509,11 +509,13 @@ docker pull redis:5.0.14 建立文件夹为了配置保留数据和配置文件�
 <pre><code>docker pull redis:latest</code></pre><p>2、拉取指定版本</p>
 <pre><code>docker pull redis:5.0.14 </code></pre><h4 id="建立文件夹"><a href="#建立文件夹" class="headerlink" title="建立文件夹"></a>建立文件夹</h4><p>为了配置保留数据和配置文件，我们需要在启动的时候把容器中的数据文件、配置文件以及log文件关联到本地，防止删除容器的时候把这些文件一块也删除掉。<br>需要在本地新建redis目录，如下命令</p>
 <pre><code> mkdir -p redis/data</code></pre><p>我们redis的目录中放入一个redis.conf的文件，这个文件可以在以前配置文件或者下载一个redis的安装包都可以找，把它放入进去就可以了，然后启动redis，如下命令</p>
-<h4 id="把-redis-下的文件挂载到本机"><a href="#把-redis-下的文件挂载到本机" class="headerlink" title="把 redis 下的文件挂载到本机"></a>把 redis 下的文件挂载到本机</h4><pre><code>docker run -p 6379:6379 --name redis -v D:\redis\redis.conf:/etc/redis/redis.conf -v D:\redis\data:/data -d redis:5.0.14 redis-server /etc/redis/redis.conf --appendonly yes </code></pre><h4 id="如何设置Redis的密码？"><a href="#如何设置Redis的密码？" class="headerlink" title="如何设置Redis的密码？"></a>如何设置Redis的密码？</h4><p>1.进入redis的容器<br>docker exec -it 容器ID bash</p>
+<h4 id="把-redis-下的文件挂载到本机"><a href="#把-redis-下的文件挂载到本机" class="headerlink" title="把 redis 下的文件挂载到本机"></a>把 redis 下的文件挂载到本机</h4><pre><code>docker run -p 6379:6379 --name redis -v D:\redis\redis.conf:/etc/redis/redis.conf -v D:\redis\data:/data -d redis:5.0.14 redis-server /etc/redis/redis.conf --appendonly yes 
+</code></pre><p> docker run -it -d -p 6380:6380 -p 16380:16380 –privileged=true -v /home/redis/node-6380/conf/redis.conf:/usr/local/etc/redis/redis.conf –privileged=true -v /home/redis/node-6380/data:/data –restart always –name redis-6380 –net myredis –sysctl net.core.somaxconn=1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf</p>
+<h4 id="如何设置Redis的密码？"><a href="#如何设置Redis的密码？" class="headerlink" title="如何设置Redis的密码？"></a>如何设置Redis的密码？</h4><p>1.进入redis的容器<br>docker exec -it 容器ID bash</p>
 <p>2.进入redis目录<br>cd /usr/local/bin</p>
 <p>3.运行命令：<br>redis-cli</p>
 <p>4.查看现有的redis密码：<br>config get requirepass</p>
-<p>5.设置redis密码<br>config set requirepass 密码</p>
+<p>5.设置redis密码<br>config set requirepass 123456</p>
 <p>6、当我们设置了密码后再通过config get requirepass 查看密码时会提示：(error) NOAUTH Authentication required<br>这是因为redis设置了密码，我们需要使用密码来进行验证之后再来对redis客户端进行操作，否则我们没有操作redis缓存数据库的权限。</p>
 <pre><code>auth 密码</code></pre><p>auth 密码在执行 config get requirepass 查看密码</p>
 <h4 id="参数说明"><a href="#参数说明" class="headerlink" title="参数说明"></a>参数说明</h4><p>1、前面的6379表示本机中的端口，后面的6379表示的容器中的端口。 把容器中6379映射到本机的6379端口上</p>
@@ -522,7 +524,52 @@ docker pull redis:5.0.14 建立文件夹为了配置保留数据和配置文件�
 -v redis/data:/data</code></pre><p>3、 -d表示后台启动，使用redis的5.0.14版本的镜像，使用redis-server命令，/etc/redis/redis.conf的配置文件启动redis，因为我们做了配置文件的映射，<br>所以实际上使用的本机中的配置文件不是容器中的配置文件</p>
 <pre><code>-d redis:5.0.14 redis-server /etc/redis/redis.conf</code></pre><p>4、 启动后容器名称是redis</p>
 <pre><code>--name redis</code></pre><p>5、 是否需要持久化</p>
-<pre><code>--appendonly yes</code></pre>
+<pre><code>--appendonly yes</code></pre><h3 id="Window-Docker-搭建Redis集群部署"><a href="#Window-Docker-搭建Redis集群部署" class="headerlink" title="Window Docker 搭建Redis集群部署"></a>Window Docker 搭建Redis集群部署</h3><h3 id="主从复制-方式-集群"><a href="#主从复制-方式-集群" class="headerlink" title="主从复制 方式 集群"></a>主从复制 方式 集群</h3><h4 id="创建虚拟网卡"><a href="#创建虚拟网卡" class="headerlink" title="创建虚拟网卡"></a>创建虚拟网卡</h4><pre class="line-numbers language-bash"><code class="language-bash">docker network create myredis<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="查看Docker-网卡信息"><a href="#查看Docker-网卡信息" class="headerlink" title="查看Docker 网卡信息"></a>查看Docker 网卡信息</h4><pre class="line-numbers language-bash"><code class="language-bash">docker network <span class="token function">ls</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="查看dockerr网络详细信息"><a href="#查看dockerr网络详细信息" class="headerlink" title="查看dockerr网络详细信息"></a>查看dockerr网络详细信息</h4><pre class="line-numbers language-bash"><code class="language-bash">docker network inspect myredis<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>redis 配置文件</p>
+<p>示例</p>
+<pre class="line-numbers language-bash"><code class="language-bash">port 6385
+bind 0.0.0.0
+protected-mode no
+daemonize no
+appendonly <span class="token function">yes</span>
+cluster-enabled <span class="token function">yes</span> 
+cluster-config-file nodes.conf
+cluster-node-timeout 5000
+cluster-announce-ip  192.168.176.1
+cluster-announce-port 6385
+cluster-announce-bus-port 16385<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>做3主3副</p>
+<p>启动6个Redis 容器,端口依次从6380到6383,并把数据卷挂载到宿主机(持久化,保证Redis节点宕机或容器被意外删除后数据不丢失)</p>
+<p>示例命令</p>
+<pre class="line-numbers language-bash"><code class="language-bash"> docker run -it -d -p 6380:6380 -p 16380:16380 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6380\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6380\data:/data --restart always --name redis-6380 --net myredis --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 第一台 </span>
+ docker run -it -d -p 6380:6380 -p 16380:16380 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6380\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6380\data:/data --restart always --name redis-6380 --net myredis --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf
+<span class="token comment" spellcheck="true"># 第二台</span>
+ docker run -it -d -p 6381:6381 -p 16381:16381 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6381\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6381\data:/data --restart always --name redis-6381 --net myredis --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf
+<span class="token comment" spellcheck="true"># 第三台</span>
+ docker run -it -d -p 6382:6382 -p 16382:16382 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6382\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6382\data:/data --restart always --name redis-6382 --net myredis --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf
+<span class="token comment" spellcheck="true"># 第四台</span>
+ docker run -it -d -p 6383:6383 -p 16383:16383 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6383\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6383\data:/data --restart always --name redis-6383 --net myredis --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf
+ <span class="token comment" spellcheck="true"># 第五台</span>
+ docker run -it -d -p 6384:6384 -p 16384:16384 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6384\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6384\data:/data --restart always --name redis-6384 --net myredis --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf
+ <span class="token comment" spellcheck="true"># 第六台</span>
+ docker run -it -d -p 6385:6385 -p 16385:16385 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6385\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6385\data:/data --restart always --name redis-6385 --net myredis --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="解释："><a href="#解释：" class="headerlink" title="解释："></a>解释：</h4><p>-it:交互<br>-d:后台运行，容器启动完成后打印容器<br>–privileged:是否让docker 应用容器 获取宿主机root权限（特殊权限-）<br>-p:端口映射<br>-v:文件挂载<br>–sysctl参数来设置系统参数，通过这些参数来调整系统性能<br>–restart always:在容器退出时总是重启容器<br>–name:给容器取名<br>–net myredis:使用我们创建的虚拟网卡 （想详细了解，可以去看看Docker 网络方面知识）</p>
+<h4 id="创建集群"><a href="#创建集群" class="headerlink" title="创建集群"></a>创建集群</h4><p>首先进入任意一个容器<br>docker exec -it redis-6380 bash<br>create –replicas<br>主节点占从节点的比例<br>从3 主3 比例 1<br>从6 主3 比例 0.5<br>从3 主6 比例 2 </p>
+<h4 id="示例命令"><a href="#示例命令" class="headerlink" title="示例命令"></a>示例命令</h4><pre class="line-numbers language-bash"><code class="language-bash">redis-cli --cluster create 192.168.176.1:6380 192.168.176.1:6381 192.168.176.1:6382 192.168.176.1:6383 192.168.176.1:6384 192.168.176.1:6385  --cluster-replicas 1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="哨兵模式搭建-一主二从三哨兵"><a href="#哨兵模式搭建-一主二从三哨兵" class="headerlink" title="哨兵模式搭建(一主二从三哨兵)"></a>哨兵模式搭建(一主二从三哨兵)</h3><p>一主两从三哨兵集群,当master节点宕机时,通过哨兵(sentinel)重新推选出新的master节点,保证集群的可用性.<br> <img src="../../public/images/redis/image-1.png" alt="alt text"></p>
+<h4 id="哨兵的主要功能"><a href="#哨兵的主要功能" class="headerlink" title="哨兵的主要功能"></a>哨兵的主要功能</h4><p>1.集群监控：负责监控 Redis master 和 slave 进程是否正常工作。<br>2.消息通知：如果某个 Redis 实例有故障,那么哨兵负责发送消息作为报警通知给管理员。<br>3.故障转移：如果 master node 挂掉了,会自动转移到 slave node 上。<br>4.配置中心：如果故障转移发生了,通知 client 客户端新的 master 地址。</p>
+<p>哨兵用于实现 redis 集群的高可用，本身也是分布式的，作为一个哨兵集群去运行，互相协同工作。<br>故障转移时，判断一个 master node 是否宕机了，需要大部分的哨兵都同意才行，涉及到了分布式选举的问题。<br>即使部分哨兵节点挂掉了，哨兵集群还是能正常工作的，因为如果一个作为高可用机制重要组成部分的故障转移系统本身是单点的，那就很坑爹了.</p>
+<h4 id="特别注意"><a href="#特别注意" class="headerlink" title="特别注意"></a>特别注意</h4><p>哨兵的核心知识：<br>哨兵至少需要 3 个实例，来保证自己的健壮性。<br>哨兵 + redis 主从的部署架构，是不保证数据零丢失的，只能保证 redis 集群的高可用性。<br>对于哨兵 + redis 主从这种复杂的部署架构，尽量在测试环境和生产环境，都进行充足的测试和演练。</p>
+<pre class="line-numbers language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 第一台 </span>
+ docker run -it -d -p 6380:6380 -p 16380:16380 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6380\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6380\data:/data  --name redis-6380  --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf
+<span class="token comment" spellcheck="true"># 第二台</span>
+ docker run -it -d -p 6381:6381 -p 16381:16381 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6381\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6381\data:/data  --name redis-6381 --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf
+<span class="token comment" spellcheck="true"># 第三台</span>
+ docker run -it -d -p 6382:6382 -p 16382:16382 --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6382\conf\redis.conf:/usr/local/etc/redis/redis.conf --privileged<span class="token operator">=</span>true -v D:\home\redis\node-6382\data:/data  --name redis-6382  --sysctl net.core.somaxconn<span class="token operator">=</span>1024 redis:5.0.14 redis-server /usr/local/etc/redis/redis.conf<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
             </div>
             <hr />
 
@@ -868,7 +915,7 @@ docker pull redis:5.0.14 建立文件夹为了配置保留数据和配置文件�
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="Windows-Docker-安装-RabbitMQ">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="Windows-Docker-安装-RabbitMQ">
                         
                         <span class="card-title">Windows-Docker-安装-RabbitMQ</span>
                     </div>
@@ -912,7 +959,7 @@ docker
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Windows Docker 安装 MySql">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="Windows Docker 安装 MySql">
                         
                         <span class="card-title">Windows Docker 安装 MySql</span>
                     </div>
@@ -1111,7 +1158,7 @@ docker
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">32.2k</span>
+            <span class="white-color">36.9k</span>
             
 
             <br>

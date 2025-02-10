@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/</loc>
+    <lastmod>2025-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/</loc>
+    <lastmod>2025-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/</loc>
+    <lastmod>2025-02-07</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/</loc>
+    <lastmod>2024-12-27</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/</loc>
+    <lastmod>2024-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2024/11/13/minio-shi-yong-shou-ce/</loc>
+    <lastmod>2024-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2024/11/18/abp-vnext-kuo-zhan-deng-lu-fang-shi/</loc>
+    <lastmod>2024-11-19</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/</loc>
+    <lastmod>2024-11-14</lastmod>
+  </url>
+  <url>
     <loc>https://lszai90.github.io/2024/06/14/sql-zhuan-linq-linqer/</loc>
     <lastmod>2024-11-13</lastmod>
   </url>
@@ -33,19 +65,7 @@
     <lastmod>2024-06-09</lastmod>
   </url>
   <url>
-    <loc>https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/</loc>
-    <lastmod>2024-06-06</lastmod>
-  </url>
-  <url>
-    <loc>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/</loc>
-    <lastmod>2024-04-06</lastmod>
-  </url>
-  <url>
     <loc>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-mysql/</loc>
-    <lastmod>2024-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/</loc>
     <lastmod>2024-04-06</lastmod>
   </url>
   <url>

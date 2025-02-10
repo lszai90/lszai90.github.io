@@ -1,3 +1,8 @@
+https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/
+https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/
+https://lszai90.github.io/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/
+https://lszai90.github.io/2024/11/18/abp-vnext-kuo-zhan-deng-lu-fang-shi/
+https://lszai90.github.io/2024/11/13/minio-shi-yong-shou-ce/
 https://lszai90.github.io/2024/06/14/sql-zhuan-linq-linqer/
 https://lszai90.github.io/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/
 https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/
