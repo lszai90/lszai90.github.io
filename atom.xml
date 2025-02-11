@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2025-02-10T02:20:42.447Z</updated>
+  <updated>2025-02-10T09:39:39.133Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>AbpVNext微信小程序登陆</title>
+    <link href="https://lszai90.github.io/2025/02/10/abpvnext-wei-xin-xiao-cheng-xu-deng-lu/"/>
+    <id>https://lszai90.github.io/2025/02/10/abpvnext-wei-xin-xiao-cheng-xu-deng-lu/</id>
+    <published>2025-02-10T09:38:29.000Z</published>
+    <updated>2025-02-10T09:39:39.133Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;微信小程序登陆&quot;&gt;&lt;a href=&quot;#微信小程序登陆&quot; class=&quot;headerlink&quot; title=&quot;微信小程序登陆&quot;&gt;&lt;/a&gt;微信小程序登陆&lt;/h3&gt;&lt;h4 id=&quot;前提体条件&quot;&gt;&lt;a href=&quot;#前提体条件&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="AbpVNext" scheme="https://lszai90.github.io/categories/AbpVNext/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>AbpVNext审计日志学习</title>
     <link href="https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/"/>
     <id>https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/</id>
     <published>2025-02-10T02:07:37.000Z</published>
-    <updated>2025-02-10T02:20:42.447Z</updated>
+    <updated>2025-02-10T09:35:17.629Z</updated>
     
     <summary type="html">
     
@@ -45,7 +69,7 @@
     <link href="https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/"/>
     <id>https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/</id>
     <published>2025-02-08T05:56:05.000Z</published>
-    <updated>2025-02-10T06:55:09.157Z</updated>
+    <updated>2025-02-10T09:34:28.096Z</updated>
     
     <summary type="html">
     
@@ -60,28 +84,6 @@
     </summary>
     
       <category term=".NetCore" scheme="https://lszai90.github.io/categories/NetCore/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>微信小程序开发</title>
-    <link href="https://lszai90.github.io/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/"/>
-    <id>https://lszai90.github.io/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/</id>
-    <published>2024-11-20T03:48:56.000Z</published>
-    <updated>2024-11-20T03:49:47.074Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;微信小程序开发&quot;&gt;&lt;a href=&quot;#微信小程序开发&quot; class=&quot;headerlink&quot; title=&quot;微信小程序开发&quot;&gt;&lt;/a&gt;微信小程序开发&lt;/h3&gt;&lt;p&gt;小程序地址&lt;br&gt;&lt;a
-        
-      
-    
-    </summary>
     
     
   </entry>
@@ -190,7 +192,7 @@
     <link href="https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/"/>
     <id>https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/</id>
     <published>2024-06-11T00:52:24.000Z</published>
-    <updated>2024-06-11T00:58:28.578Z</updated>
+    <updated>2025-02-10T09:35:32.825Z</updated>
     
     <summary type="html">
     
@@ -242,7 +244,7 @@
     <link href="https://lszai90.github.io/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/"/>
     <id>https://lszai90.github.io/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/</id>
     <published>2024-06-09T02:22:42.000Z</published>
-    <updated>2024-08-30T14:29:26.468Z</updated>
+    <updated>2025-02-10T09:35:53.319Z</updated>
     
     <summary type="html">
     

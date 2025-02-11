@@ -330,7 +330,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -481,7 +481,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    588
+                    594
                 </div>
                 
 
@@ -513,16 +513,16 @@
 <pre class="line-numbers language-bash"><code class="language-bash"> dotnet tool <span class="token function">install</span> -g dotnet-dump<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>解释:<br>name: 容器名称<br>v:挂载文件</p>
 <h4 id="查看安装DotNet-SDK-版本"><a href="#查看安装DotNet-SDK-版本" class="headerlink" title="查看安装DotNet SDK 版本"></a>查看安装DotNet SDK 版本</h4><pre class="line-numbers language-bash"><code class="language-bash">dotnet --version<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<h4 id="分析内存泄漏"><a href="#分析内存泄漏" class="headerlink" title="分析内存泄漏"></a>分析内存泄漏</h4><p>命令：<br>dotnet-dump analyze 【dump文件名称】<br>dumpheap -stat  找到堆上的对象信息（注：此命令第一次执行时会消耗很久时间，请泡一杯茶耐心等候，如果服务器会自动断开连接的，建议下载到一台不会断开连接的机器进行分析，因为这里可能在没有分析出来连接就断开了）<br>dumpheap -mt  <mt> 列出所有与<mt>结构对应的对象，一般我都会找string对象的mt，看看里面大size的string对象是有哪些<br>do  <address> 查看对象详细信息<br>gcroot -all <address> 一般我也是找string地址，看看对象引用<br>help  帮助</address></address></mt></mt></p>
+<h4 id="分析内存泄漏"><a href="#分析内存泄漏" class="headerlink" title="分析内存泄漏"></a>分析内存泄漏</h4><p>命令：<br>dotnet-dump analyze 【dump文件名称】<br>dumpheap -stat  找到堆上的对象信息（注：此命令第一次执行时会消耗很久时间，请泡一杯茶耐心等候，如果服务器会自动断开连接的，建议下载到一台不会断开连接的机器进行分析，因为这里可能在没有分析出来连接就断开了）<br>dumpheap -mt  <mt> 列出所有与<mt>结构对应的对象，一般我都会找string对象的mt，看看里面大size的string对象是有哪些<br>do  [address] 查看对象详细信息<br>gcroot -all [address] 一般我也是找string地址，看看对象引用<br>help  帮助</mt></mt></p>
 <p>由于对象信息很多且没有按照大小排序所以把日志持久化到本地</p>
 <pre class="line-numbers language-bash"><code class="language-bash">logopen C:\Users\liusong\Desktop\分析日志\dumpheap_stat.txt
 dumpheap -mt 7f0c1fbd1038
 logclose C:\Users\liusong\Desktop\分析日志\dumpheap_stat.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-<p>do [adress]<br>结果出来了，可以看到有很多占内存一样大的字符串，此时需要用到第四个命令<br><img src="../../source/images/netcoredump/image-1.png" alt="alt text"></p>
+<p>do [address]<br>结果出来了，可以看到有很多占内存一样大的字符串，此时需要用到第四个命令<br><img src="../../public/images/netcoredump/image-1.png" alt="alt text"></p>
 <p>注：如果是比较小的string，红框部分就会显示该string的内容，但是这个太大了，无法显示</p>
-<p>在所有命令中一个命令一个命令试过之后，<br>找到两个命令<br>dq <address><br>du <address><br>先执行dq <address>,会得到一群类似adress的东西<br><img src="../../source/images/netcoredump/image-2.png" alt="alt text"></address></address></address></p>
-<p>再du <adress> 注：这里的address就用上面的结果（每个都试下，因为不是每一个都有你想要的结果）</adress></p>
-<p>其中一个结果如下：<br><img src="../../source/images/netcoredump/image-3.png" alt="alt text"></p>
+<p>在所有命令中一个命令一个命令试过之后，<br>找到两个命令<br>dq [address]<br>du [address]<br>先执行dq [address],会得到一群类似adress的东西<br><img src="../../public/images/netcoredump/image-2.png" alt="alt text"></p>
+<p>再du [address] 注：这里的address就用上面的结果（每个都试下，因为不是每一个都有你想要的结果）</p>
+<p>其中一个结果如下：<br><img src="../../public/images/netcoredump/image-3.png" alt="alt text"></p>
 
             </div>
             <hr />
@@ -869,7 +869,7 @@ logclose C:\Users\liusong\Desktop\分析日志\dumpheap_stat.txt<span aria-hidde
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="AbpVNext审计日志学习">
+                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="AbpVNext审计日志学习">
                         
                         <span class="card-title">AbpVNext审计日志学习</span>
                     </div>
@@ -906,30 +906,37 @@ logclose C:\Users\liusong\Desktop\分析日志\dumpheap_stat.txt<span aria-hidde
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/">
+                <a href="/2024/11/18/abp-vnext-kuo-zhan-deng-lu-fang-shi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.jpg" class="responsive-img" alt="微信小程序开发">
+                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="Abp VNext扩展登陆方式">
                         
-                        <span class="card-title">微信小程序开发</span>
+                        <span class="card-title">Abp VNext扩展登陆方式</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            微信小程序开发小程序地址https://mp.weixin.qq.com/wxamp/home/guide?lang=zh_CN&amp;token=210526085
-
+                            Abp-VNext OAuth 2.0  grant_type 扩展登陆方式扩展背景   由于项目需要、之前我们一直使用三方客户端进行登陆。然后调用对应的接口、这样对于简单的接口没有，后来我们扩展了数据权限导致、这个就无法通用、客户端就没有
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-11-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2024-11-18
                             </span>
                         <span class="publish-author">
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/随笔/" target="_blank">
+                        <span class="chip bg-color">随笔</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -1101,7 +1108,7 @@ logclose C:\Users\liusong\Desktop\分析日志\dumpheap_stat.txt<span aria-hidde
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">36.9k</span>
+            <span class="white-color">37k</span>
             
 
             <br>

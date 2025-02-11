@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/</loc>
+    <loc>https://lszai90.github.io/2022/07/13/httpclient-hu-lue-ssl/</loc>
+    <lastmod>2025-02-11</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2025/02/10/abpvnext-wei-xin-xiao-cheng-xu-deng-lu/</loc>
+    <lastmod>2025-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/</loc>
+    <lastmod>2025-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/</loc>
     <lastmod>2025-02-10</lastmod>
   </url>
   <url>
     <loc>https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/</loc>
+    <lastmod>2025-02-10</lastmod>
+  </url>
+  <url>
+    <loc>https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/</loc>
     <lastmod>2025-02-10</lastmod>
   </url>
   <url>
@@ -15,10 +31,6 @@
   <url>
     <loc>https://lszai90.github.io/2022/11/19/git-ji-ben-cao-zuo/</loc>
     <lastmod>2024-12-27</lastmod>
-  </url>
-  <url>
-    <loc>https://lszai90.github.io/2024/11/20/wei-xin-xiao-cheng-xu-kai-fa/</loc>
-    <lastmod>2024-11-20</lastmod>
   </url>
   <url>
     <loc>https://lszai90.github.io/2024/11/13/minio-shi-yong-shou-ce/</loc>
@@ -37,20 +49,12 @@
     <lastmod>2024-11-13</lastmod>
   </url>
   <url>
-    <loc>https://lszai90.github.io/2024/06/09/docker-an-zhuang-sqlserver-bing-kai-qi-dai-li/</loc>
-    <lastmod>2024-08-30</lastmod>
-  </url>
-  <url>
     <loc>https://lszai90.github.io/2023/05/13/abp-vnext-kuo-zhan-icurrentuser-deng-lu-shi-zeng-jia-claim/</loc>
     <lastmod>2024-08-20</lastmod>
   </url>
   <url>
     <loc>https://lszai90.github.io/2024/06/13/liunx-fu-wu-qi-shi-jian-he-ben-di-shi-jian-bu-yi-zhi/</loc>
     <lastmod>2024-06-13</lastmod>
-  </url>
-  <url>
-    <loc>https://lszai90.github.io/2024/06/11/c-fan-she-zhi-xing-fang-fa/</loc>
-    <lastmod>2024-06-11</lastmod>
   </url>
   <url>
     <loc>https://lszai90.github.io/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/</loc>
@@ -123,10 +127,6 @@
   <url>
     <loc>https://lszai90.github.io/2022/07/22/abpvnext-zi-dong-zhu-ru/</loc>
     <lastmod>2022-07-22</lastmod>
-  </url>
-  <url>
-    <loc>https://lszai90.github.io/2022/07/13/httpclient-hu-lue-ssl/</loc>
-    <lastmod>2022-07-13</lastmod>
   </url>
   <url>
     <loc>https://lszai90.github.io/2022/07/07/jian-dan-httpclient-qing-qiu-li-zi/</loc>
