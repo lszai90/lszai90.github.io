@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2025-02-10T09:39:39.133Z</updated>
+  <updated>2025-02-18T10:45:05.061Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,78 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>NETCORE迁移生成Sql脚本</title>
+    <link href="https://lszai90.github.io/2025/02/18/netcore-qian-yi-sheng-cheng-sql-jiao-ben/"/>
+    <id>https://lszai90.github.io/2025/02/18/netcore-qian-yi-sheng-cheng-sql-jiao-ben/</id>
+    <published>2025-02-18T10:36:55.000Z</published>
+    <updated>2025-02-18T10:45:05.061Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h3&gt;&lt;p&gt;   生产环境中迁移错误，导致迁移不了、需要生成数据库脚本进行迁移。建议通过生成 SQL 脚本，将迁移部署到生产数据库。
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="https://lszai90.github.io/2025/02/17/shi-yong-wen-dang/"/>
+    <id>https://lszai90.github.io/2025/02/17/shi-yong-wen-dang/</id>
+    <published>2025-02-17T01:45:29.571Z</published>
+    <updated>2025-02-17T01:52:26.450Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;怎么打包到服务器形成模板代码&quot;&gt;&lt;a href=&quot;#怎么打包到服务器形成模板代码&quot; class=&quot;headerlink&quot; title=&quot;怎么打包到服务器形成模板代码&quot;&gt;&lt;/a&gt;怎么打包到服务器形成模板代码&lt;/h2&gt;&lt;p&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Oracle定时任务</title>
+    <link href="https://lszai90.github.io/2025/02/11/oracle-ding-shi-ren-wu/"/>
+    <id>https://lszai90.github.io/2025/02/11/oracle-ding-shi-ren-wu/</id>
+    <published>2025-02-11T10:47:52.000Z</published>
+    <updated>2025-02-11T10:49:48.993Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;语法&quot;&gt;&lt;a href=&quot;#语法&quot; class=&quot;headerlink&quot; title=&quot;语法&quot;&gt;&lt;/a&gt;语法&lt;/h3&gt;&lt;pre class=&quot;line-numbers language-bash&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="Oracle 定时任务" scheme="https://lszai90.github.io/tags/Oracle-%E5%AE%9A%E6%97%B6%E4%BB%BB%E5%8A%A1/"/>
+    
+  </entry>
   
   <entry>
     <title>AbpVNext微信小程序登陆</title>
@@ -69,7 +141,7 @@
     <link href="https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/"/>
     <id>https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/</id>
     <published>2025-02-08T05:56:05.000Z</published>
-    <updated>2025-02-10T09:34:28.096Z</updated>
+    <updated>2025-02-18T10:37:06.081Z</updated>
     
     <summary type="html">
     
@@ -77,7 +149,7 @@
       
         
         
-          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;  由于.NET CORE 程序部署在Liunx 随着时间推移 耗用的内存只增不减,内存消耗异常、记录一下如何分析，参考文章:&lt;a
+          &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;p&gt;  由于.NET CORE 程序部署在Liunx 随着时间推移 耗用的内存只增不减,内存消耗异常、记录一下如何分析，&lt;br&gt; 
         
       
     
@@ -423,78 +495,6 @@
       
     
     </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Windows-Docker-安装-RabbitMQ</title>
-    <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/"/>
-    <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-rabbitmq/</id>
-    <published>2023-02-11T15:32:34.000Z</published>
-    <updated>2024-11-14T05:39:02.667Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Windows安装RabbitMQ教程&quot;&gt;&lt;a href=&quot;#Windows安装RabbitMQ教程&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Windows Docker 安装 Redis</title>
-    <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/"/>
-    <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-redis/</id>
-    <published>2023-02-11T14:54:06.000Z</published>
-    <updated>2025-02-07T06:53:02.154Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Windows安装Redis教程&quot;&gt;&lt;a href=&quot;#Windows安装Redis教程&quot; class=&quot;headerlink&quot; title=&quot;Windows安装Redis教程&quot;&gt;&lt;/a&gt;Windows安装Redis教程&lt;/h3&gt;&lt;h4 id=&quot;拉取镜像&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Windows Docker 安装 MySql</title>
-    <link href="https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-mysql/"/>
-    <id>https://lszai90.github.io/2023/02/11/windows-docker-an-zhuang-mysql/</id>
-    <published>2023-02-11T14:41:16.000Z</published>
-    <updated>2024-04-06T01:13:04.415Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Windows安装MySQL教程&quot;&gt;&lt;a href=&quot;#Windows安装MySQL教程&quot; class=&quot;headerlink&quot; title=&quot;Windows安装MySQL教程&quot;&gt;&lt;/a&gt;Windows安装MySQL教程&lt;/h3&gt;&lt;p&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
     
     
   </entry>
