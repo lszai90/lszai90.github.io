@@ -9,8 +9,7 @@
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
     <meta name="description" content="Abp VNext 日志分为4类日志审计日志、安全日志(登陆日志)、实体变更日志、系统日志
-日志第一种写入ES模块引用[DependsOn(typeof(AbpAuditLoggingElasticsearchModule))]
-publi">
+–系统日志模板abp.dev.logging-*–审计日志abp.dev.auditing-audit-log–安全日志abp.dev.auditi">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -331,7 +330,7 @@ publi">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -482,7 +481,7 @@ publi">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    161
+                    285
                 </div>
                 
 
@@ -506,6 +505,7 @@ publi">
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h2 id="Abp-VNext-日志分为4类日志"><a href="#Abp-VNext-日志分为4类日志" class="headerlink" title="Abp VNext 日志分为4类日志"></a>Abp VNext 日志分为4类日志</h2><p>审计日志、安全日志(登陆日志)、实体变更日志、系统日志</p>
+<p>–系统日志模板<br>abp.dev.logging-*<br>–审计日志<br>abp.dev.auditing-audit-log<br>–安全日志<br>abp.dev.auditing-security-log</p>
 <h3 id="日志"><a href="#日志" class="headerlink" title="日志"></a>日志</h3><h4 id="第一种写入ES"><a href="#第一种写入ES" class="headerlink" title="第一种写入ES"></a>第一种写入ES</h4><h5 id="模块引用"><a href="#模块引用" class="headerlink" title="模块引用"></a>模块引用</h5><pre class="line-numbers language-bash"><code class="language-bash"><span class="token punctuation">[</span>DependsOn<span class="token punctuation">(</span>typeof<span class="token punctuation">(</span>AbpAuditLoggingElasticsearchModule<span class="token punctuation">))</span><span class="token punctuation">]</span>
 public class YouProjectModule <span class="token keyword">:</span> AbpModule
 <span class="token punctuation">{</span>
@@ -535,6 +535,8 @@ public class YouProjectModule <span class="token keyword">:</span> AbpModule
     <span class="token string">"AbpAuditLogging"</span><span class="token keyword">:</span> <span class="token string">"Server=127.0.0.1;Database=AuditLogging;User Id=root;Password=*"</span>,
   <span class="token punctuation">}</span>
 <span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h4 id="系统日志配置字符串"><a href="#系统日志配置字符串" class="headerlink" title="系统日志配置字符串:"></a>系统日志配置字符串:</h4><p>“Serilog”: {<br>  “MinimumLevel”: {<br>    “Default”: “Debug”,<br>    “Override”: {<br>      “System”: “Warning”,<br>      “Microsoft”: “Warning”,<br>      “DotNetCore”: “Debug”<br>    }<br>  },<br>  “WriteTo”: [<br>    {<br>      “Name”: “Console”,<br>      “Args”: {<br>        “restrictedToMinimumLevel”: “Debug”,<br>        “outputTemplate”: “{Timestamp:yyyy-MM-dd HH:mm:ss} [{Level:u3}] [{SourceContext}] [{ProcessId}] [{ThreadId}] - {Message:lj}{NewLine}{Exception}”<br>      }<br>    },<br>    {<br>      “Name”: “Elasticsearch”,<br>      “Args”: {<br>        “nodeUris”: “<a href="http://elastic:123456@192.168.176.1:9200&quot;" target="_blank" rel="noopener">http://elastic:123456@192.168.176.1:9200&quot;</a>,<br>        “indexFormat”: “abp.dev.logging-{0:yyyy.MM.dd}”,<br>        “autoRegisterTemplate”: true,<br>        “autoRegisterTemplateVersion”: “ESv7”<br>      }<br>    }<br>  ]<br>}</p>
+<p>如果ES使用了 security<br>使用:nodeUris=<a href="http://elastic:123456@192.168.176.1:9200" target="_blank" rel="noopener">http://elastic:123456@192.168.176.1:9200</a><br>没有使用:nodeUris=<a href="http://192.168.176.1:9200" target="_blank" rel="noopener">http://192.168.176.1:9200</a></p>
 <h3 id="审计日志扩展"><a href="#审计日志扩展" class="headerlink" title="审计日志扩展"></a>审计日志扩展</h3>
             </div>
             <hr />
@@ -881,7 +883,7 @@ public class YouProjectModule <span class="token keyword">:</span> AbpModule
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/10.jpg" class="responsive-img" alt="AbpVNext微信小程序登陆">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="AbpVNext微信小程序登陆">
                         
                         <span class="card-title">AbpVNext微信小程序登陆</span>
                     </div>
@@ -922,7 +924,7 @@ public class YouProjectModule <span class="token keyword">:</span> AbpModule
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="NetCoreDump分析">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="NetCoreDump分析">
                         
                         <span class="card-title">NetCoreDump分析</span>
                     </div>
@@ -1119,7 +1121,7 @@ public class YouProjectModule <span class="token keyword">:</span> AbpModule
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">38k</span>
+            <span class="white-color">39.2k</span>
             
 
             <br>

@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2025-02-18T10:45:05.061Z</updated>
+  <updated>2025-03-29T06:59:35.235Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -15,6 +15,54 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AbpVNext审计日志扩展</title>
+    <link href="https://lszai90.github.io/2025/03/29/abpvnext-shen-ji-ri-zhi-kuo-zhan/"/>
+    <id>https://lszai90.github.io/2025/03/29/abpvnext-shen-ji-ri-zhi-kuo-zhan/</id>
+    <published>2025-03-29T06:51:59.000Z</published>
+    <updated>2025-03-29T06:59:35.235Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;拦截审计日志&quot;&gt;&lt;a href=&quot;#拦截审计日志&quot; class=&quot;headerlink&quot; title=&quot;拦截审计日志&quot;&gt;&lt;/a&gt;拦截审计日志&lt;/h2&gt;&lt;h3 id=&quot;重写-InterceptAsync-和ShouldIntercept-方法&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="Abp.IO" scheme="https://lszai90.github.io/categories/Abp-IO/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Serilog 学习 </title>
+    <link href="https://lszai90.github.io/2025/03/17/serilog-xue-xi/"/>
+    <id>https://lszai90.github.io/2025/03/17/serilog-xue-xi/</id>
+    <published>2025-03-17T08:03:02.000Z</published>
+    <updated>2025-03-17T08:09:01.773Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Serilog-学习&quot;&gt;&lt;a href=&quot;#Serilog-学习&quot; class=&quot;headerlink&quot; title=&quot;Serilog 学习&quot;&gt;&lt;/a&gt;Serilog 学习&lt;/h3&gt;&lt;h4 id=&quot;Override-日志等级&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>NETCORE迁移生成Sql脚本</title>
@@ -67,7 +115,7 @@
     <link href="https://lszai90.github.io/2025/02/11/oracle-ding-shi-ren-wu/"/>
     <id>https://lszai90.github.io/2025/02/11/oracle-ding-shi-ren-wu/</id>
     <published>2025-02-11T10:47:52.000Z</published>
-    <updated>2025-02-11T10:49:48.993Z</updated>
+    <updated>2025-03-17T08:02:14.816Z</updated>
     
     <summary type="html">
     
@@ -117,7 +165,7 @@
     <link href="https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/"/>
     <id>https://lszai90.github.io/2025/02/10/abpvnext-shen-ji-ri-zhi-xue-xi/</id>
     <published>2025-02-10T02:07:37.000Z</published>
-    <updated>2025-02-10T09:35:17.629Z</updated>
+    <updated>2025-02-25T10:56:31.045Z</updated>
     
     <summary type="html">
     
@@ -141,7 +189,7 @@
     <link href="https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/"/>
     <id>https://lszai90.github.io/2025/02/08/netcoredump-fen-xi/</id>
     <published>2025-02-08T05:56:05.000Z</published>
-    <updated>2025-02-18T10:37:06.081Z</updated>
+    <updated>2025-03-17T08:02:30.535Z</updated>
     
     <summary type="html">
     
@@ -290,7 +338,7 @@
     <link href="https://lszai90.github.io/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/"/>
     <id>https://lszai90.github.io/2024/06/09/docker-zhong-an-zhuang-es-he-kibana/</id>
     <published>2024-06-09T02:37:13.000Z</published>
-    <updated>2024-06-09T02:40:28.764Z</updated>
+    <updated>2025-03-04T06:43:47.751Z</updated>
     
     <summary type="html">
     
@@ -447,50 +495,6 @@
         
         
           &lt;h3 id=&quot;第一步-XXXXX-IdentityServer-中添加需要在ICurrentUser-显示的字段信息&quot;&gt;&lt;a href=&quot;#第一步-XXXXX-IdentityServer-中添加需要在ICurrentUser-显示的字段信息&quot;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2023/04/23/abp-vnext-kuo-jian-yong-hu-biao/"/>
-    <id>https://lszai90.github.io/2023/04/23/abp-vnext-kuo-jian-yong-hu-biao/</id>
-    <published>2023-04-23T15:21:51.963Z</published>
-    <updated>2023-04-23T15:29:16.434Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;EntityFrameworkCore-ExtensionMappings&quot;&gt;&lt;a href=&quot;#EntityFrameworkCore-ExtensionMappings&quot; class=&quot;headerlink&quot;
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2023/03/07/redis/"/>
-    <id>https://lszai90.github.io/2023/03/07/redis/</id>
-    <published>2023-03-07T10:31:52.404Z</published>
-    <updated>2023-03-07T11:35:00.108Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;Redis&quot;&gt;&lt;a href=&quot;#Redis&quot; class=&quot;headerlink&quot; title=&quot;Redis&quot;&gt;&lt;/a&gt;Redis&lt;/h3&gt;&lt;p&gt;当出现 StackExchange.Redis.RedisConnectionException: No
         
       
     

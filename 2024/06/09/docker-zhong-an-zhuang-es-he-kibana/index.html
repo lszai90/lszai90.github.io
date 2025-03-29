@@ -329,7 +329,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -484,7 +484,7 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    180
+                    333
                 </div>
                 
 
@@ -507,7 +507,18 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="Docker中安装ES和Kibana"><a href="#Docker中安装ES和Kibana" class="headerlink" title="Docker中安装ES和Kibana"></a>Docker中安装ES和Kibana</h3><h4 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h4><pre><code>docker pull docker.elastic.co/elasticsearch/elasticsearch:7.14.0</code></pre><h4 id="启动镜像"><a href="#启动镜像" class="headerlink" title="启动镜像"></a>启动镜像</h4><pre><code>docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; docker.elastic.co/elasticsearch/elasticsearch:7.14.0</code></pre><h4 id="拉取-Kibana-镜像"><a href="#拉取-Kibana-镜像" class="headerlink" title="拉取 Kibana 镜像"></a>拉取 Kibana 镜像</h4><pre><code>docker pull docker.elastic.co/kibana/kibana:7.14.0 </code></pre><h4 id="创建软连接-link-elasticsearch"><a href="#创建软连接-link-elasticsearch" class="headerlink" title="创建软连接-link elasticsearch"></a>创建软连接-link elasticsearch</h4><pre><code>docker run -d --name kibana --link elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:7.14.0</code></pre><h4 id="将-kibana设置中文（可选）"><a href="#将-kibana设置中文（可选）" class="headerlink" title="将 kibana设置中文（可选）"></a>将 kibana设置中文（可选）</h4><h5 id="进入容器内部"><a href="#进入容器内部" class="headerlink" title="进入容器内部"></a>进入容器内部</h5><pre><code>docker exec -it 0bcd8fda4c27 /bin/bash</code></pre><h5 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h5><p>在config文件夹中找到kibana.yml文件，并用文本编辑器打开。在文件中找到i18n.locale属性，并将其值更改为zh-CN，表示设置为中文。如果找不到该属性，可以在文件中添加以下行：<br>i18n.locale: “zh-CN”</p>
+                <h3 id="Docker中安装ES和Kibana"><a href="#Docker中安装ES和Kibana" class="headerlink" title="Docker中安装ES和Kibana"></a>Docker中安装ES和Kibana</h3><h4 id="拉取镜像"><a href="#拉取镜像" class="headerlink" title="拉取镜像"></a>拉取镜像</h4><pre><code>docker pull docker.elastic.co/elasticsearch/elasticsearch:7.14.0</code></pre><h4 id="启动镜像"><a href="#启动镜像" class="headerlink" title="启动镜像"></a>启动镜像</h4><pre><code>docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e &quot;discovery.type=single-node&quot; docker.elastic.co/elasticsearch/elasticsearch:7.14.0
+
+docker run -d --name elasticsearch -p 9200:9200 -p 9300:9300 -e ES_JAVA_OPTS=&quot;-Xms64m -Xmx128m&quot; -e &quot;discovery.type=single-node&quot; docker.elastic.co/elasticsearch/elasticsearch:7.14.0</code></pre><p>解释一下:<br>这里，-Xms 设置初始堆内存为64MB，-Xmx 设置最大堆内存为128MB</p>
+<h3 id="进入容器-修改文件"><a href="#进入容器-修改文件" class="headerlink" title="进入容器 修改文件"></a>进入容器 修改文件</h3><p> config/elasticsearch.yml</p>
+<h4 id="开启账户密码验证"><a href="#开启账户密码验证" class="headerlink" title="开启账户密码验证"></a>开启账户密码验证</h4><p>http.cors.allow-headers: Authorization,X-Requested-With,Content-Length,Content-Type<br>xpack.security.enabled: true<br>xpack.security.transport.ssl.enabled: false</p>
+<h4 id="重启elasticsearch"><a href="#重启elasticsearch" class="headerlink" title="重启elasticsearch"></a>重启elasticsearch</h4><p>docker restart elasticsearch</p>
+<h4 id="进入容器内"><a href="#进入容器内" class="headerlink" title="进入容器内"></a>进入容器内</h4><p>docker exec -it elasticsearch bash</p>
+<h4 id="设置密码-elastic，apm-system，kibana，kibana-system，logstash-system，beats-system，remote-monitoring-user-这些用户的密码"><a href="#设置密码-elastic，apm-system，kibana，kibana-system，logstash-system，beats-system，remote-monitoring-user-这些用户的密码" class="headerlink" title="设置密码 elastic，apm_system，kibana，kibana_system，logstash_system，beats_system，remote_monitoring_user 这些用户的密码"></a>设置密码 elastic，apm_system，kibana，kibana_system，logstash_system，beats_system，remote_monitoring_user 这些用户的密码</h4><p>bin/elasticsearch-setup-passwords interactive<br>密码设置</p>
+<p>123456<br>zongsen123456</p>
+<h4 id="拉取-Kibana-镜像"><a href="#拉取-Kibana-镜像" class="headerlink" title="拉取 Kibana 镜像"></a>拉取 Kibana 镜像</h4><pre><code>docker pull docker.elastic.co/kibana/kibana:7.14.0 </code></pre><h4 id="创建软连接-link-elasticsearch"><a href="#创建软连接-link-elasticsearch" class="headerlink" title="创建软连接-link elasticsearch"></a>创建软连接-link elasticsearch</h4><pre><code>docker run -d --name kibana --link elasticsearch -p 5601:5601 docker.elastic.co/kibana/kibana:7.14.0</code></pre><h4 id="将-kibana设置中文（可选）"><a href="#将-kibana设置中文（可选）" class="headerlink" title="将 kibana设置中文（可选）"></a>将 kibana设置中文（可选）</h4><h5 id="进入容器内部"><a href="#进入容器内部" class="headerlink" title="进入容器内部"></a>进入容器内部</h5><pre><code>docker exec -it kibana /bin/bash</code></pre><h5 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h5><p>在config文件夹中找到kibana.yml文件，并用文本编辑器打开。在文件中找到i18n.locale属性，并将其值更改为zh-CN，表示设置为中文。如果找不到该属性，可以在文件中添加以下行：<br>i18n.locale: “zh-CN”</p>
+<p>config/kibana.yml</p>
+<p>i18n.locale: “zh-CN”<br>elasticsearch.username: “elastic”<br>elasticsearch.password: “zongsen123456”</p>
 
             </div>
             <hr />
@@ -854,7 +865,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="C#反射执行方法">
+                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="C#反射执行方法">
                         
                         <span class="card-title">C#反射执行方法</span>
                     </div>
@@ -903,7 +914,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Docker安装SqlServer并开启代理">
+                        <img src="/medias/featureimages/25.jpg" class="responsive-img" alt="Docker安装SqlServer并开启代理">
                         
                         <span class="card-title">Docker安装SqlServer并开启代理</span>
                     </div>
@@ -1109,7 +1120,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">38k</span>
+            <span class="white-color">39.2k</span>
             
 
             <br>
