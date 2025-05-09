@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://lszai90.github.io/"/>
-  <updated>2025-03-29T06:59:35.235Z</updated>
+  <updated>2025-05-09T02:22:38.010Z</updated>
   <id>https://lszai90.github.io/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Denodo学习</title>
+    <link href="https://lszai90.github.io/2025/05/09/denodo-xue-xi/"/>
+    <id>https://lszai90.github.io/2025/05/09/denodo-xue-xi/</id>
+    <published>2025-05-09T02:09:43.000Z</published>
+    <updated>2025-05-09T02:22:38.010Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;什么是Denodo&quot;&gt;&lt;a href=&quot;#什么是Denodo&quot; class=&quot;headerlink&quot; title=&quot;什么是Denodo&quot;&gt;&lt;/a&gt;什么是Denodo&lt;/h4&gt;&lt;p&gt;   Denodo 是一家专注于 数据虚拟化（Data
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+  </entry>
+  
+  <entry>
     <title>AbpVNext审计日志扩展</title>
     <link href="https://lszai90.github.io/2025/03/29/abpvnext-shen-ji-ri-zhi-kuo-zhan/"/>
     <id>https://lszai90.github.io/2025/03/29/abpvnext-shen-ji-ri-zhi-kuo-zhan/</id>
     <published>2025-03-29T06:51:59.000Z</published>
-    <updated>2025-03-29T06:59:35.235Z</updated>
+    <updated>2025-03-29T07:01:53.090Z</updated>
     
     <summary type="html">
     
@@ -115,7 +139,7 @@
     <link href="https://lszai90.github.io/2025/02/11/oracle-ding-shi-ren-wu/"/>
     <id>https://lszai90.github.io/2025/02/11/oracle-ding-shi-ren-wu/</id>
     <published>2025-02-11T10:47:52.000Z</published>
-    <updated>2025-03-17T08:02:14.816Z</updated>
+    <updated>2025-04-03T06:43:00.605Z</updated>
     
     <summary type="html">
     
@@ -477,28 +501,6 @@
     </summary>
     
       <category term="随笔" scheme="https://lszai90.github.io/categories/%E9%9A%8F%E7%AC%94/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="https://lszai90.github.io/2023/05/13/abp-vnext-kuo-zhan-icurrentuser-deng-lu-shi-zeng-jia-claim/"/>
-    <id>https://lszai90.github.io/2023/05/13/abp-vnext-kuo-zhan-icurrentuser-deng-lu-shi-zeng-jia-claim/</id>
-    <published>2023-05-13T02:21:35.079Z</published>
-    <updated>2024-08-20T09:00:05.240Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h3 id=&quot;第一步-XXXXX-IdentityServer-中添加需要在ICurrentUser-显示的字段信息&quot;&gt;&lt;a href=&quot;#第一步-XXXXX-IdentityServer-中添加需要在ICurrentUser-显示的字段信息&quot;
-        
-      
-    
-    </summary>
     
     
   </entry>

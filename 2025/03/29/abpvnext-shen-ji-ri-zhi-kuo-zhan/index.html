@@ -329,7 +329,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -731,7 +731,7 @@ public static bool? ShouldAuditTypeByDefaultOrNull(Type type, bool ignoreIntegra
 
     return null;
 }</code></pre><p>}</p>
-<h3 id="原有AbpAuditingMapperProfile"><a href="#原有AbpAuditingMapperProfile" class="headerlink" title="原有AbpAuditingMapperProfile"></a>原有AbpAuditingMapperProfile</h3><p>CreateMap&lt;AuditLog, AuditLogDto&gt;()<br>.MapExtraProperties()<br>.ForMember(dest =&gt; dest.ExtraProperties, opt =&gt;<br>{<br>    opt.MapFrom(src =&gt; src.ExtraProperties ?? new ExtraPropertyDictionary());<br>});<br>原有 .MapExtraProperties() 扩展有问题需要自己加入.ForMember</p>
+<h3 id="原有AbpAuditingMapperProfile"><a href="#原有AbpAuditingMapperProfile" class="headerlink" title="原有AbpAuditingMapperProfile"></a>原有AbpAuditingMapperProfile</h3><p>CreateMap&lt;AuditLog, AuditLogDto&gt;()<br>.MapExtraProperties()<br>.ForMember(dest =&gt; dest.ExtraProperties, opt =&gt;<br>{<br>    opt.MapFrom(src =&gt; src.ExtraProperties ?? new ExtraPropertyDictionary());<br>});<br>原有 .MapExtraProperties() 扩展有问题需要自己加入.ForMemberhex</p>
 
             </div>
             <hr />
@@ -1070,43 +1070,41 @@ public static bool? ShouldAuditTypeByDefaultOrNull(Type type, bool ignoreIntegra
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
-            </div>
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2025/03/29/abpvnext-shen-ji-ri-zhi-kuo-zhan/">
+                <a href="/2025/05/09/denodo-xue-xi/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="AbpVNext审计日志扩展">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Denodo学习">
                         
-                        <span class="card-title">AbpVNext审计日志扩展</span>
+                        <span class="card-title">Denodo学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            审计日志扩展把菜单名称和按钮名称写入ES
+                            什么是Denodo   Denodo 是一家专注于 数据虚拟化（Data Virtualization） 的软件公司，其核心产品 Denodo Platform 提供了一种高效的数据集成和管理方案，允许企业在不移动数据的情况下，实时访和整合
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2025-03-29
-                            </span>
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2025-05-09
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Abp-IO/" class="post-category" target="_blank">
-                                    Abp.IO
+                            <a href="/categories/随笔/" class="post-category" target="_blank">
+                                    随笔
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
@@ -1121,7 +1119,7 @@ public static bool? ShouldAuditTypeByDefaultOrNull(Type type, bool ignoreIntegra
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="Serilog 学习 ">
+                        <img src="/medias/featureimages/28.jpg" class="responsive-img" alt="Serilog 学习 ">
                         
                         <span class="card-title">Serilog 学习 </span>
                     </div>
@@ -1318,7 +1316,7 @@ public static bool? ShouldAuditTypeByDefaultOrNull(Type type, bool ignoreIntegra
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">39.2k</span>
+            <span class="white-color">40.5k</span>
             
 
             <br>
