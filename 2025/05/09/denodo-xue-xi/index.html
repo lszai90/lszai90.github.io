@@ -329,7 +329,7 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
@@ -480,14 +480,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.2k
+                    2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    9 分
                 </div>
                 
                 
@@ -548,23 +548,183 @@
 <p>注意:<br>Driver={DenodoODBC} 是 ODBC 驱动名称（可能因版本不同而变化）。<br>Denodo 默认端口通常是 9996（HTTP）或 9999（HTTPS）</p>
 <h5 id="方法-2：使用-JDBC-驱动（通过-IKVM-或-JNI-桥接）"><a href="#方法-2：使用-JDBC-驱动（通过-IKVM-或-JNI-桥接）" class="headerlink" title="方法 2：使用 JDBC 驱动（通过 IKVM 或 JNI 桥接）"></a>方法 2：使用 JDBC 驱动（通过 IKVM 或 JNI 桥接）</h5><p>如果 Denodo 推荐使用 JDBC，可以在 .NET Core 中使用 IKVM 或 JNBridge 桥接 JDBC 驱动，但这种方式较复杂，推荐优先使用 ODBC。</p>
 <h5 id="方法-3：使用-Denodo-REST-API（推荐）"><a href="#方法-3：使用-Denodo-REST-API（推荐）" class="headerlink" title="方法 3：使用 Denodo REST API（推荐）"></a>方法 3：使用 Denodo REST API（推荐）</h5><p>Denodo 提供了 RESTful API，可以直接通过 HTTP 请求查询数据（适用于 .NET Core 跨平台场景）。<br>示例：使用 HttpClient 调用 Denodo REST API</p>
-<p>using System;<br>using System.Net.Http;<br>using System.Text;<br>using System.Threading.Tasks;</p>
-<p>class Program<br>{<br>    static async Task Main()<br>    {<br>        string denodoRestUrl = “<a href="http://your_denodo_server:9996/denodo-restfulws/your_db/views/your_view&quot;" target="_blank" rel="noopener">http://your_denodo_server:9996/denodo-restfulws/your_db/views/your_view&quot;</a>;<br>        string username = “your_username”;<br>        string password = “your_password”;</p>
-<pre><code>    var httpClient = new HttpClient();
-    var authToken = Convert.ToBase64String(Encoding.UTF8.GetBytes($&quot;{username}:{password}&quot;));
-    httpClient.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue(&quot;Basic&quot;, authToken);
+<p>  private async Task GetRestApiV2()<br>  {<br>      try<br>      {</p>
+<pre><code>      //总的条数
+      //http://XXXXXX:9090/server/aito_il/lms_wms_warehouse_inventory_assem_uni/views/lms_wms_warehouse_inventory_assem_uni/$count?%24format=json
+      // 配置客户端
+      var client = new DenodoRestClient(
+          baseUrl: &quot;http://XXXXXX:9090/server/aito_il/lms_wms_warehouse_inventory_assem_uni/views&quot;,
+          username: &quot;用户名&quot;,
+          password: &quot;密码&quot;);
 
+      // 查询参数
+      string viewName = &quot;lms_wms_warehouse_inventory_assem_uni&quot;;
+      int pageNumber = 1;
+      int pageSize = 50;
+      string fields = string.Empty;
+      //&quot;id,factory_code,warehouse_code&quot;; // 可选：指定返回字段
+      string filter = &quot;id=16561365&quot;; //  // 可选：过滤条件
+      //单个 &quot;id=16561365
+      //&amp;factory_code=2000&amp;id=16561365
+      string orderBy = string.Empty; //&quot;id desc&quot;; // 可选：排序
+
+      // 获取第一页数据
+      var (data, totalCount) = await client.GetPagedDataAsync(
+          viewName, pageNumber, pageSize, fields, filter, orderBy);
+
+      LogManager.WriteLog(&quot;获取到的对象:&quot; + data);
+  }
+  catch (Exception ex)
+  {
+      LogManager.WriteLog($&quot;发生错误: {ex.Message}&quot;);
+  }</code></pre><p>  }</p>
+<p>  using Newtonsoft.Json.Linq;<br>using System.Net.Http.Headers;<br>using System.Text;</p>
+<p>namespace denodotest;</p>
+<p>public class DenodoRestClient<br>{<br>    private readonly string _baseUrl;<br>    private readonly string _username;<br>    private readonly string _password;<br>    private readonly HttpClient _httpClient;</p>
+<pre><code>public DenodoRestClient(string baseUrl, string username, string password)
+{
+    _baseUrl = baseUrl;
+    _username = username;
+    _password = password;
+    _httpClient = new HttpClient();
+}
+
+
+/// &lt;summary&gt;
+/// 获取条数
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;viewName&quot;&gt;视图名称&lt;/param&gt; 
+/// &lt;param name=&quot;fields&quot;&gt;要返回的字段（可选）&lt;/param&gt;
+/// &lt;param name=&quot;filter&quot;&gt;过滤条件（可选）&lt;/param&gt;
+/// &lt;param name=&quot;orderBy&quot;&gt;排序字段（可选）&lt;/param&gt;
+private async Task&lt;int&gt; GetPagedDataAsync(string viewName, string fields = null, string filter = null, string orderBy = null)
+{
     try
     {
-        var response = await httpClient.GetAsync(denodoRestUrl);
-        response.EnsureSuccessStatusCode();
+        //http://XXXXXX:9090/server/aito_il/lms_wms_warehouse_inventory_assem_uni/views/lms_wms_warehouse_inventory_assem_uni/$count?%24format=json
+        // 构建查询URL
+        var queryParams = new List&lt;string&gt;
+        {
+            $&quot;$count?&quot;,
+            &quot;$format=json&quot;
+        };
 
-        string jsonResponse = await response.Content.ReadAsStringAsync();
-        Console.WriteLine(jsonResponse);
+        if (!string.IsNullOrWhiteSpace(fields))
+            queryParams.Add($&quot;$select={Uri.EscapeDataString(fields)}&quot;);
+
+        if (!string.IsNullOrWhiteSpace(filter))
+            queryParams.Add($&quot;$filter={Uri.EscapeDataString(filter)}&quot;);
+
+        if (!string.IsNullOrWhiteSpace(orderBy))
+            queryParams.Add($&quot;$orderby={Uri.EscapeDataString(orderBy)}&quot;);
+
+        string queryString = string.Join(&quot;&amp;&quot;, queryParams);
+        string requestUrl = $&quot;{_baseUrl}/{viewName}/{queryString}&quot;;
+        LogManager.WriteLog(&quot;请求路径&quot; + requestUrl);
+        // 设置认证头
+        var authToken = Convert.ToBase64String(Encoding.UTF8.GetBytes($&quot;{_username}:{_password}&quot;));
+        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(&quot;Basic&quot;, authToken);
+        _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(&quot;application/json&quot;));
+        // 发送请求
+        var response = await _httpClient.GetAsync(requestUrl);
+        // 检查响应状态
+        if (!response.IsSuccessStatusCode)
+        {
+            string errorContent = await response.Content.ReadAsStringAsync();
+            throw new Exception($&quot;请求失败: {response.StatusCode} - {errorContent}&quot;);
+        }
+
+        // 解析响应数据
+        string json = await response.Content.ReadAsStringAsync();
+        int TotalCount = 0;
+        if (string.IsNullOrWhiteSpace(json))
+        {
+            int.TryParse(json, out TotalCount);
+        }
+        return TotalCount;
     }
     catch (Exception ex)
     {
-        Console.WriteLine($&quot;Error: {ex.Message}&quot;);
+        throw new Exception($&quot;获取数据失败: {ex.Message}&quot;, ex);
+    }
+}
+
+
+/// &lt;summary&gt;
+/// 获取分页数据
+/// &lt;/summary&gt;
+/// &lt;param name=&quot;viewName&quot;&gt;视图名称&lt;/param&gt;
+/// &lt;param name=&quot;pageNumber&quot;&gt;页码（从1开始）&lt;/param&gt;
+/// &lt;param name=&quot;pageSize&quot;&gt;每页记录数&lt;/param&gt;
+/// &lt;param name=&quot;fields&quot;&gt;要返回的字段（可选）&lt;/param&gt;
+/// &lt;param name=&quot;filter&quot;&gt;过滤条件（可选）&lt;/param&gt;
+/// &lt;param name=&quot;orderBy&quot;&gt;排序字段（可选）&lt;/param&gt;
+public async Task&lt;(string Data, int TotalCount)&gt; GetPagedDataAsync(string viewName, int pageNumber, int pageSize,
+        string fields = null, string filter = null, string orderBy = null)
+{
+    try
+    {
+        int TotalCount = await GetPagedDataAsync(viewName, fields, filter, orderBy);
+        // 计算偏移量
+        int skip = (pageNumber - 1) * pageSize;
+        // 构建查询URL
+        var queryParams = new List&lt;string&gt;
+        {
+            &quot;$format=json&quot;,
+            $&quot;$start_index={skip}&quot;,
+            $&quot;$count={pageSize}&quot;
+        };
+
+        if (!string.IsNullOrWhiteSpace(fields))
+            queryParams.Add($&quot;$select={Uri.EscapeDataString(fields)}&quot;);
+
+        if (!string.IsNullOrWhiteSpace(filter))
+            queryParams.Add($&quot;$filter={Uri.EscapeDataString(filter)}&quot;);
+
+        if (!string.IsNullOrWhiteSpace(orderBy))
+            queryParams.Add($&quot;$orderby={Uri.EscapeDataString(orderBy)}&quot;);
+
+        string queryString = string.Join(&quot;&amp;&quot;, queryParams);
+        string requestUrl = $&quot;{_baseUrl}/{viewName}?{queryString}&quot;;
+        LogManager.WriteLog(&quot;请求路径&quot; + requestUrl);
+        // 设置认证头
+        var authToken = Convert.ToBase64String(Encoding.UTF8.GetBytes($&quot;{_username}:{_password}&quot;));
+        _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue(&quot;Basic&quot;, authToken);
+        _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue(&quot;application/json&quot;));
+
+        // 发送请求
+        var response = await _httpClient.GetAsync(requestUrl);
+
+        // 检查响应状态
+        if (!response.IsSuccessStatusCode)
+        {
+            string errorContent = await response.Content.ReadAsStringAsync();
+            throw new Exception($&quot;请求失败: {response.StatusCode} - {errorContent}&quot;);
+        }
+
+        // 解析响应数据
+        string json = await response.Content.ReadAsStringAsync();
+        if (!string.IsNullOrWhiteSpace(json))
+        {
+            var result = JObject.Parse(json);
+            if (!string.IsNullOrWhiteSpace(result[&quot;elements&quot;]?.ToString()))
+            {
+                return (result[&quot;elements&quot;]?.ToString(), TotalCount);
+            }
+            else
+            {
+                return (&quot;&quot;, 0);
+            }
+
+        }
+        else
+        {
+            return (&quot;&quot;, 0);
+        }
+    }
+    catch (Exception ex)
+    {
+        throw new Exception($&quot;获取数据失败: {ex.Message}&quot;, ex);
     }
 }</code></pre><p>}</p>
 
@@ -914,7 +1074,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="Denodo学习">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="Denodo学习">
                         
                         <span class="card-title">Denodo学习</span>
                     </div>
@@ -956,7 +1116,7 @@
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="AbpVNext审计日志扩展">
+                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="AbpVNext审计日志扩展">
                         
                         <span class="card-title">AbpVNext审计日志扩展</span>
                     </div>
@@ -1153,7 +1313,7 @@
 
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">40.5k</span>
+            <span class="white-color">41.3k</span>
             
 
             <br>
